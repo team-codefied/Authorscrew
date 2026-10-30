@@ -2,6 +2,7 @@
 
 @theme {
   --color-navy: #003b52;
+  --color-navy-deep: #00263a;
   --color-ink: #1c2b36;
   --color-teal: #00b0cc;
   --color-teal-dark: #00778c;
@@ -9,10 +10,72 @@
   --color-amber-dark: #d98b0a;
   --color-amber-text: #8f5600;
   --color-mist: #f4f8fb;
+  --color-cream: #fbf7ef;
   --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-serif: var(--font-lora), Georgia, serif;
+  --shadow-card: 0 1px 2px rgb(0 59 82 / 0.06), 0 8px 24px -8px rgb(0 59 82 / 0.16);
+  --shadow-lift: 0 2px 4px rgb(0 59 82 / 0.08), 0 24px 48px -12px rgb(0 59 82 / 0.28);
+  --shadow-book: 0 18px 30px -12px rgb(0 0 0 / 0.55), 0 6px 10px -4px rgb(0 0 0 / 0.35);
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-slow: float 10s ease-in-out infinite;
+  --animate-marquee: marquee 48s linear infinite;
 }
 
 html { scroll-behavior: smooth; }
 body { color: var(--color-ink); background: #fff; font-family: var(--font-sans); }
 :focus-visible { outline: 2px solid var(--color-teal); outline-offset: 2px; }
+
+/* ---- Decorative backgrounds ---- */
+.bg-dots { background-image: radial-gradient(rgb(255 255 255 / 0.16) 1.2px, transparent 1.2px); background-size: 24px 24px; }
+.bg-dots-dark { background-image: radial-gradient(rgb(0 59 82 / 0.12) 1.2px, transparent 1.2px); background-size: 24px 24px; }
+.bg-lines {
+  background-image: repeating-linear-gradient(135deg, rgb(255 255 255 / 0.04) 0 1px, transparent 1px 14px);
+}
+.bg-hero {
+  background:
+    radial-gradient(60rem 36rem at 85% -10%, rgb(0 176 204 / 0.32), transparent 60%),
+    radial-gradient(44rem 30rem at -10% 110%, rgb(245 166 35 / 0.18), transparent 60%),
+    linear-gradient(160deg, #00263a 0%, #003b52 55%, #00506b 100%);
+}
+.bg-paper {
+  background:
+    radial-gradient(40rem 24rem at 100% 0%, rgb(0 176 204 / 0.07), transparent 60%),
+    radial-gradient(36rem 24rem at 0% 100%, rgb(245 166 35 / 0.08), transparent 60%),
+    var(--color-mist);
+}
+.text-gradient-amber {
+  background: linear-gradient(90deg, #ffd27a, #f5a623);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.glass {
+  background: rgb(255 255 255 / 0.96);
+  box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.5), 0 0 0 1px rgb(255 255 255 / 0.6) inset;
+}
+.book-tilt { transform: rotate(var(--r, 0deg)); filter: drop-shadow(0 18px 22px rgb(0 0 0 / 0.45)); }
+.book-tilt-soft { transform: rotate(var(--r, 0deg)); filter: drop-shadow(0 14px 16px rgb(0 59 82 / 0.28)); }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+  50% { transform: translateY(-12px) rotate(var(--r, 0deg)); }
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+.marquee-track { display: flex; width: max-content; animation: var(--animate-marquee); }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+/* Scroll reveal: pure CSS where supported, plain visible content elsewhere. */
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal { animation: reveal-up linear both; animation-timeline: view(); animation-range: entry 0% entry 40%; }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-float, .animate-float-slow, .marquee-track { animation: none !important; }
+}

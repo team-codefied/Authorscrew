@@ -4,6 +4,8 @@ import Link from "next/link";
 import { LeadForm } from "@/components/LeadForm";
 import { QuoteButton } from "@/components/PopupProvider";
 import { Faq } from "@/components/sections";
+import { PageHero } from "@/components/Decor";
+import { IMG } from "@/lib/img";
 import { Container, LinkButton, SectionHeading, buttonClass } from "@/components/ui";
 import faq from "@/content/our-services-faq.json";
 import { SITE } from "@/lib/site";
@@ -28,20 +30,18 @@ const why = ["Author-Focused Approach", "Expert Creative Team", "Global Publishi
 export default function OurServices() {
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-navy pt-36 pb-16 text-white sm:pt-44 sm:pb-24">
-        <Image src="/images/services/banner-publishing.webp" alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40" />
-        <Container>
-          <nav aria-label="Breadcrumb" className="mb-4 text-sm text-white/75">
-            <Link href="/" className="hover:underline">Home</Link> <span aria-hidden>/</span> Our Services
-          </nav>
-          <h1 className="font-serif text-4xl font-medium sm:text-5xl">Our Services</h1>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <QuoteButton className={buttonClass("amber")}>Get A Quote</QuoteButton>
-            <LinkButton href={SITE.phoneHref} variant="outline">Schedule a Call</LinkButton>
-          </div>
-        </Container>
-      </section>
+      <PageHero
+        title="Our Services"
+        crumbs={[{ label: "Home", href: "/" }, { label: "Our Services" }]}
+        eyebrow="360° author services"
+        intro="From ghostwriting to global distribution, one expert crew handles every step."
+        visual={IMG.podium}
+      >
+        <div className="mt-8 flex flex-wrap gap-4">
+          <QuoteButton className={buttonClass("amber")}>Get A Quote</QuoteButton>
+          <LinkButton href={SITE.phoneHref} variant="outline">Schedule a Call</LinkButton>
+        </div>
+      </PageHero>
 
       <section className="py-16 sm:py-20">
         <Container>

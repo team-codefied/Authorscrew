@@ -17,6 +17,8 @@ export type LeadFormProps = {
   hideProjectType?: boolean;
   tone?: "light" | "dark";
   className?: string;
+  /** Pre-selects the Project Type, e.g. on a service page. */
+  defaultProjectType?: string;
 };
 
 type Values = {
@@ -76,6 +78,7 @@ export function LeadForm({
   hideProjectType,
   tone = "light",
   className = "",
+  defaultProjectType,
 }: LeadFormProps) {
   const router = useRouter();
   const uid = useId();
@@ -88,7 +91,7 @@ export function LeadForm({
     formState: { errors },
   } = useForm<Values>({
     resolver: zodResolver(SCHEMAS[variant]) as unknown as Resolver<Values>,
-    defaultValues: { kind: variant } as Values,
+    defaultValues: { kind: variant, projectType: defaultProjectType ?? "" } as Values,
   });
 
   async function onSubmit(values: Values) {
@@ -110,8 +113,8 @@ export function LeadForm({
   }
 
   const dark = tone === "dark";
-  const input = `w-full rounded-lg border bg-white px-4 py-3 text-[15px] text-ink placeholder:text-slate-500 transition focus:border-teal focus:ring-4 focus:ring-teal/15 focus:outline-none ${
-    dark ? "border-transparent" : "border-slate-300"
+  const input = `w-full rounded-xl border bg-slate-50 px-4 py-3 text-[15px] text-ink placeholder:text-slate-500 transition hover:border-slate-400 focus:border-teal focus:bg-white focus:ring-4 focus:ring-teal/15 focus:outline-none ${
+    dark ? "border-transparent" : "border-slate-200"
   }`;
   const label = `mb-1.5 block text-sm font-medium ${dark ? "text-white" : "text-ink"}`;
   const err = "mt-1 text-sm text-red-600";
@@ -174,7 +177,7 @@ export function LeadForm({
           <label htmlFor={field("projectType")} className={label}>
             Project Type
           </label>
-          <select {...register("projectType")} {...a11y("projectType")} defaultValue="" className={input}>
+          <select {...register("projectType")} {...a11y("projectType")} className={input}>
             <option value="">Select</option>
             {PROJECT_TYPES.map((p) => (
               <option key={p}>{p}</option>
@@ -222,7 +225,7 @@ export function LeadForm({
         <button
           type="submit"
           disabled={status === "sending"}
-          className="w-full rounded-lg bg-amber px-6 py-3.5 text-sm font-bold tracking-wide text-navy uppercase transition hover:bg-amber-dark focus-visible:outline-offset-4 disabled:cursor-wait disabled:opacity-70"
+          className="w-full rounded-xl bg-gradient-to-b from-[#ffbb4d] to-amber px-6 py-4 text-sm font-bold tracking-wide text-navy uppercase shadow-[0_10px_20px_-8px_rgb(217_139_10/0.7)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_24px_-8px_rgb(217_139_10/0.8)] focus-visible:outline-offset-4 disabled:cursor-wait disabled:opacity-70"
         >
           {status === "sending" ? "Sending..." : submitLabel}
         </button>

@@ -4,6 +4,7 @@ import privacy from "@/content/legal/privacy-policy.json";
 import terms from "@/content/legal/terms-conditions.json";
 import copyright from "@/content/legal/copyright-intellectual-property.json";
 import { Inline } from "./Inline";
+import { PageHero } from "./Decor";
 import { Container } from "./ui";
 
 type LegalBlock =
@@ -57,14 +58,7 @@ export function LegalPage({ slug }: { slug: LegalSlug }) {
 
   return (
     <>
-      <section className="bg-navy pt-36 pb-14 text-white sm:pt-44 sm:pb-16">
-        <Container>
-          <nav aria-label="Breadcrumb" className="mb-4 text-sm text-white/75">
-            <Link href="/" className="hover:underline">Home</Link> <span aria-hidden>/</span> {heading}
-          </nav>
-          <h1 className="font-serif text-4xl font-medium sm:text-5xl">{heading}</h1>
-        </Container>
-      </section>
+      <PageHero title={heading} crumbs={[{ label: "Home", href: "/" }, { label: heading }]} eyebrow="Legal" />
 
       <section className="py-14 sm:py-18">
         <Container className="grid gap-10 lg:grid-cols-[260px_1fr]">

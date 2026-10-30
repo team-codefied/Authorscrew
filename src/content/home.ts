@@ -15,8 +15,9 @@ export const platforms = {
     { name: "Apple Books", src: "/images/company/04.webp" },
     { name: "Kobo", src: "/images/company/03.webp" },
     { name: "Google Play Books", src: "/images/company/05.webp" },
+    { name: "Goodreads", src: "/images/live/goodreads.png" },
   ],
-  textOnly: ["IngramSpark", "Goodreads"],
+  textOnly: ["IngramSpark"],
 };
 
 export const consultation = {

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { LeadForm } from "@/components/LeadForm";
+import { PageHero } from "@/components/Decor";
+import { IMG } from "@/lib/img";
 import { Container } from "@/components/ui";
 import { SITE } from "@/lib/site";
 
@@ -29,16 +31,13 @@ export default function ContactUs() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="relative isolate overflow-hidden bg-navy pt-36 pb-16 text-white sm:pt-44 sm:pb-24">
-        <Image src="/images/services/contact-us.webp" alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40" />
-        <Container>
-          <nav aria-label="Breadcrumb" className="mb-4 text-sm text-white/75">
-            <Link href="/" className="hover:underline">Home</Link> <span aria-hidden>/</span> Contact Us
-          </nav>
-          <h1 className="font-serif text-4xl font-medium sm:text-5xl">Contact Us</h1>
-        </Container>
-      </section>
+      <PageHero
+        title="Contact Us"
+        crumbs={[{ label: "Home", href: "/" }, { label: "Contact Us" }]}
+        eyebrow="We'd love to hear from you"
+        intro="Call, email or send a message. A publishing consultant replies within one business day."
+        visual={IMG.publishers}
+      />
 
       <section className="py-16 sm:py-20">
         <Container className="grid gap-12 lg:grid-cols-[1fr_1.1fr]">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Wave } from "@/components/Decor";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -10,7 +11,9 @@ export const metadata: Metadata = {
 
 export default function ThankYou() {
   return (
-    <section className="bg-navy px-4 pt-40 pb-24 text-center text-white">
+    <section className="bg-hero relative isolate overflow-hidden px-4 pt-40 pb-32 text-center text-white">
+      <div aria-hidden className="bg-dots absolute inset-0 -z-10 opacity-50" />
+      <Wave fill="#ffffff" />
       <div className="mx-auto max-w-2xl">
         <div className="mx-auto mb-6 grid size-16 place-items-center rounded-full bg-amber text-3xl text-navy">&#10003;</div>
         <h1 className="font-serif text-4xl font-medium sm:text-5xl">Thank You, We&apos;ve Got Your Request</h1>

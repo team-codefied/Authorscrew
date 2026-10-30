@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BlogCard } from "@/components/BlogCard";
+import { PageHero } from "@/components/Decor";
+import { IMG } from "@/lib/img";
 import { Container } from "@/components/ui";
 import { getPosts } from "@/lib/blog";
 import { SITE } from "@/lib/site";
@@ -24,16 +26,13 @@ export default function Blogs() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="relative isolate overflow-hidden bg-navy pt-36 pb-16 text-white sm:pt-44 sm:pb-24">
-        <Image src="/images/services/blog-banner.webp" alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40" />
-        <Container>
-          <nav aria-label="Breadcrumb" className="mb-4 text-sm text-white/75">
-            <Link href="/" className="hover:underline">Home</Link> <span aria-hidden>/</span> Blogs
-          </nav>
-          <h1 className="font-serif text-4xl font-medium sm:text-5xl">Blogs</h1>
-        </Container>
-      </section>
+      <PageHero
+        title="Blogs"
+        crumbs={[{ label: "Home", href: "/" }, { label: "Blogs" }]}
+        eyebrow="Author insights"
+        intro="Writing tips, publishing guidance and marketing strategies for every stage of your author journey."
+        visual={IMG.stack}
+      />
 
       <section className="py-16 sm:py-20">
         <Container>

@@ -1,3 +1,4 @@
+import { IMG } from "./img";
 import ghost from "@/content/services/ghostwriting-services.json";
 import ebook from "@/content/services/ebook-writing.json";
 import cover from "@/content/services/book-cover-design.json";
@@ -28,14 +29,22 @@ export type ServiceContent = {
   contact: { title: string; text: string } | null;
 };
 
+export type Pic = { src: string; alt: string };
+
 export type ServiceMeta = {
   content: ServiceContent;
   title: string;
   description: string;
   /** Hero background (from the supplied assets). */
   banner: string;
-  /** Side image used beside the first content section. */
-  side?: string;
+  /** Short label for the hero eyebrow and the form's pre-selected project type. */
+  label: string;
+  /** Two pictures composed in the hero. */
+  hero: [Pic, Pic];
+  /** Pictures used beside content sections, in order. */
+  pics: Pic[];
+  /** Which kind of cover strip to show mid-page. */
+  strip: "published" | "small" | "cutouts";
 };
 
 const BANNER_FALLBACK = "/images/services/banner-publishing.webp";
@@ -46,49 +55,70 @@ export const SERVICE_PAGES: Record<string, ServiceMeta> = {
     title: "Professional Ghostwriting Services",
     description: "Hire professional ghostwriters to turn your ideas into a publish-ready book in your own voice, with full ownership and confidentiality.",
     banner: "/images/services/banner-ghost-writing.webp",
-    side: "/images/inner-pics/novel/ghostwriting-novel.webp",
+    label: "Ghostwriting",
+    hero: [IMG.ghostwriter, IMG.writer],
+    pics: [IMG.writer, IMG.ghostwriter, IMG.stack, IMG.publishers, IMG.books3],
+    strip: "published",
   },
   "ebook-writing": {
     content: ebook as ServiceContent,
     title: "eBook Writing Services",
     description: "Professional eBook writing, editing and formatting for Amazon Kindle and every major digital platform.",
     banner: BANNER_FALLBACK,
-    side: "/images/ghost-writing-hire.webp",
+    label: "eBook Writing",
+    hero: [IMG.ebookDevices, IMG.ereader],
+    pics: [IMG.kindleScreen, IMG.ebookDesk, IMG.ebookDesk2, IMG.ebookHand, IMG.devices, IMG.ereader],
+    strip: "published",
   },
   "book-cover-design": {
     content: cover as ServiceContent,
     title: "Book Cover Design Services",
     description: "Custom book cover design for print and eBook, built for your genre and ready for Amazon KDP and every major retailer.",
     banner: "/images/services/banner-cover-design.webp",
-    side: "/images/inner-pics/novel/cover-design-novel.webp",
+    label: "Book Cover Design",
+    hero: [IMG.coverSet, IMG.coverStack],
+    pics: [IMG.coverTablet, IMG.coverMock, IMG.coverGrid, IMG.coverGrid2, IMG.coverBooks, IMG.coverFlatlay],
+    strip: "small",
   },
   "book-publishing-services": {
     content: publishing as ServiceContent,
     title: "Book Publishing Services",
     description: "Complete book publishing services: editing, cover design, formatting, ISBN help and worldwide distribution while you keep your rights.",
     banner: "/images/services/banner-publishing.webp",
-    side: "/images/inner-pics/novel/publishing-novel.webp",
+    label: "Book Publishing",
+    hero: [IMG.podium, IMG.publishers],
+    pics: [IMG.libraryShelf, IMG.stack, IMG.distribution, IMG.openBook, IMG.books3],
+    strip: "published",
   },
   "audiobook-publishing-services": {
     content: audiobook as ServiceContent,
     title: "Audiobook Publishing Services",
     description: "Professional audiobook narration, production and global distribution for your book.",
     banner: BANNER_FALLBACK,
-    side: "/images/ghost-writing-hire.webp",
+    label: "Audiobook Publishing",
+    hero: [IMG.audioPhone, IMG.audioProduction],
+    pics: [IMG.audioStudio, IMG.audioBooks, IMG.audioDistribution, IMG.audioPlatforms, IMG.audioProduction],
+    strip: "small",
   },
   "book-editing-services": {
     content: editing as ServiceContent,
     title: "Book Editing Services",
     description: "Developmental editing, line editing, copy editing and proofreading from professional book editors.",
     banner: "/images/services/banner-editing.webp",
-    side: "/images/inner-pics/novel/editing-novel.webp",
+    label: "Book Editing",
+    hero: [IMG.editing, IMG.redPen],
+    pics: [IMG.redPen, IMG.glasses, IMG.oldBooks, IMG.editing, IMG.openBook],
+    strip: "cutouts",
   },
   "book-marketing-services": {
     content: marketing as ServiceContent,
     title: "Book Marketing Services",
     description: "Author branding, launch campaigns and book marketing that help you reach more readers and sell more books.",
     banner: "/images/services/banner-marketing.webp",
-    side: "/images/inner-pics/novel/marketing-novel.webp",
+    label: "Book Marketing",
+    hero: [IMG.billboard, IMG.socialMedia],
+    pics: [IMG.publicity, IMG.launchEmail, IMG.amazonBest, IMG.bookstore, IMG.billboard],
+    strip: "published",
   },
 };
 

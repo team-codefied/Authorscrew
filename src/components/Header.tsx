@@ -150,10 +150,10 @@ export function Header() {
 export function LandingHeader() {
   const { openQuote } = useQuotePopup();
   return (
-    <header className="absolute inset-x-0 top-0 z-40 text-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 lg:px-8">
+    <header className="sticky top-0 z-40 bg-navy-deep/95 text-white shadow-lg backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 lg:px-8">
         <Link href="/" aria-label="Authors Crew home">
-          <Image src="/images/logo.svg" alt="Authors Crew" width={188} height={64} priority className="h-12 w-auto sm:h-14" />
+          <Image src="/images/logo.svg" alt="Authors Crew" width={188} height={64} priority className="h-11 w-auto sm:h-12" />
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">
           <button type="button" onClick={openQuote} className={`${btn} hidden bg-teal text-navy hover:bg-teal-dark hover:text-white sm:block`}>

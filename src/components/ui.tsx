@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Eyebrow } from "./Decor";
 import type { ReactNode } from "react";
 
 export function Container({ children, className = "" }: { children: ReactNode; className?: string }) {
@@ -11,15 +12,18 @@ export function SectionHeading({
   center = true,
   light = false,
   as: Tag = "h2",
+  eyebrow,
 }: {
   title: string;
   intro?: string;
   center?: boolean;
   light?: boolean;
   as?: "h1" | "h2";
+  eyebrow?: string;
 }) {
   return (
     <div className={`mb-10 max-w-3xl ${center ? "mx-auto text-center" : ""}`}>
+      {eyebrow && <Eyebrow light={light}>{eyebrow}</Eyebrow>}
       <Tag className={`font-serif text-3xl leading-tight font-medium sm:text-4xl ${light ? "text-white" : "text-navy"}`}>{title}</Tag>
       {intro && <p className={`mt-4 text-lg leading-relaxed ${light ? "text-white/90" : "text-slate-600"}`}>{intro}</p>}
     </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/BlogCard";
+import { PageHero } from "@/components/Decor";
 import { CoverCalculator } from "@/components/CoverCalculator";
 import { Inline } from "@/components/Inline";
 import { LeadForm } from "@/components/LeadForm";
@@ -59,26 +60,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <section className="relative isolate overflow-hidden bg-navy pt-36 pb-14 text-white sm:pt-44 sm:pb-20">
-        <Image src="/images/services/blog-banner.webp" alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/85 to-navy/60" />
-        <Container className="max-w-4xl">
-          <nav aria-label="Breadcrumb" className="mb-4 text-sm text-white/75">
-            <Link href="/" className="hover:underline">Home</Link> <span aria-hidden>/</span>{" "}
-            <Link href="/blogs" className="hover:underline">Blogs</Link>
-          </nav>
-          <h1 className="font-serif text-3xl leading-tight font-medium sm:text-5xl">{post.title}</h1>
-          <p className="mt-5 text-sm text-white/80">
-            {post.published && <time dateTime={post.published}>{formatDate(post.published)}</time>}
-            {post.published && " · "}
-            {readingMinutes(post)} min read · By Authors Crew
-          </p>
-        </Container>
-      </section>
+      <PageHero
+        title={post.title}
+        crumbs={[{ label: "Home", href: "/" }, { label: "Blogs", href: "/blogs" }, { label: "Article" }]}
+        visual={img ? { src: img, alt: post.title, width: 800, height: 450 } : undefined}
+      >
+        <p className="mt-5 text-sm text-white/80">
+          {post.published && <time dateTime={post.published}>{formatDate(post.published)}</time>}
+          {post.published && " · "}
+          {readingMinutes(post)} min read · By Authors Crew
+        </p>
+      </PageHero>
 
       <article className="py-12 sm:py-16">
         <Container className="max-w-3xl">
-          {img && <Image src={img} alt={post.title} width={1200} height={675} priority className="mb-10 h-auto w-full rounded-2xl" />}
           <div className="text-[17px] leading-[1.8] text-slate-700">
             {post.blocks.map((b, i) => {
               switch (b.k) {
