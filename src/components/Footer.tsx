@@ -12,7 +12,7 @@ const link = "text-slate-500 transition hover:text-amber-text";
 
 export function NewsletterCta() {
   return (
-    <section aria-labelledby="nl-title" className="mx-auto max-w-6xl px-4">
+    <section aria-labelledby="nl-title" className="mx-auto max-w-[1280px] px-4">
       <div className="grid overflow-hidden rounded-2xl bg-navy md:grid-cols-[1fr_1.2fr]">
         <div className="relative hidden min-h-64 md:block">
           <Image src="/images/cta-img-1.webp" alt="" fill sizes="480px" className="object-cover" />
@@ -33,7 +33,7 @@ export function Footer({ landing = false }: { landing?: boolean }) {
   return (
     <footer className="mt-20 bg-gradient-to-b from-white to-slate-100 pt-4">
       <NewsletterCta />
-      <div className="mx-auto mt-16 grid max-w-6xl gap-10 px-4 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
+      <div className="mx-auto mt-16 grid max-w-[1280px] gap-10 px-4 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
         <div>
           <Image src="/images/logo-dark.svg" alt="Authors Crew" width={188} height={64} className="h-16 w-auto" />
           <p className="mt-5 max-w-sm leading-relaxed text-slate-500">
@@ -100,7 +100,7 @@ export function Footer({ landing = false }: { landing?: boolean }) {
         </address>
       </div>
 
-      <div className="mx-auto mt-12 max-w-6xl px-4">
+      <div className="mx-auto mt-12 max-w-[1280px] px-4">
         <p className="mx-auto max-w-4xl text-center text-sm leading-relaxed text-slate-500">
           Disclaimer: Authors Crew is an independent book publishing and publishing-services provider and is not affiliated with, endorsed by, sponsored by, or officially connected to Amazon KDP (Kindle Direct Publishing), Barnes &amp; Noble, or their related entities. Any mention of these platforms is solely for informational purposes regarding publishing and distribution services. All trademarks and brand names belong to their respective owners.
         </p>

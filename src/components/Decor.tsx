@@ -177,7 +177,7 @@ export function PageHero({
       <div aria-hidden className="bg-dots absolute inset-0 -z-10 opacity-60 [mask-image:radial-gradient(ellipse_at_25%_40%,black,transparent_70%)]" />
       <div aria-hidden className="absolute -top-24 right-[-8rem] -z-10 size-[28rem] rounded-full border border-white/10" />
       <div aria-hidden className="absolute -top-8 right-[-3rem] -z-10 size-[20rem] rounded-full border border-teal/20" />
-      <div className={`mx-auto grid w-full max-w-6xl items-center gap-10 px-4 sm:px-6 ${visual ? "lg:grid-cols-[1.1fr_0.9fr]" : ""}`}>
+      <div className={`mx-auto grid w-full max-w-[1280px] items-center gap-10 px-4 sm:px-6 ${visual ? "lg:grid-cols-[1.1fr_0.9fr]" : ""}`}>
         <div>
           <nav aria-label="Breadcrumb" className="mb-5 text-sm text-white/70">
             {crumbs.map((c, i) => (

@@ -36,7 +36,7 @@ export function Header() {
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:bg-white focus:p-2 focus:text-ink">
         Skip to content
       </a>
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 lg:px-8">
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-6 px-4 py-4 lg:px-8">
         <Link href="/" aria-label="Authors Crew home" className="shrink-0">
           <Image src="/images/logo.svg" alt="Authors Crew" width={188} height={64} priority className="h-14 w-auto" />
         </Link>
@@ -151,7 +151,7 @@ export function LandingHeader() {
   const { openQuote } = useQuotePopup();
   return (
     <header className="sticky top-0 z-40 bg-navy-deep/95 text-white shadow-lg backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 lg:px-8">
+      <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-3 px-4 py-3 lg:px-8">
         <Link href="/" aria-label="Authors Crew home">
           <Image src="/images/logo.svg" alt="Authors Crew" width={188} height={64} priority className="h-11 w-auto sm:h-12" />
         </Link>
