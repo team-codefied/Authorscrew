@@ -1,0 +1,256 @@
+{
+ "slug": "childrens-book-publishing-illustration-lp",
+ "eyebrow": "Children’s Book Publishing & Illustration",
+ "h1": "A Children’s Book Has to Work for Two Audiences at Once",
+ "intro": [
+  "Children need a story they want to enter. Adults need a book they trust enough to put in a child’s hands. Authors Crew helps bring writing, illustration, layout, and publishing together so both parts of that decision feel intentional."
+ ],
+ "bullets": [
+  "Age-aware storytelling",
+  "Illustration direction",
+  "Print-ready publishing support"
+ ],
+ "heroCtas": [
+  {
+   "label": "Get Your Free Consultation",
+   "to": "popup"
+  },
+  {
+   "label": "Publish My book",
+   "to": "tel"
+  }
+ ],
+ "heroOffer": "Avail Up to 40% OFF",
+ "heroGenreBudget": false,
+ "platformsTitle": "Global Publishing Powered by Industry-Leading Platforms",
+ "sections": [
+  {
+   "title": "A Good Idea Needs More Than a Finished Manuscript",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Children’s books depend on the relationship between words, pictures, pacing, page turns, and format. We help you shape those pieces as one reading experience."
+    }
+   ]
+  },
+  {
+   "title": "We Help Connect Story,Art, and Production",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Bring us an idea, a draft, or a completed story. We can help plan what the book needs next."
+    },
+    {
+     "k": "cta",
+     "label": "Let's Bring Your Story to Life",
+     "to": "tel"
+    }
+   ]
+  },
+  {
+   "title": "Illustrations Should Help Children Read the Story Before the Words Do",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "The right visual direction supports character, mood, action, and comprehension. We develop illustrations around the manuscript, intended age group, and the kind of experience you want each spread to create."
+    },
+    {
+     "k": "p",
+     "text": "Possible visual directions:"
+    },
+    {
+     "k": "ul",
+     "items": [
+      "Whimsical & Playful",
+      "Character-Led",
+      "Storybook Classic",
+      "Educational",
+      "Custom Visual Styles"
+     ]
+    },
+    {
+     "k": "cta",
+     "label": "Explore Children's Book Illustration",
+     "to": "popup"
+    }
+   ]
+  },
+  {
+   "title": "Everything Your Children’s Book Needs to Feel Cohesive",
+   "blocks": [
+    {
+     "k": "cards",
+     "items": [
+      {
+       "title": "Story Development",
+       "text": "Shape plot, pacing, language, and page-turn moments around the age group and reading experience."
+      },
+      {
+       "title": "Children's Book Illustration",
+       "text": "Create characters, scenes, and visual continuity that support the story from page to page."
+      },
+      {
+       "title": "Cover Design",
+       "text": "Develop a cover that feels connected to the interior artwork and speaks to the intended audience."
+      },
+      {
+       "title": "Page Layout",
+       "text": "Balance words, illustrations, spacing, and page turns for clear, child-friendly reading."
+      },
+      {
+       "title": "Publishing Preparation",
+       "text": "Prepare approved artwork and interiors for the print or digital formats included in the project."
+      },
+      {
+       "title": "Launch Support",
+       "text": "Build practical promotional materials around the book, its audience, and the way you plan to share it."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Imagine the Story as a Book a Child Can Hold, Revisit, and Remember",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "We help turn the manuscript and artwork into a complete reading experience, with each page working toward the same story."
+    },
+    {
+     "k": "cta",
+     "label": "Call Now",
+     "to": "tel"
+    },
+    {
+     "k": "cta",
+     "label": "Get a Free Consultation",
+     "to": "popup"
+    }
+   ]
+  },
+  {
+   "title": "Stories We Transform Into Magical Children’s Books",
+   "blocks": []
+  },
+  {
+   "title": "Ready to Bring the Story Out of Your Draft Folder?",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Whether you have a concept, finished manuscript, or existing illustrations, we can help you identify the next creative and publishing step."
+    },
+    {
+     "k": "cta",
+     "label": "Get My Free Consultation",
+     "to": "popup"
+    },
+    {
+     "k": "cta",
+     "label": "Request a Quote",
+     "to": "tel"
+    }
+   ]
+  },
+  {
+   "title": "One Team Across Story, Art, and Publishing",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Children’s books have many moving parts. Keeping those parts connected helps the finished book feel intentional instead of assembled one piece at a time."
+    },
+    {
+     "k": "cards",
+     "items": [
+      {
+       "title": "Collaborative Direction",
+       "text": "Your story, audience, references, and feedback stay central throughout the creative work."
+      },
+      {
+       "title": "Character Consistency",
+       "text": "Visual details are developed to stay recognizable across scenes, expressions, and pages."
+      },
+      {
+       "title": "Child-Friendly Production",
+       "text": "Layout and formatting decisions support readability, pacing, and the intended age group."
+      },
+      {
+       "title": "End-to-End Coordination",
+       "text": "Story, illustration, design, and publishing tasks are planned as connected stages of one project."
+      }
+     ]
+    },
+    {
+     "k": "cta",
+     "label": "Book a Specialist",
+     "to": "popup"
+    }
+   ]
+  },
+  {
+   "title": "Different Authors Bring Different Reasons for Writing for Children",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "The process can support a first story idea, a family project, a classroom concept, or an established author building a new children’s title."
+    },
+    {
+     "k": "cards",
+     "items": [
+      {
+       "title": "First-Time Children’s Authors",
+       "text": "Develop an early idea into a clear, structured book project."
+      },
+      {
+       "title": "Parents & Families",
+       "text": "Shape a meaningful family story into a professionally prepared children’s book."
+      },
+      {
+       "title": "Educators",
+       "text": "Create engaging books around learning, classroom themes, or age-appropriate concepts."
+      },
+      {
+       "title": "Established Authors",
+       "text": "Add a children’s title with coordinated illustration, design, and publishing support."
+      }
+     ]
+    },
+    {
+     "k": "cta",
+     "label": "Tell Us About Your Book",
+     "to": "popup"
+    }
+   ]
+  }
+ ],
+ "faqTitle": "Still Have Questions? We’re Here to Help",
+ "faqIntro": "We make the writing and publishing process easy to understand from the start.",
+ "faq": [
+  {
+   "q": "Do I need a completed manuscript?",
+   "a": "No. You can approach us with a finished manuscript, rough concept, or children’s book idea. We can determine what level of development your project needs."
+  },
+  {
+   "q": "Do you provide children's book illustrations?",
+   "a": "Yes. We can develop custom illustrations based on your story, characters, target audience, and preferred visual direction."
+  },
+  {
+   "q": "Can you help with the book cover?",
+   "a": "Yes. Your cover can be developed as part of the overall visual identity of your children’s book."
+  },
+  {
+   "q": "Can you format my children's book for publishing?",
+   "a": "Yes. We can prepare the interior layout and files according to the requirements of your selected publishing route."
+  },
+  {
+   "q": "Can you publish my children's book?",
+   "a": "We provide publishing support and can help guide you through the preparation and publishing process."
+  },
+  {
+   "q": "I already have illustrations. Can you still help?",
+   "a": "Yes. If you already have artwork, we can assess your existing materials and determine which publishing, formatting, design, or production services you need."
+  }
+ ],
+ "reviewsTitle": "What Authors Say About Creating Their Children’s Books",
+ "reviewsIntro": "Check out how authors describe the collaboration, illustration process, revisions, and experience of watching a story move from manuscript to finished book.",
+ "bottomFormTitle": "Start Your Author Journey"
+}

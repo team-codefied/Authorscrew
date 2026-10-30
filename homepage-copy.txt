@@ -1,0 +1,145 @@
+﻿Authors Crew Homepage Copy (Revamp)
+Oct 28, 2026 · @Saad
+Notes for the web team
+This rewrites every section of the current homepage in the same order, so it can drop into the existing layout. Fix these four issues before it goes live:
+Issue on the live page
+Fix
+The stats counters all show &quot;0&quot;
+Add real numbers, or remove the section. Showing zeros undercuts trust.
+Success stories show placeholders B-1 to B-8
+Replace with real book covers linked to Amazon, or remove.
+Process step mentions &quot;video testimonials by celebrities&quot;
+Remove unless it is a real, deliverable service.
+&quot;Types of Books We Can Turn Into Bestsellers&quot;
+Reworded below. Bestseller status can&apos;t be promised and invites complaints.
+The current page also says the FAQ has six questions but lists eight. The new FAQ below has eight. Section numbers in brackets match the order on the live page.
+[1–3] Hero and platforms
+Headline: We Build Authors, Not Just Books.
+Subheadline: Ghostwriting, editing, cover design, publishing and marketing under one roof. One dedicated project manager guides you from first idea to finished book, and you keep 100% of your rights and royalties.
+Buttons: Get a Free Quote · Schedule a Call
+Trust line under buttons: Rated Excellent on Trustpilot · Human editors, never AI · You approve every stage
+Platforms strip heading: Publish Where Readers Shop
+Platforms strip text: Your book, available worldwide on Amazon, Barnes &amp; Noble, Apple Books, Kobo and Google Play Books, and in bookstores and libraries through IngramSpark.
+Show logos: Amazon, Barnes &amp; Noble, Apple Books, Kobo, Google Play Books, IngramSpark, Goodreads.
+[4–6] Consultation form, problem and audience
+Consultation form
+Heading: Start Your Author Journey
+Text: Tell us about your book. A publishing consultant will get back to you within one business day with honest advice and a clear quote. No pressure, no obligation.
+Button: Get My Free Consultation
+Problem section
+Heading: Great Ideas Don&apos;t Fail. Unfinished Books Do.
+Intro: Most books never get published, not because the idea isn&apos;t good enough, but because the process feels overwhelming. We make each step simple.
+Not sure where to start? We&apos;ll map out your book with you, from outline to launch.
+Writing feels hard? Our ghostwriters and editors help you shape your story in your own voice.
+Publishing feels complicated? We handle the formatting, ISBNs, store setup and every technical detail.
+Marketing feels confusing? We build a launch plan around your goals, your audience and your budget.
+Who we help
+Heading: Helping Authors at Every Stage
+First-time authors who want expert guidance from day one
+Entrepreneurs and coaches building authority with a book
+Speakers who want a book to sell at every event
+Fiction writers with a story ready to share
+Memoir and nonfiction authors with a life or lesson worth telling
+Children&apos;s book authors bringing a picture book to life
+Button: Let&apos;s Bring Your Book to Life
+[7–9, 13, 17] Services, why us and process
+Global distribution
+Heading: Your Book, Available Worldwide
+Text: We publish your book in eBook, paperback and hardcover on the stores readers use most, under your own author accounts, so royalties go straight to you.
+Button: Publish Your Book Globally
+Services
+Heading: Your All-in-One Writing and Publishing Partner
+Service card
+Card text
+Ghostwriting
+Your story, your voice. A professional writer turns your ideas, notes or interviews into a finished manuscript.
+Editing &amp; Proofreading
+From big-picture developmental edits to a final proofread, with every change tracked for your approval.
+Book Cover Design
+Original covers designed for your genre, with several concepts to choose from.
+Book Publishing
+Formatting, ISBNs and setup on every major store, in eBook, paperback and hardcover.
+Book Marketing
+Launch plans, author branding, social media and press, built around your goals and budget.
+Audiobook Publishing
+Professional narration and production, distributed to Audible and other audio stores.
+Each card keeps its &quot;Learn More&quot; link.
+Why Authors Crew (replaces the stats counters)
+Heading: Why Authors Choose Authors Crew
+You own everything. 100% of your rights, your author accounts and your royalties.
+You approve every stage. Nothing moves forward, and nothing is published, without your OK.
+Human editors, never AI. Your manuscript is read and edited by people, and kept confidential.
+One dedicated project manager. A single point of contact from start to finish.
+Clear, fixed pricing. One quote up front, with nothing added without your agreement.
+Fair refunds. Cancel anytime and get back what you paid for work not yet started.
+If you want to keep the counters, use only verified numbers, for example &quot;[X]+ books published&quot; and &quot;[X] years in publishing&quot;.
+Process (one 5-step version replaces both process sections)
+Heading: Your Journey to Becoming a Published Author
+Free consultation. We learn about your book, your goals and your budget, and give you a clear plan and quote.
+Writing and editing. Our writers and editors shape your manuscript, with every change sent to you for approval.
+Design. You choose your cover from original concepts, and we lay out your interior for print and eBook.
+Publishing. We set up your book on every major store under your own accounts, ready for readers worldwide.
+Launch and marketing. We help you reach readers with a launch plan built around your story.
+Button: Start Your Book Today
+[10–12, 14–16, 18] Showcase, genres, marketing and reviews
+Author showcase
+Heading: Real Authors, Real Books
+Text: Every author we work with has a different story and a different goal. Here are a few of the writers we&apos;ve helped bring their books to readers.
+Keep the Priscilla Keresey and Stacy Q. Peake features, each with &quot;Read Their Story&quot; as the link text.
+Genres
+Heading: Books We Bring to Life
+Genre
+Card text
+Fiction
+Novels and stories with polished prose, strong pacing and covers that fit the genre.
+Nonfiction
+Expert, business and self-help books that build your authority.
+Memoir
+Your life story, told with honesty and care, in your own voice.
+Biography
+Well-researched life stories of the people who matter to you.
+Autobiography
+Your full journey, shaped into a compelling book.
+Children&apos;s Books
+Picture books and early readers with illustrations children love.
+Marketing
+Heading: Author Branding and Book Marketing
+Text: A great book still needs readers. We help you build your author brand, grow your audience and plan a launch that fits your goals and your budget, from social media and press releases to Amazon ads and author websites.
+Button: Explore Book Marketing
+From idea to published book
+Heading: From Idea to Published Book
+Text: Have a story but not the time to write it? Our ghostwriters work closely with you through interviews and drafts, so the finished book sounds like you.
+Button: Talk to a Ghostwriter
+Success stories
+Heading: Books We&apos;ve Published
+Text: Browse a selection of books we&apos;ve helped authors publish, available now on Amazon and Barnes &amp; Noble.
+Replace B-1 to B-8 with real covers, each linked to its store page.
+Button: Publish Your Book Today
+Client reviews
+Heading: What Our Authors Say
+Text: Rated Excellent on Trustpilot, with reviews on Reviews.io and ProvenExpert.
+Keep the four existing reviews from Niel Pye, Mia Tinea, Dr. Paul and John Carzello, with the review-site badges linked.
+[19–22] FAQ, blog, final call to action and footer
+FAQ
+Heading: Questions Authors Ask Us
+What does Authors Crew do? We help authors write, edit, design, publish and market their books, all under one roof. You can use one service or let us guide you through the whole journey.
+Is Authors Crew a self-publishing company? Yes. We provide professional self-publishing services. Your book is published under your own author accounts, so you keep 100% of your rights and royalties.
+Which services do you offer? Ghostwriting, editing and proofreading, cover design, formatting, publishing, audiobooks and book marketing.
+How are you different from other publishers? You own everything, you approve every stage, our editors are real people, and you have one project manager from start to finish. Our pricing is fixed and agreed up front.
+I have an idea but haven&apos;t started writing. Where do I begin? Book a free consultation. We&apos;ll help you outline your book and recommend whether to write it yourself with editing support or work with a ghostwriter.
+Do I need a ghostwriter? Not always. If you enjoy writing, our editors can help you finish and polish your manuscript. If time is short, a ghostwriter can write it with you, in your voice.
+What is the easiest way to get published? With a publishing package that covers editing, design, formatting and store setup in one plan, so you don&apos;t have to manage each step yourself.
+How long does publishing take? Most books are published in 3 to 8 weeks once the manuscript is ready, depending on the editing needed. Ghostwritten books take longer, and we&apos;ll give you a timeline up front.
+Blog preview
+No changes. Keep the current blog section exactly as it is.
+Final call to action
+Heading: Let&apos;s Turn Your Idea Into a Published Book
+Text: Tell us about your project, and a publishing consultant will get back to you within one business day.
+Button: Get My Free Quote
+Newsletter heading: Join the Author Community
+Newsletter text: Publishing tips, guides and offers for authors, straight to your inbox.
+Footer
+Company blurb: Authors Crew is a full-service self-publishing company helping authors write, publish and market their books, while keeping 100% of their rights and royalties.
+Locations: Headquarters in Aurora, Illinois · Regional office in Los Angeles, California
+Disclaimer: Authors Crew is an independent publishing services company and is not affiliated with, endorsed by or sponsored by Amazon.com, Inc., Barnes &amp; Noble or any other retailer. All trademarks belong to their respective owners.
+

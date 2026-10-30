@@ -1,0 +1,408 @@
+{
+ "slug": "book-publishing-services-lp2",
+ "eyebrow": "Book Publishing Services",
+ "h1": "Turn Your Manuscript Into a Professionally Published Book",
+ "intro": [
+  "Completing your manuscript is an achievement worth celebrating. The next step is turning your work into a professionally published book that is ready for readers. Authors Crew helps authors navigate the publishing process, from preparing essential files and formatting the manuscript to getting the final book ready for print and digital release."
+ ],
+ "bullets": [
+  "For new & experienced authors",
+  "Fiction, nonfiction, memoirs & more",
+  "Print & digital publishing support"
+ ],
+ "heroCtas": [
+  {
+   "label": "Publish My Book",
+   "to": "popup"
+  },
+  {
+   "label": "HIRE A BOOK PUBLISHER",
+   "to": "tel"
+  }
+ ],
+ "heroOffer": "",
+ "heroGenreBudget": true,
+ "platformsTitle": "Global Publishing Powered by Industry-Leading Platforms",
+ "sections": [
+  {
+   "title": "THE PARTNER BEHIND YOUR PUBLISHED BOOK",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "As a professional book publishing company, we guide you through every stage of the publishing journey, helping transform your manuscript into a professionally published book ready to reach readers worldwide."
+    }
+   ]
+  },
+  {
+   "title": "Professional Book Publishers, Supporting You Every Step of the Way",
+   "blocks": [
+    {
+     "k": "cta",
+     "label": "Get A Quote",
+     "to": "popup"
+    },
+    {
+     "k": "cta",
+     "label": "Schedule a Call",
+     "to": "tel"
+    }
+   ]
+  },
+  {
+   "title": "Make Your Story Publication-Ready",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Professional book publishing services that help transform your manuscript into a book you can be proud of."
+    },
+    {
+     "k": "cards",
+     "items": [
+      {
+       "title": "Manuscript Review",
+       "text": "Receive expert feedback to strengthen your manuscript before publication."
+      },
+      {
+       "title": "Book Production",
+       "text": "Transform your manuscript into a polished, professionally produced book."
+      },
+      {
+       "title": "Cover Design",
+       "text": "Create a compelling cover that makes a strong first impression."
+      },
+      {
+       "title": "Interior Formatting",
+       "text": "Give every page a clean, consistent, and professional appearance."
+      },
+      {
+       "title": "Publishing",
+       "text": "Publish your book professionally across leading platforms."
+      },
+      {
+       "title": "Launch Support",
+       "text": "Move forward confidently with guidance throughout your book launch."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ready to See Your Book Become a Published Success?",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Bring your story to readers with professional guidance from a trusted book publishing company. Get the expert support you need to professionally prepare, publish, and launch your book."
+    },
+    {
+     "k": "cta",
+     "label": "Get A Quote",
+     "to": "popup"
+    },
+    {
+     "k": "cta",
+     "label": "HIRE A BOOK PUBLISHER",
+     "to": "tel"
+    }
+   ]
+  },
+  {
+   "title": "Publishing Across All Genres",
+   "blocks": [
+    {
+     "k": "chips",
+     "items": [
+      "Action",
+      "Comics",
+      "Fiction",
+      "Children's",
+      "Romance",
+      "Sci-Fi",
+      "Mystery",
+      "Thriller",
+      "Non-Fiction",
+      "Horror"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "",
+   "blocks": [
+    {
+     "k": "genres",
+     "items": [
+      {
+       "title": "Action Book Publishing",
+       "text": "Bring your high-energy stories to life with professional publishing designed to captivate thrill-seeking readers."
+      },
+      {
+       "title": "Comic Book Publishing",
+       "text": "Transform your visual storytelling into a professionally published comic that stands out on every platform."
+      },
+      {
+       "title": "Fiction Book Publishing",
+       "text": "Turn your imagination into a compelling fiction book that engages readers from the first page to the last."
+      },
+      {
+       "title": "Childrens Book Publishing",
+       "text": "Create magical reading experiences with beautifully published books for young minds."
+      },
+      {
+       "title": "Romance Book Publishing",
+       "text": "Share unforgettable love stories with expertly crafted publishing solutions for romance readers."
+      },
+      {
+       "title": "Science Fiction Book Publishing",
+       "text": "Launch readers into extraordinary worlds with professional science fiction publishing services."
+      },
+      {
+       "title": "Mystery Book Publishing",
+       "text": "Keep readers guessing with polished mystery novels published for maximum impact."
+      },
+      {
+       "title": "Thriller Book Publishing",
+       "text": "Publish gripping stories packed with suspense, twists, and unforgettable tension."
+      },
+      {
+       "title": "Non-Fiction Book Publishing",
+       "text": "Share your expertise, insights, and experiences through professionally published non-fiction books."
+      },
+      {
+       "title": "Horror Book Publishing",
+       "text": "Bring chilling tales to life with publishing services crafted for horror enthusiasts."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "",
+   "blocks": [
+    {
+     "k": "features",
+     "items": [
+      {
+       "title": "Print + eBook",
+       "text": "Publishing Formats"
+      },
+      {
+       "title": "Fiction + Nonfiction",
+       "text": "Book Types"
+      },
+      {
+       "title": "Multiple Genres",
+       "text": "Editorial Fit"
+      },
+      {
+       "title": "Platform-Ready",
+       "text": "Files & Metadata"
+      },
+      {
+       "title": "Author-Led",
+       "text": "Final Approvals"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Every Detail Matters in a Successful Book",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "From editing and design to formatting, metadata, and publication, each step is carefully aligned to create a polished book ready for readers."
+    }
+   ]
+  },
+  {
+   "title": "Book Publishing Packages",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Every author’s book publishing journey is different. Choose the level of support that fits your needs and turn your manuscript into a professionally published book."
+    },
+    {
+     "k": "tiers",
+     "items": [
+      {
+       "name": "Basic",
+       "features": [
+        "Amazon Publication",
+        "Digital Ebook Version",
+        "Paperback & Hardcover",
+        "Page Layout Services",
+        "Typesetting",
+        "Professional Formatting",
+        "Authors Central Page",
+        "Books Profile",
+        "Finalized Digital Files",
+        "Book Cover",
+        "Print on Demand",
+        "Amazon Optimization",
+        "ISBN Assignment"
+       ]
+      },
+      {
+       "name": "Pro",
+       "features": [
+        "Amazon Publication",
+        "Barnes & Nobel Publication",
+        "Digital Ebook Version",
+        "Paperback, and hardcover",
+        "Professional Editing",
+        "Proofreading",
+        "Page Layout Services",
+        "Typesetting",
+        "Professional Formatting",
+        "Authors Central Page",
+        "Books Profiles",
+        "Book Cover"
+       ]
+      },
+      {
+       "name": "Enterprise",
+       "features": [
+        "Publishing (Top 10 Platforms)",
+        "Amazon Publication",
+        "Barnes & Nobel Publication",
+        "Kobo Publication",
+        "Google Books Publication",
+        "Digital Ebook Version",
+        "Paperback & Hardcover",
+        "Proofreading",
+        "Page Layout Services",
+        "Typesetting",
+        "Professional Formatting",
+        "Authors Central Page",
+        "Books Profiles"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Your Story Deserves to Be Read.",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "You’ve put your ideas, time, and passion into your manuscript. Now take the next step with professional preparation and publishing support designed to bring your book to readers."
+    },
+    {
+     "k": "cta",
+     "label": "Get A Quote",
+     "to": "popup"
+    },
+    {
+     "k": "cta",
+     "label": "Hire A Book Publisher",
+     "to": "tel"
+    }
+   ]
+  },
+  {
+   "title": "A Clearer Journey From Manuscript to Published Book",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Publishing involves many important steps and decisions. Our book publishing services simplify the process, manage the technical details, and keep you informed throughout the journey."
+    },
+    {
+     "k": "cards",
+     "items": [
+      {
+       "title": "Clear Process",
+       "text": "Understand what’s included, what we need from you, and what comes next."
+      },
+      {
+       "title": "Author Involvement",
+       "text": "Review important editorial, design, and production choices before final approval."
+      },
+      {
+       "title": "Quality Production",
+       "text": "Receive clean, professionally prepared files suited to your chosen publishing formats."
+      },
+      {
+       "title": "Expert Support",
+       "text": "Work with experienced book publishers who guide you through each stage with clarity and confidence."
+      }
+     ]
+    },
+    {
+     "k": "cta",
+     "label": "Get A Quote",
+     "to": "popup"
+    }
+   ]
+  },
+  {
+   "title": "Our Book Publishing Process",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Our process keeps your project organized, your decisions clear, and every stage professionally managed from preparation through publication."
+    },
+    {
+     "k": "cards",
+     "items": [
+      {
+       "title": "Publishing Review",
+       "text": "We assess the manuscript, goals, and current files, then outline the work still required."
+      },
+      {
+       "title": "Editorial & Design",
+       "text": "Editing, proofreading, cover work, and other approved production tasks are completed."
+      },
+      {
+       "title": "File Preparation",
+       "text": "Final interiors, cover files, and book information are prepared for the selected formats."
+      },
+      {
+       "title": "Release Support",
+       "text": "Approved files move into the publishing stage with guidance around setup and launch readiness."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "faqTitle": "Your Publishing Questions, Answered",
+ "faqIntro": "Planning to publish your book? Get answers about preparation, formats, publishing, distribution, timelines, and what to expect before you begin.",
+ "faq": [
+  {
+   "q": "Can you help publish my book online?",
+   "a": "Yes. Our book publishing services cover manuscript preparation, cover design, formatting, publishing files, and online publication support."
+  },
+  {
+   "q": "What does my book need before publication?",
+   "a": "You typically need a completed manuscript, professional cover, formatted interior, ISBN, and publication-ready files. We can help coordinate these requirements."
+  },
+  {
+   "q": "How does the publishing process work?",
+   "a": "It may include editing, design, formatting, ISBN setup, file preparation, publication, and distribution, depending on your selected requirements."
+  },
+  {
+   "q": "How long does it take to publish a book?",
+   "a": "The timeline depends on your manuscript, design needs, revisions, approvals, formats, and selected platforms. We establish a clear project timeline."
+  },
+  {
+   "q": "Can you publish paperback and hardcover books?",
+   "a": "Yes. We can prepare your book for paperback and hardcover editions according to the specifications required for each format."
+  },
+  {
+   "q": "Can my book be published as an eBook?",
+   "a": "Yes. Your manuscript can be professionally formatted and prepared for release on supported digital platforms."
+  },
+  {
+   "q": "Will I retain ownership of my book?",
+   "a": "Ownership depends on your agreement and selected services. A book publishing company should clearly explain the applicable rights and terms."
+  },
+  {
+   "q": "Where can my book be distributed?",
+   "a": "Depending on your selected package, book publishers can help make your title available through online bookstores, digital platforms, and broader distribution channels."
+  }
+ ],
+ "reviewsTitle": "Hear From the Authors Behind the Books",
+ "reviewsIntro": "Discover feedback from authors we have helped prepare and publish.",
+ "bottomFormTitle": "Start Your Author Journey"
+}
