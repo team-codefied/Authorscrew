@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import { formSchema } from "@/lib/schemas";
 
 // Best-effort per-instance rate limit; Turnstile is the real spam gate.
@@ -53,8 +53,8 @@ export async function POST(req: Request) {
     .join("");
   const subject = `New ${data.kind} submission${data.page ? ` - ${data.page}` : ""}`;
 
-  const key = process.env.RESEND_API_KEY;
-  if (!key) {
+  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
+  if (!SMTP_USER || !SMTP_PASS) {
     if (process.env.NODE_ENV === "production") {
       return NextResponse.json({ ok: false, error: "Email service is not configured." }, { status: 500 });
     }
@@ -62,14 +62,24 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const { error } = await new Resend(key).emails.send({
-    from: process.env.FORM_FROM_EMAIL ?? "Authors Crew <onboarding@resend.dev>",
-    to: (process.env.FORM_TO_EMAIL ?? "info@authorscrew.com").split(","),
-    replyTo: "email" in data && data.email ? data.email : undefined,
-    subject,
-    html: `<table cellpadding="6">${rows}</table>`,
+  const port = Number(SMTP_PORT ?? 465);
+  const transport = nodemailer.createTransport({
+    host: SMTP_HOST ?? "smtp.hostinger.com",
+    port,
+    secure: port === 465, // 465 = implicit TLS, 587 = STARTTLS
+    auth: { user: SMTP_USER, pass: SMTP_PASS },
   });
-  if (error) {
+  try {
+    await transport.sendMail({
+      // Hostinger only accepts mail sent from the authenticated mailbox.
+      from: `"Authors Crew Website" <${SMTP_USER}>`,
+      to: (process.env.FORM_TO_EMAIL ?? SMTP_USER).split(",").map((s) => s.trim()),
+      replyTo: "email" in data && data.email ? data.email : undefined,
+      subject,
+      html: `<table cellpadding="6">${rows}</table>`,
+    });
+  } catch (err) {
+    console.error("[forms] SMTP send failed", err);
     return NextResponse.json({ ok: false, error: "We couldn't send your message. Please try again." }, { status: 502 });
   }
   return NextResponse.json({ ok: true });

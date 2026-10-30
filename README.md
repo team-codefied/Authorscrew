@@ -1,6 +1,6 @@
 # Authors Crew website
 
-Next.js (App Router), TypeScript, Tailwind CSS v4. Forms post to a serverless route that validates, checks spam, and emails the submission through Resend.
+Next.js (App Router), TypeScript, Tailwind CSS v4. Forms post to a serverless route that validates, checks spam, and emails the submission through the Hostinger mailbox (SMTP).
 
 ## Run locally
 
@@ -10,16 +10,16 @@ cp .env.example .env.local   # fill in values; all are optional in dev
 npm run dev
 ```
 
-In development with no keys set, form submissions are logged to the terminal and succeed. In production a missing Turnstile secret or Resend key makes submissions fail on purpose.
+In development with no keys set, form submissions are logged to the terminal and succeed. In production a missing Turnstile secret or SMTP login makes submissions fail on purpose.
 
 ## Environment variables
 
 | Variable | Purpose |
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin, used for sitemap, metadata and structured data |
-| `RESEND_API_KEY` | Resend API key |
-| `FORM_TO_EMAIL` | Comma-separated recipients for every form |
-| `FORM_FROM_EMAIL` | Sender on a domain verified in Resend |
+| `SMTP_HOST` / `SMTP_PORT` | Hostinger SMTP server (`smtp.hostinger.com`, `465`) |
+| `SMTP_USER` / `SMTP_PASS` | The Hostinger mailbox address and its password; mail is sent from this mailbox |
+| `FORM_TO_EMAIL` | Comma-separated recipients for every form (defaults to `SMTP_USER`) |
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Cloudflare Turnstile site key |
 | `TURNSTILE_SECRET_KEY` | Cloudflare Turnstile secret key |
 
@@ -27,7 +27,7 @@ In development with no keys set, form submissions are logged to the terminal and
 
 1. Push the repository and import it in Vercel (framework preset: Next.js).
 2. Add the variables above under Project Settings, Environment Variables (Production and Preview).
-3. In Resend, verify the sending domain and use an address on it for `FORM_FROM_EMAIL`.
+3. Use the mailbox's real password for `SMTP_PASS` (reset it in Hostinger hPanel if unsure).
 4. In Cloudflare Turnstile, create a widget for the production domain.
 5. Deploy, then submit each form type once and confirm the email arrives and you land on `/thank-you`.
 6. Point the domain at Vercel. Old landing-page URLs (`/book-cover-design-2`, `/childrens-book-publishing-illustration`, `/christian-book-publishing`) redirect permanently to the new `-lp` URLs.
