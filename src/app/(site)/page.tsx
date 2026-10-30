@@ -52,7 +52,7 @@ export default function Home() {
         <div aria-hidden className="absolute -top-24 right-[-8rem] -z-10 size-[28rem] rounded-full border border-white/10" />
         <div aria-hidden className="absolute -top-8 right-[-3rem] -z-10 size-[20rem] rounded-full border border-teal/20" />
 
-        <Container className="grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-14">
+        <Container className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(400px,460px)] lg:gap-12 xl:grid-cols-[minmax(0,1fr)_520px] xl:gap-16">
           <div>
             <Eyebrow light>Full-service self-publishing</Eyebrow>
             <h1 className="font-serif text-[2.6rem] leading-[1.05] font-medium sm:text-6xl">
@@ -71,7 +71,7 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <BookFan covers={heroCovers} className="mt-12 hidden sm:flex lg:mt-14" size="lg" />
+            <BookFan covers={heroCovers} className="mt-12 hidden pl-4 sm:flex lg:mt-14 lg:justify-start" size="lg" />
           </div>
 
           <div className="relative">

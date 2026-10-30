@@ -71,7 +71,7 @@ export function LandingPage({ slug }: { slug: LandingSlug }) {
         )}
         {theme === "faith" && <div aria-hidden className="absolute top-10 left-1/2 -z-10 h-[40rem] w-px bg-gradient-to-b from-amber/40 to-transparent" />}
 
-        <Container className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
+        <Container className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(400px,460px)] lg:gap-12 xl:grid-cols-[minmax(0,1fr)_520px] xl:gap-16">
           <div className={formFirst ? "lg:order-2" : ""}>
             {c.eyebrow && <Eyebrow light={dark}>{c.eyebrow}</Eyebrow>}
             <h1 className={`font-serif text-4xl leading-[1.08] font-medium sm:text-5xl ${theme === "faith" ? "tracking-tight" : ""}`}>{c.h1}</h1>
@@ -101,7 +101,7 @@ export function LandingPage({ slug }: { slug: LandingSlug }) {
             </div>
 
             {meta.heroCovers.length > 0 ? (
-              <BookFan covers={meta.heroCovers} size="lg" className="mt-12 hidden sm:flex" />
+              <BookFan covers={meta.heroCovers} size="lg" className="mt-12 hidden pl-4 sm:flex lg:justify-start" />
             ) : (
               meta.heroVisual && (
                 <FramedImage src={meta.heroVisual.src} alt={meta.heroVisual.alt} width={768} height={512} accent="teal" className="mt-12 hidden max-w-md sm:block" sizes="420px" />

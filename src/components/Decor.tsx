@@ -19,7 +19,7 @@ type Cover = { src: string; alt: string };
 
 /** An overlapping, gently fanned row of book covers used as a hero or section visual. */
 export function BookFan({ covers, className = "", size = "md" }: { covers: Cover[]; className?: string; size?: "sm" | "md" | "lg" }) {
-  const w = { sm: "w-16 sm:w-20", md: "w-20 sm:w-28 lg:w-32", lg: "w-24 sm:w-32 lg:w-40" }[size];
+  const w = { sm: "w-16 sm:w-20", md: "w-20 sm:w-28 lg:w-32", lg: "w-24 sm:w-28 xl:w-36" }[size];
   const mid = (covers.length - 1) / 2;
   return (
     <ul className={`flex items-end justify-center ${className}`} aria-label="Books published with Authors Crew">

@@ -244,7 +244,7 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
       <section className="bg-hero relative isolate overflow-hidden pt-32 pb-28 text-white sm:pt-40 sm:pb-32">
         <div aria-hidden className="bg-dots absolute inset-0 -z-10 opacity-60 [mask-image:radial-gradient(ellipse_at_25%_40%,black,transparent_70%)]" />
         <div aria-hidden className="absolute -top-24 right-[-8rem] -z-10 size-[28rem] rounded-full border border-white/10" />
-        <Container className="grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-14">
+        <Container className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(400px,460px)] lg:gap-12 xl:grid-cols-[minmax(0,1fr)_520px] xl:gap-16">
           <div>
             <nav aria-label="Breadcrumb" className="mb-5 text-sm text-white/70">
               <Link href="/" className="hover:underline">Home</Link> <span aria-hidden>/</span>{" "}
