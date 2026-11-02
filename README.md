@@ -10,7 +10,7 @@ cp .env.example .env.local   # fill in values; all are optional in dev
 npm run dev
 ```
 
-In development with no keys set, form submissions are logged to the terminal and succeed. In production a missing Turnstile secret or SMTP login makes submissions fail on purpose.
+In development with no keys set, form submissions are logged to the terminal and succeed. In production a missing SMTP login makes submissions fail on purpose. Turnstile is optional; without it the hidden honeypot field and the rate limit are the spam protection.
 
 ## Environment variables
 
@@ -28,7 +28,7 @@ In development with no keys set, form submissions are logged to the terminal and
 1. Push the repository and import it in Vercel (framework preset: Next.js).
 2. Add the variables above under Project Settings, Environment Variables (Production and Preview).
 3. Use the mailbox's real password for `SMTP_PASS` (reset it in Hostinger hPanel if unsure).
-4. In Cloudflare Turnstile, create a widget for the production domain.
+4. Optional: create a Cloudflare Turnstile widget for stronger spam protection and add its two keys.
 5. Deploy, then submit each form type once and confirm the email arrives and you land on `/thank-you`.
 6. Point the domain at Vercel. Old landing-page URLs (`/book-cover-design-2`, `/childrens-book-publishing-illustration`, `/christian-book-publishing`) redirect permanently to the new `-lp` URLs.
 
