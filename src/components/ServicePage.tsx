@@ -118,6 +118,45 @@ export function Blocks({ blocks, center, light = false }: { blocks: Block[]; cen
                 ))}
               </ul>
             );
+          case "showcase": {
+            const id = (t: string) => "svc-" + t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+            return (
+              <div key={i} className="mt-4">
+                <nav aria-label="Jump to a service" className="mb-10">
+                  <ul className="flex flex-wrap justify-center gap-2.5">
+                    {b.items.map((it) => (
+                      <li key={it.title}>
+                        <a href={"#" + id(it.title)} className="inline-block rounded-full bg-white px-4 py-2 text-sm font-semibold text-navy shadow-[var(--shadow-card)] ring-1 ring-slate-200 transition hover:-translate-y-0.5 hover:bg-navy hover:text-white">
+                          {it.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+                <ol className="grid gap-6 lg:grid-cols-2">
+                  {b.items.map((it, n) => (
+                    <li key={it.title} id={id(it.title)} className="reveal group relative scroll-mt-28 overflow-hidden rounded-3xl bg-white p-7 shadow-[var(--shadow-card)] ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-lift)] sm:p-9">
+                      <span aria-hidden className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-teal via-amber to-teal opacity-70 transition group-hover:opacity-100" />
+                      <span aria-hidden className="absolute -top-4 right-5 font-serif text-[6.5rem] leading-none font-bold text-teal/10 transition group-hover:text-amber/25">{String(n + 1).padStart(2, "0")}</span>
+                      <div className="relative flex items-center gap-4">
+                        <span aria-hidden className="grid size-12 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-navy to-[#00506b] font-serif text-lg font-bold text-white shadow-lg">{n + 1}</span>
+                        <h3 className="font-serif text-2xl leading-tight text-navy">{it.title}</h3>
+                      </div>
+                      {it.text.map((para) => (
+                        <p key={para} className="relative mt-5 leading-relaxed text-slate-600">{para}</p>
+                      ))}
+                      {it.lead && <p className="relative mt-5 text-sm font-bold tracking-wide text-teal-dark uppercase">{it.lead.replace(/:$/, "")}</p>}
+                      <ul className="relative mt-3 grid gap-x-6 gap-y-2.5 sm:grid-cols-2">
+                        {it.bullets.map((bl) => (
+                          <li key={bl} className="flex gap-2.5 text-sm text-slate-700">{check}{bl}</li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            );
+          }
           default:
             return null; // ctas are rendered together below
         }
@@ -156,7 +195,7 @@ type Kind = "band" | "cards" | "split" | "center";
 function kindOf(s: ServiceSection): Kind {
   const has = (k: Block["k"]) => s.blocks.some((b) => b.k === k);
   const ps = s.blocks.filter((b) => b.k === "p").length;
-  if (has("cards") || has("chips") || has("tiers") || has("genres") || has("features")) return "cards";
+  if (has("cards") || has("chips") || has("tiers") || has("genres") || has("features") || has("showcase")) return "cards";
   if (s.title && has("cta") && ps <= 2 && !has("ul")) return "band";
   if (has("ul") || ps >= 2) return "split";
   return "center";

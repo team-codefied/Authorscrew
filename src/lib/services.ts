@@ -15,7 +15,8 @@ export type Block =
   | { k: "cta"; label: string; to: string }
   | { k: "tiers"; items: { name: string; features: string[] }[] }
   | { k: "genres"; items: { title: string; text: string }[] }
-  | { k: "features"; items: { title: string; text: string }[] };
+  | { k: "features"; items: { title: string; text: string }[] }
+  | { k: "showcase"; items: { title: string; text: string[]; lead?: string; bullets: string[] }[] };
 
 export type ServiceSection = { title: string; blocks: Block[] };
 

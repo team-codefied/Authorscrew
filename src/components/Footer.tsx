@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { LeadForm } from "./LeadForm";
+import { NewsletterArt } from "./NewsletterArt";
 import { NAV, SERVICES, SITE } from "@/lib/site";
 
 const quick = [...NAV.filter((n) => n.label !== "Our Services"), { label: "Services", href: "/our-services" }].sort(
@@ -14,9 +15,7 @@ export function NewsletterCta() {
   return (
     <section aria-labelledby="nl-title" className="mx-auto max-w-[1280px] px-4">
       <div className="grid overflow-hidden rounded-2xl bg-navy md:grid-cols-[1fr_1.2fr]">
-        <div className="relative hidden min-h-64 md:block">
-          <Image src="/images/cta-img-1.webp" alt="" fill sizes="480px" className="object-cover" />
-        </div>
+        <NewsletterArt />
         <div className="p-8 sm:p-12">
           <h2 id="nl-title" className="font-serif text-3xl leading-tight font-medium text-white sm:text-4xl">
             Ready to Become an Author? Start Here

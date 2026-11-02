@@ -79,123 +79,96 @@
      "text": "Our affordable book marketing services help authors increase visibility, reach more readers, and grow book sales through customized promotional strategies."
     },
     {
-     "k": "chips",
+     "k": "showcase",
      "items": [
-      "Amazon Book Marketing",
-      "Book Launch Marketing",
-      "Social Media Marketing",
-      "Email Marketing Campaigns",
-      "Publicity & Media Outreach",
-      "Author Branding Services"
-     ]
-    },
-    {
-     "k": "p",
-     "text": "Amazon remains one of the most important sales channels for authors. Our amazon book marketing services help improve discoverability and increase your book’s chances of reaching potential readers."
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Book listing optimization",
-      "Keyword research and implementation",
-      "Category optimization",
-      "Book description enhancement",
-      "Metadata optimization",
-      "Promotional campaign strategies"
-     ]
-    },
-    {
-     "k": "p",
-     "text": "A successful launch can create momentum that drives long-term sales and visibility. Our book launch marketing services help authors generate excitement before, during, and after publication."
-    },
-    {
-     "k": "p",
-     "text": "Our launch campaigns include:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Pre-launch marketing strategies",
-      "Audience-building campaigns",
-      "Promotional content development",
-      "Launch-day promotion",
-      "Reader engagement initiatives",
-      "Post-launch visibility strategies"
-     ]
-    },
-    {
-     "k": "p",
-     "text": "Modern readers discover books through social media every day. Our social media marketing for authors helps build an engaged community while promoting your work across leading platforms."
-    },
-    {
-     "k": "p",
-     "text": "Services include:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Content creation and scheduling",
-      "Platform optimization",
-      "Audience engagement",
-      "Community growth strategies",
-      "Promotional campaigns",
-      "Author brand development"
-     ]
-    },
-    {
-     "k": "p",
-     "text": "Email marketing remains one of the most effective ways to connect directly with readers. We help authors build and nurture email lists that drive engagement and book sales."
-    },
-    {
-     "k": "p",
-     "text": "Our email marketing services include:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Newsletter creation",
-      "Reader list growth strategies",
-      "Automated email sequences",
-      "Book launch announcements",
-      "Reader engagement campaigns",
-      "Promotional email management"
-     ]
-    },
-    {
-     "k": "p",
-     "text": "Media coverage can significantly increase exposure and credibility. Our publicity campaigns help connect authors with relevant media opportunities and industry audiences."
-    },
-    {
-     "k": "p",
-     "text": "Our publicity services include:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Media outreach campaigns",
-      "Press release distribution",
-      "Podcast outreach",
-      "Interview opportunities",
-      "Online publication placement",
-      "Author visibility strategies"
-     ]
-    },
-    {
-     "k": "p",
-     "text": "Successful books often grow alongside strong author brands. Our author branding services help establish a professional identity that resonates with readers and supports future publishing goals."
-    },
-    {
-     "k": "p",
-     "text": "We help develop:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Author positioning",
-      "Brand messaging",
-      "Professional author profiles",
-      "Online presence strategies",
-      "Audience engagement plans"
+      {
+       "title": "Amazon Book Marketing",
+       "text": [
+        "Amazon remains one of the most important sales channels for authors. Our amazon book marketing services help improve discoverability and increase your book’s chances of reaching potential readers."
+       ],
+       "bullets": [
+        "Book listing optimization",
+        "Keyword research and implementation",
+        "Category optimization",
+        "Book description enhancement",
+        "Metadata optimization",
+        "Promotional campaign strategies"
+       ]
+      },
+      {
+       "title": "Book Launch Marketing",
+       "text": [
+        "A successful launch can create momentum that drives long-term sales and visibility. Our book launch marketing services help authors generate excitement before, during, and after publication."
+       ],
+       "lead": "Our launch campaigns include:",
+       "bullets": [
+        "Pre-launch marketing strategies",
+        "Audience-building campaigns",
+        "Promotional content development",
+        "Launch-day promotion",
+        "Reader engagement initiatives",
+        "Post-launch visibility strategies"
+       ]
+      },
+      {
+       "title": "Social Media Marketing",
+       "text": [
+        "Modern readers discover books through social media every day. Our social media marketing for authors helps build an engaged community while promoting your work across leading platforms."
+       ],
+       "lead": "Services include:",
+       "bullets": [
+        "Content creation and scheduling",
+        "Platform optimization",
+        "Audience engagement",
+        "Community growth strategies",
+        "Promotional campaigns",
+        "Author brand development"
+       ]
+      },
+      {
+       "title": "Email Marketing Campaigns",
+       "text": [
+        "Email marketing remains one of the most effective ways to connect directly with readers. We help authors build and nurture email lists that drive engagement and book sales."
+       ],
+       "lead": "Our email marketing services include:",
+       "bullets": [
+        "Newsletter creation",
+        "Reader list growth strategies",
+        "Automated email sequences",
+        "Book launch announcements",
+        "Reader engagement campaigns",
+        "Promotional email management"
+       ]
+      },
+      {
+       "title": "Publicity & Media Outreach",
+       "text": [
+        "Media coverage can significantly increase exposure and credibility. Our publicity campaigns help connect authors with relevant media opportunities and industry audiences."
+       ],
+       "lead": "Our publicity services include:",
+       "bullets": [
+        "Media outreach campaigns",
+        "Press release distribution",
+        "Podcast outreach",
+        "Interview opportunities",
+        "Online publication placement",
+        "Author visibility strategies"
+       ]
+      },
+      {
+       "title": "Author Branding Services",
+       "text": [
+        "Successful books often grow alongside strong author brands. Our author branding services help establish a professional identity that resonates with readers and supports future publishing goals."
+       ],
+       "lead": "We help develop:",
+       "bullets": [
+        "Author positioning",
+        "Brand messaging",
+        "Professional author profiles",
+        "Online presence strategies",
+        "Audience engagement plans"
+       ]
+      }
      ]
     }
    ]
@@ -219,7 +192,7 @@
       "Children's book authors",
       "Business authors",
       "Coaches and consultants",
-      "Thought leaders and entrepreneurs 0 +"
+      "Thought leaders and entrepreneurs"
      ]
     }
    ]
