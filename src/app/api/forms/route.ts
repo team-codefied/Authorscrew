@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { formSchema } from "@/lib/schemas";
 
-// Best-effort per-instance rate limit; Turnstile is the real spam gate.
+// Best-effort per-instance rate limit; the honeypot field and optional Turnstile are the spam gates.
 const hits = new Map<string, { n: number; t: number }>();
 function limited(ip: string) {
   const now = Date.now();
@@ -18,7 +18,7 @@ const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
 
 async function verifyTurnstile(token: string | undefined, ip: string) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return process.env.NODE_ENV !== "production";
+  if (!secret) return true; // Turnstile is optional; the honeypot and rate limit still apply
   if (!token) return false;
   const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
@@ -42,7 +42,8 @@ export async function POST(req: Request) {
   }
 
   const { turnstileToken, website, ...data } = parsed.data;
-  void website;
+  // Bots fill the hidden honeypot field; pretend it worked so they don't retry.
+  if (website) return NextResponse.json({ ok: true });
   if (!(await verifyTurnstile(turnstileToken, ip))) {
     return NextResponse.json({ ok: false, error: "Spam check failed. Please try again." }, { status: 400 });
   }
