@@ -25,8 +25,8 @@ const check = (
   </svg>
 );
 
-const heroCovers = [COVERS.shadowfell, COVERS.forever, COVERS.legends, COVERS.stellar, COVERS.whisperingHouse];
-const genreCovers = [COVERS.forever, COVERS.peakHabits, COVERS.spirit, COVERS.manor, COVERS.finalCode, COVERS.jackLucy];
+const heroCovers = [COVERS.thirdMom, COVERS.worldCouldBe, COVERS.bookOfAdam, COVERS.boxing, COVERS.lastFarewell];
+const genreCovers = [COVERS.portuguese, COVERS.worldCouldBe, COVERS.spirit, COVERS.mittLiv, COVERS.boxing, COVERS.thirdMom];
 const processIcons = Object.values(PROCESS_ICONS);
 
 export default function Home() {
@@ -101,7 +101,7 @@ export default function Home() {
             <ul className="marquee-track items-center gap-14 py-4">
               {[...c.platforms.logos, ...c.platforms.logos, ...c.platforms.logos, ...c.platforms.logos].map((l, i) => (
                 <li key={i} className="shrink-0 pr-14" aria-hidden={i >= c.platforms.logos.length}>
-                  <Image src={l.src} alt={i < c.platforms.logos.length ? l.name : ""} width={150} height={50} className="h-10 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
+                  <Image src={l.src} alt={i < c.platforms.logos.length ? l.name : ""} width={150} height={50} className="h-10 w-auto object-contain transition hover:scale-105" />
                 </li>
               ))}
               {[...c.platforms.textOnly, ...c.platforms.textOnly, ...c.platforms.textOnly, ...c.platforms.textOnly].map((n, i) => (
@@ -146,7 +146,7 @@ export default function Home() {
       {/* 5. Who we help */}
       <section className="bg-mist relative py-20 sm:py-24">
         <Container className="grid items-center gap-14 lg:grid-cols-2">
-          <FramedImage src={IMG.team.src} alt={IMG.team.alt} width={768} height={768} accent="teal" className="reveal mx-auto w-full max-w-lg" sizes="(min-width:1024px) 480px, 90vw" />
+          <FramedImage src={IMG.stackBig.src} alt={IMG.stackBig.alt} width={1024} height={1024} accent="teal" className="reveal mx-auto w-full max-w-lg" sizes="(min-width:1024px) 480px, 90vw" />
           <div className="reveal">
             <SectionHeading title={c.whoWeHelp.title} center={false} eyebrow="Who we help" />
             <ul className="grid gap-3 sm:grid-cols-1">
@@ -205,7 +205,7 @@ export default function Home() {
         <Container className="grid items-center gap-14 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="reveal relative mx-auto max-w-sm">
             <div aria-hidden className="absolute inset-0 -z-10 translate-x-4 translate-y-4 rounded-[2rem] bg-amber/25" />
-            <Image src={IMG.publishers.src} alt={IMG.publishers.alt} width={1024} height={1024} sizes="(min-width:1024px) 400px, 80vw" className="h-auto w-full rounded-[2rem] bg-white object-contain p-4 shadow-[var(--shadow-lift)]" />
+            <Image src={IMG.globalAuthors.src} alt={IMG.globalAuthors.alt} width={1024} height={1024} sizes="(min-width:1024px) 400px, 80vw" className="h-auto w-full rounded-[2rem] bg-white object-contain p-4 shadow-[var(--shadow-lift)]" />
           </div>
           <div>
             <SectionHeading title={c.why.title} center={false} eyebrow="Our promise" />
@@ -404,13 +404,13 @@ export default function Home() {
       <section id="contact" className="bg-hero relative isolate overflow-hidden py-24 text-white">
         <div aria-hidden className="bg-dots absolute inset-0 -z-10 opacity-50" />
         <Wave fill="#ffffff" flip />
-        <FloatingBook cover={COVERS.peakHabits} className="top-24 left-[3%] hidden opacity-90 2xl:block" rotate={-10} width={120} slow />
+        <FloatingBook cover={COVERS.worldCouldBe} className="top-24 left-[3%] hidden opacity-90 2xl:block" rotate={-10} width={120} slow />
         <Container className="grid items-center gap-12 pt-8 lg:grid-cols-2">
           <div className="reveal">
             <Eyebrow light>Start today</Eyebrow>
             <h2 className="font-serif text-3xl leading-tight font-medium sm:text-5xl">{c.finalCta.title}</h2>
             <p className="mt-5 max-w-lg text-lg text-white/85">{c.finalCta.text}</p>
-            <BookFan covers={[COVERS.finalCode, COVERS.manor, COVERS.shadowStrike]} className="mt-10 hidden sm:flex lg:justify-start" size="sm" />
+            <BookFan covers={[COVERS.worldCouldBe, COVERS.thirdMom, COVERS.portuguese]} className="mt-10 hidden sm:flex lg:justify-start" size="lg" />
           </div>
           <div className="reveal rounded-[1.75rem] bg-white p-6 text-ink shadow-2xl sm:p-8">
             <LeadForm variant="contact" submitLabel={c.finalCta.button} />

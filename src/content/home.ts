@@ -151,7 +151,7 @@ export const published = {
 
 export const reviews = {
   title: "What Our Authors Say",
-  text: "Rated Excellent on Trustpilot, with reviews on Reviews.io and ProvenExpert.",
+  text: "See what authors say about working with Authors Crew. Explore their experiences and discover why they trusted us with their publishing journey.",
   badges: [
     { label: "Reviews.io", href: "https://www.reviews.io/company-reviews/store/authorscrew.com" },
     { label: "Trustpilot", href: "https://www.trustpilot.com/review/authorscrew.com" },

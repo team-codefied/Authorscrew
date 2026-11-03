@@ -132,7 +132,7 @@ export function LandingPage({ slug }: { slug: LandingSlug }) {
             <ul className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
               {platforms.logos.map((l) => (
                 <li key={l.name}>
-                  <Image src={l.src} alt={l.name} width={140} height={50} className="h-9 w-auto object-contain opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0" />
+                  <Image src={l.src} alt={l.name} width={140} height={50} className="h-9 w-auto object-contain transition hover:scale-105" />
                 </li>
               ))}
             </ul>
@@ -198,7 +198,7 @@ export function LandingPage({ slug }: { slug: LandingSlug }) {
             <Eyebrow light>Ready when you are</Eyebrow>
             <h2 className="font-serif text-3xl leading-tight font-medium sm:text-5xl">{c.bottomFormTitle}</h2>
             <p className="mt-5 max-w-lg text-lg text-white/85">Share a few details and get a clear plan and quote for your book.</p>
-            <BookFan covers={[COVERS.manor, COVERS.finalCode, COVERS.stellar]} size="sm" className="mt-10 hidden justify-start sm:flex" />
+            <BookFan covers={[COVERS.bookOfAdam, COVERS.boxing, COVERS.lastFarewell]} size="sm" className="mt-10 hidden justify-start sm:flex" />
             <QuoteButton className="mt-8 rounded-2xl bg-amber px-6 py-4 text-sm font-bold tracking-wide text-navy uppercase hover:bg-amber-dark">
               New Author Special: Get 70% Off
             </QuoteButton>

@@ -342,7 +342,7 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
               <Eyebrow light>Let&apos;s talk</Eyebrow>
               <h2 className="font-serif text-3xl leading-tight font-medium sm:text-5xl">{content.contact.title}</h2>
               {content.contact.text && <p className="mt-5 max-w-lg text-lg text-white/85">{content.contact.text}</p>}
-              <BookFan covers={[COVERS.manor, COVERS.finalCode, COVERS.stellar]} size="sm" className="mt-10 hidden justify-start sm:flex" />
+              <BookFan covers={[COVERS.bookOfAdam, COVERS.boxing, COVERS.lastFarewell]} size="sm" className="mt-10 hidden justify-start sm:flex" />
             </div>
             <div className="reveal rounded-[1.75rem] bg-white p-6 text-ink shadow-2xl sm:p-8">
               <LeadForm variant="contact" submitLabel="Submit Now" />

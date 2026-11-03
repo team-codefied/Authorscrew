@@ -4,20 +4,17 @@
  */
 const L = (n: string) => `/images/live/${n}`;
 
-/** Transparent portrait cut-out covers (2:3) for floating compositions. */
+/** Transparent 3D cut-out covers of real Authors Crew books, taken from the live homepage. */
 export const COVERS = {
-  finalCode: { src: L("2026_06_10-4.webp"), alt: "The Final Code book cover" },
-  peakHabits: { src: L("2026_06_11-3.webp"), alt: "Peak Performance Habits book cover" },
-  whisperingHouse: { src: L("2026_06_12-2.webp"), alt: "The Whispering House book cover" },
-  legends: { src: L("2026_06_14.webp"), alt: "Legends of the Soul by S.Q. Peake" },
-  relentless: { src: L("2026_06_3-6.webp"), alt: "Relentless Pursuit book cover" },
-  shadowStrike: { src: L("2026_06_4-6.webp"), alt: "Shadow Strike book cover" },
-  shadowfell: { src: L("2026_06_5-7.webp"), alt: "The Shadowfell King book cover" },
-  jackLucy: { src: L("2026_06_6-6.webp"), alt: "The Adventures of Jack & Lucy book cover" },
-  forever: { src: L("2026_06_7-6.webp"), alt: "Forever My Love book cover" },
-  stellar: { src: L("2026_06_8-4.webp"), alt: "Stellar Nexus book cover" },
-  manor: { src: L("2026_06_9-5.webp"), alt: "The Manor Secret book cover" },
+  thirdMom: { src: L("2026_06_B-1.webp"), alt: "The Third Biological Mom by Shani Roffeh" },
+  worldCouldBe: { src: L("2026_06_B-2.webp"), alt: "The World That Could Be by Krzysztof Lukewski" },
+  bookOfAdam: { src: L("2026_06_B-3.webp"), alt: "The Book of Adam by Constantin" },
+  portuguese: { src: L("2026_06_B-4.webp"), alt: "Learn European Portuguese by Ana Baltazar" },
+  boxing: { src: L("2026_06_B-5.webp"), alt: "Boxing Fundamentals by Allen Pevec" },
+  lastFarewell: { src: L("2026_06_B-6.webp"), alt: "The Last Farewell by Gudmund Lindbaek" },
+  mittLiv: { src: L("2026_06_B-7.webp"), alt: "Mitt liv uten uvenner by Gudmund Lindbaek" },
   spirit: { src: L("2026_06_13.webp"), alt: "It Will All Make Sense When You're Dead by Priscilla A. Keresey" },
+  legends: { src: L("2026_06_14.webp"), alt: "Legends of the Soul by S.Q. Peake" },
 };
 
 export const IMG = {
@@ -75,6 +72,7 @@ export const IMG = {
   christianBible: { src: L("2026_08_ChatGPT-Image-May-25-2026-11_12_05-PM-e1779733536900.webp"), alt: "Miracle Life book, ebook and back cover" },
   miracleLife: { src: L("2026_08_miracle-life-front-book-cover-2.jpg-scaled.webp"), alt: "Miracle Life book cover" },
   faq: { src: L("2026_06_faq.webp"), alt: "Frequently asked questions illustration" },
+  globalAuthors: { src: L("2026_06_Authors-crew-global-book-publishers.webp"), alt: "Authors from around the world with their published books" },
   stackBig: { src: L("2026_06_13-2.webp"), alt: "A fan of published book covers" },
   ghostwriterWord: { src: L("2026_06_ChatGPT-Image-Jun-11-2026-07_45_27-PM-600x400-1.webp"), alt: "A pen, glasses and manuscript spelling ghostwriter" },
 };
@@ -91,9 +89,7 @@ export const GALLERY = {
     L("2026_06_WhatsApp-Image-2026-05-04-at-11.56.16-PM.webp"),
     L("2026_06_a8.webp"),
     L("2026_06_a9.webp"),
-    L("2026_06_a12.webp"),
     L("2026_06_a13.webp"),
-    L("2026_06_a14.webp"),
   ],
   cutouts: Object.values(COVERS).map((c) => c.src),
   kids: [
