@@ -3,47 +3,42 @@
  "h1": "Audiobook Publishing Services",
  "sections": [
   {
-   "title": "Distributing Audiobooks Across Leading Global Platforms",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Start Your Audiobook Journey Today"
-    }
-   ]
+   "title": "Make your book accessible to listeners with professional audiobook publishing services. We help prepare, produce, and publish your audiobook across leading platforms.",
+   "blocks": []
   },
   {
-   "title": "Turn Your Book Into a Professional Audiobook",
+   "title": "Reach More Listeners With Your Audiobook",
+   "layout": "split",
+   "pic": "audioBooks",
    "blocks": [
     {
      "k": "p",
-     "text": "Reach more listeners and expand your audience with professional audiobook publishing services from Authors Crew. Whether you are a self-published author, entrepreneur, or established writer, we help transform your manuscript into a high-quality audiobook through expert narration, production, editing, and worldwide distribution."
+     "text": "Give your book a new way to connect with audiences. Authors Crew provides complete audiobook publishing support, including narration, audio editing, production, and distribution across leading platforms."
     },
     {
      "k": "cta",
-     "label": "Publish Audiobook Now",
+     "label": "Publish Your Audiobook Now",
      "to": "/contact-us"
-    },
-    {
-     "k": "p",
-     "text": "Turn Readers Into Listeners."
     }
    ]
   },
   {
-   "title": "Audiobook Creation Services for Authors",
+   "title": "Create an Audiobook Your Listeners Will Enjoy",
+   "layout": "split",
+   "pic": "audioStudio",
    "blocks": [
     {
      "k": "p",
-     "text": "The audiobook industry continues to grow as readers increasingly choose to listen to books on the go. Our audiobook creation services make it easy to convert your manuscript into a professionally produced audiobook that meets industry standards and delivers an exceptional listening experience."
+     "text": "Creating a great audiobook takes more than just narration. Our audiobook production team focuses on clear voice recording, professional editing, and sound quality to deliver an enjoyable listening experience."
     },
     {
      "k": "p",
-     "text": "From narration and recording to editing and distribution, our team manages the entire production process while you focus on your writing."
+     "text": "We prepare your audiobook to meet the requirements of major publishing platforms while keeping your original message, tone, and story intact."
     },
     {
      "k": "cta",
-     "label": "Schedule a Free Consultation",
-     "to": "tel"
+     "label": "Start Your Audiobook Project Today",
+     "to": "/contact-us"
     }
    ]
   },
@@ -57,46 +52,26 @@
     {
      "k": "cta",
      "label": "Choose Your Narrator",
-     "to": "popup"
-    },
-    {
-     "k": "p",
-     "text": "Ready to Record Your Story?"
-    }
-   ]
-  },
-  {
-   "title": "Audiobook Production Services",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Creating a successful audiobook requires more than simply reading a manuscript aloud. Our audiobook production services combine professional recording, audio engineering, and quality control to ensure your audiobook sounds polished and engaging."
-    },
-    {
-     "k": "p",
-     "text": "We carefully produce every project to meet the technical requirements of leading audiobook platforms while maintaining the integrity of your story and author voice."
-    },
-    {
-     "k": "cta",
-     "label": "Start Your Audiobook Project Today",
      "to": "/contact-us"
     }
    ]
   },
   {
-   "title": "Audiobook Narration Services",
+   "title": "Professional Audiobook Narration Services",
+   "layout": "split",
+   "pic": "audioPhone",
    "blocks": [
     {
      "k": "p",
-     "text": "The right narrator can bring your story to life and create a memorable experience for listeners. Our audiobook narration services connect authors with experienced voice talent capable of delivering compelling and authentic performances."
+     "text": "A good narrator makes your story more engaging and enjoyable to hear. We help you find the right voice for your audiobook, with experienced narrators who bring the right tone, emotion, and clarity to your content."
     },
     {
      "k": "p",
-     "text": "Our network of professional audiobook narrators includes talented performers with experience across multiple genres. Each narrator is selected based on your project’s style, audience, and production goals."
+     "text": "Our voice talent covers a range of genres and styles. We match each project with a narrator who suits your book, target audience, and creative vision."
     },
     {
      "k": "cta",
-     "label": "Lets Build Your Audiobook",
+     "label": "Find the Right Voice for Your Book",
      "to": "/contact-us"
     }
    ]
@@ -123,7 +98,8 @@
      "k": "p",
      "text": "Give Your Characters a Voice"
     }
-   ]
+   ],
+   "pic": "audioPlatforms"
   },
   {
    "title": "Voice Actors for Audiobooks",
@@ -140,49 +116,50 @@
      "k": "p",
      "text": "Authentic Voices for Every Story"
     }
-   ]
+   ],
+   "pic": "audioProduction"
   },
   {
-   "title": "AI Voice Audiobook Services",
+   "title": "AI-Powered Audiobook Narration",
+   "layout": "split",
+   "pic": "audioDistribution",
    "blocks": [
     {
      "k": "p",
-     "text": "For authors seeking a faster and more cost-effective production solution, we also offer AI voice audiobook services. Using advanced voice technology, we can create clear and professional audiobook recordings suitable for various genres and publishing goals."
+     "text": "Create your audiobook without the time and expense of traditional recording. Our AI voice audiobook services use advanced voice technology to produce clear, natural-sounding narration for your manuscript."
     },
     {
      "k": "p",
-     "text": "Authors can choose between human narration, AI-generated narration, or a customized production approach based on their budget and preferences."
+     "text": "Choose AI-generated narration, professional human voice talent, or a combination of both to suit your budget, content, and production needs."
+    },
+    {
+     "k": "p",
+     "text": "Natural-Sounding Voices, Professional Results."
     },
     {
      "k": "cta",
      "label": "Live Chat Now",
      "to": "/contact-us"
-    },
-    {
-     "k": "p",
-     "text": "Professional Editing, Flawless Sound"
     }
    ]
   },
   {
-   "title": "Audiobook Editing Services",
+   "title": "Professional Audiobook Editing Services",
+   "layout": "split",
+   "pic": "audioStudio",
    "blocks": [
     {
      "k": "p",
-     "text": "Every audiobook undergoes a detailed quality review before publication. Our audiobook editing services help eliminate recording errors, unwanted noise, pacing issues, and inconsistencies that may affect the listening experience."
+     "text": "Clear, consistent audio makes all the difference. Our audiobook editing services remove background noise, recording mistakes, awkward pauses, and volume inconsistencies to create a smooth listening experience."
     },
     {
      "k": "p",
-     "text": "Our production specialists ensure your audiobook meets professional standards and platform requirements before distribution."
+     "text": "We carefully review every recording to ensure your audiobook is polished, sounds professional, and meets the technical standards of major publishing platforms."
     },
     {
      "k": "cta",
      "label": "Ready to Record Your Story",
-     "to": "tel"
-    },
-    {
-     "k": "p",
-     "text": "0 +"
+     "to": "/contact-us"
     }
    ]
   },
@@ -206,35 +183,50 @@
      "k": "p",
      "text": "Simple Steps to Audiobook Success"
     }
-   ]
+   ],
+   "pic": "audioPhone"
   },
   {
    "title": "Our Audiobook Creation Process",
    "blocks": [
     {
      "k": "p",
-     "text": "From manuscript to marketplace, we handle every step of audiobook production and publishing."
+     "text": "From your manuscript to the listening platforms, we manage each stage of audiobook production to make the process simple and straightforward."
     },
     {
      "k": "cards",
      "items": [
       {
-       "title": "Review & Planning",
-       "text": "We evaluate your manuscript and create a customized production strategy."
+       "title": "1. Review & Planning",
+       "text": "We review your manuscript, understand your goals, and create a production plan that fits your book, audience, and budget."
       },
       {
-       "title": "Narration & Recording",
-       "text": "Professional narrators or AI voices record your audiobook with exceptional quality."
+       "title": "2. Narration & Recording",
+       "text": "Choose professional human narration or AI-generated voices. We focus on clear delivery, natural pacing, and a voice that suits your book."
       },
       {
-       "title": "Editing & Mastering",
-       "text": "We refine every chapter to ensure clear, polished, and professional audio."
+       "title": "3. Editing & Mastering",
+       "text": "We edit and refine each chapter, removing unwanted noise, correcting recording issues, and balancing audio for a smooth listening experience."
       },
       {
-       "title": "Publishing & Distribution",
-       "text": "Your audiobook is prepared and distributed across major listening platforms."
+       "title": "4. Publishing & Distribution",
+       "text": "We prepare your finished audiobook according to platform requirements and help make it available across major audiobook marketplaces."
       }
      ]
+    }
+   ]
+  },
+  {
+   "title": "Ready to Reach More Listeners?",
+   "blocks": [
+    {
+     "k": "p",
+     "text": "Expand your book into audio and connect with readers who prefer listening. We'll help you through every stage of production."
+    },
+    {
+     "k": "cta",
+     "label": "Start Your Project",
+     "to": "/contact-us"
     }
    ]
   },
@@ -271,55 +263,13 @@
      ]
     }
    ]
-  },
-  {
-   "title": "Everything You Need to Know",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Get clear, simple, and honest answers to help you confidently start your journey as an author."
-    }
-   ]
   }
  ],
  "faqTitle": "Everything You Need to Know",
- "faq": [
-  {
-   "q": "What are audiobook publishing services?",
-   "a": "Audiobook publishing services help authors convert written manuscripts into professionally produced audiobooks through narration, recording, editing, mastering, and distribution to major audiobook platforms."
-  },
-  {
-   "q": "How much does it cost to publish an audiobook?",
-   "a": "The cost of audiobook publishing depends on factors such as manuscript length, narration style, production requirements, and distribution needs. Professional audiobook production typically includes narration, editing, mastering, and platform-ready formatting."
-  },
-  {
-   "q": "Can I choose my own audiobook narrator?",
-   "a": "Yes. Authors can choose from professional , voice actors, or AI voice solutions. Selecting the right narrator helps ensure your audiobook matches the tone, genre, and audience of your book."
-  },
-  {
-   "q": "How long does audiobook production take?",
-   "a": "Most audiobook projects are completed within a few weeks, depending on the manuscript length, narration schedule, editing requirements, and approval process. Larger projects may require additional production time."
-  },
-  {
-   "q": "Do you offer AI voice audiobook services?",
-   "a": "Yes. We offer both professional human narration and AI voice audiobook services. Authors can choose the option that best fits their budget, timeline, and publishing goals. Recent industry developments have expanded AI narration options for audiobook creators."
-  },
-  {
-   "q": "What is included in audiobook editing services?",
-   "a": "Audiobook editing services typically include noise reduction, error correction, pacing adjustments, audio cleanup, mastering, and quality control to ensure a polished listening experience before publication."
-  },
-  {
-   "q": "Where can my audiobook be distributed?",
-   "a": "Audiobooks can be distributed through major audiobook retailers, subscription platforms, and digital marketplaces, helping authors reach listeners worldwide across multiple devices and regions."
-  },
-  {
-   "q": "Why should authors publish an audiobook?",
-   "a": "Publishing an audiobook helps authors expand their audience, improve accessibility, increase discoverability, and meet the growing demand for audio content. Audiobooks continue to be one of the fastest-growing publishing formats. Audiobook Publishing Services"
-  }
- ],
+ "faq": [],
  "reviews": true,
  "contact": {
   "title": "Transform Your Book Into a Captivating Audiobook",
-  "text": "From professional narration and studio-quality production to distribution on leading audiobook platforms, we handle every step of the process. Full Name Business Email Phone Number Message"
+  "text": "From professional narration and studio-quality production to distribution on leading audiobook platforms, we handle every step of the process."
  }
 }

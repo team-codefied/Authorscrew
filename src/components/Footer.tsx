@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LeadForm } from "./LeadForm";
-import { NewsletterArt } from "./NewsletterArt";
+import { NewsletterBanner } from "./NewsletterBanner";
 import { NAV, SERVICES, SITE } from "@/lib/site";
 
 const quick = [...NAV.filter((n) => n.label !== "Our Services"), { label: "Services", href: "/our-services" }].sort(
@@ -14,16 +13,7 @@ const link = "text-slate-500 transition hover:text-amber-text";
 export function NewsletterCta() {
   return (
     <section aria-labelledby="nl-title" className="mx-auto max-w-[1280px] px-4">
-      <div className="grid overflow-hidden rounded-2xl bg-navy md:grid-cols-[1fr_1.2fr]">
-        <NewsletterArt />
-        <div className="p-8 sm:p-12">
-          <h2 id="nl-title" className="font-serif text-3xl leading-tight font-medium text-white sm:text-4xl">
-            Ready to Become an Author? Start Here
-          </h2>
-          <p className="mt-4 mb-6 text-white/90">Publishing tips, guides and offers for authors, straight to your inbox.</p>
-          <LeadForm variant="newsletter" submitLabel="Join the Author Community" tone="dark" />
-        </div>
-      </div>
+      <NewsletterBanner />
     </section>
   );
 }

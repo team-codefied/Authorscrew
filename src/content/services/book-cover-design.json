@@ -3,60 +3,50 @@
  "h1": "Book Cover Design Services",
  "sections": [
   {
-   "title": "Covers Built for Every Publishing Platform",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Your Cover Is Your First Sale."
-    }
-   ]
+   "title": "Give your book a cover that captures its story, reflects its genre, and attracts readers.",
+   "blocks": []
   },
   {
-   "title": "Stunning Book Cover Design Services That Attract Readers",
+   "title": "A Great Book Deserves an Unforgettable Cover.",
+   "layout": "split",
+   "pic": "devices",
    "blocks": [
     {
      "k": "p",
-     "text": "Authors Crew create custom book cover designs that capture your story, attract readers, and help your book stand out on platforms like Amazon Kindle, Barnes & Noble, Apple Books, Kobo, and more."
+     "text": "Make your book stand out with a custom cover that reflects your story and appeals to your readers. At Authors Crew, we create eye-catching designs that bring your book's concept to life and give it a professional look across leading publishing platforms."
     },
     {
      "k": "p",
-     "text": "Whether you are publishing fiction, non-fiction, romance, thriller, fantasy, business, self-help, or children’s books, we design covers that match your genre and connect with your target audience."
+     "text": "From fiction and romance to thrillers, fantasy, business, self-help, and children's books, we design covers that suit your genre and speak to your audience."
     },
     {
      "k": "cta",
-     "label": "Design Your Bestseller",
+     "label": "Create Your Book Cover",
      "to": "/contact-us"
-    },
-    {
-     "k": "p",
-     "text": "Book Covers That Fit Your Story"
     }
    ]
   },
   {
-   "title": "Unique Cover Designs for Every Type of Genre",
+   "title": "Book Cover Designs That Match Your Genre",
+   "layout": "center",
    "blocks": [
     {
      "k": "p",
-     "text": "A book cover plays a key role in attracting readers and boosting sales. Authors Crew custom book cover design services create visually striking, genre-focused designed to capture readers attention in both print and digital marketplaces."
+     "text": "Every book has its own identity. We create custom covers that reflect your content, complement your genre, and make a strong impression on potential readers."
     }
    ]
   },
   {
-   "title": "Design a Cover Readers Can’t Ignore",
+   "title": "Create a Book Cover That Gets Noticed",
    "blocks": [
     {
      "k": "p",
-     "text": "Turn your book into a visually powerful brand with a custom cover designed to attract readers and boost sales."
+     "text": "Give your book a distinctive look with a professionally designed cover that captures attention, reflects your story, and appeals to potential readers."
     },
     {
      "k": "cta",
-     "label": "Start Your Book Cover Project",
+     "label": "Start Your Cover Design",
      "to": "/contact-us"
-    },
-    {
-     "k": "p",
-     "text": "First Impression Matters"
     }
    ]
   },
@@ -86,42 +76,9 @@
      "k": "cta",
      "label": "Start Your Cover Project",
      "to": "/contact-us"
-    },
-    {
-     "k": "p",
-     "text": "0 +"
     }
-   ]
-  },
-  {
-   "title": "Creative Book Cover Design for Self-Published Authors",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Authors Crew offers creative book cover design services that help authors and self-publishers create stunning, professional covers designed for their genre, audience, and publishing goals."
-    },
-    {
-     "k": "cards",
-     "items": [
-      {
-       "title": "Unique Cover Concepts",
-       "text": "Custom book cover designs created to match your story, style, and audience."
-      },
-      {
-       "title": "Reader-Focused Designs",
-       "text": "Eye-catching layouts and professional visuals designed to grab attention and increase clicks."
-      },
-      {
-       "title": "Smooth Creative Process",
-       "text": "Work closely with our designers from concept to final revisions for a cover you’ll love."
-      },
-      {
-       "title": "Ready for Publishing",
-       "text": "Receive high-quality cover files optimized for Amazon KDP, eBooks, paperback, and hardcover publishing. Publish With Confidence"
-      }
-     ]
-    }
-   ]
+   ],
+   "pic": "coverBooks"
   },
   {
    "title": "Amazon Kindle Book Cover Design Services",
@@ -144,24 +101,6 @@
      "k": "cta",
      "label": "Get Your Amazon KDP Cover",
      "to": "/contact-us"
-    }
-   ]
-  },
-  {
-   "title": "Your Bestseller Starts With the Right Cover",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Get a professional book cover designed for your genre, audience, and publishing platform."
-    },
-    {
-     "k": "cta",
-     "label": "Hire a Book Cover Designer",
-     "to": "popup"
-    },
-    {
-     "k": "p",
-     "text": "Eye-Catching eBook Covers"
     }
    ]
   },
@@ -228,153 +167,51 @@
    "blocks": [
     {
      "k": "p",
-     "text": "Follow a proven 4-step process to create bestselling book cover designs for every genre and publishing platform."
+     "text": "From your initial idea to the final design, we follow a simple four-step process to create a cover that suits your book and publishing needs."
     },
     {
      "k": "cards",
      "items": [
       {
-       "title": "Share Your Book Vision",
-       "text": "Tell us about your story, genre, audience, and preferred design style."
+       "title": "1. Share Your Ideas",
+       "text": "Tell us about your book, genre, target readers, and design preferences."
       },
       {
-       "title": "Research & Concept Creation",
-       "text": "We analyze market trends and create custom cover concepts designed to attract readers."
+       "title": "2. Research & Design Concepts",
+       "text": "We explore suitable design styles and develop creative cover concepts for your book."
       },
       {
-       "title": "Design & Revisions",
-       "text": "Our professional book cover designers refine your cover based on your feedback and preferences."
+       "title": "3. Review & Refine",
+       "text": "Share your feedback as we make revisions and refine the design to match your vision."
       },
       {
-       "title": "Final Files Delivery",
-       "text": "Receive high-quality, print-ready and eBook-ready files optimized for publishing platforms."
+       "title": "4. Receive Your Final Cover",
+       "text": "Get high-resolution, print-ready and eBook cover files prepared for your publishing platform."
       }
      ]
     }
    ]
   },
   {
-   "title": "Create a Stunning First Impression",
+   "title": "Let Your Book Cover Tell Its Story",
    "blocks": [
     {
      "k": "p",
-     "text": "Stand out on Amazon Kindle, Apple Books, and other marketplaces with a professionally designed cover."
+     "text": "Capture the essence of your book with a creative design that reflects its genre, theme, and personality."
     },
     {
      "k": "cta",
-     "label": "Get Your Custom Book Cover",
-     "to": "popup"
-    }
-   ]
-  },
-  {
-   "title": "Our Cover Design Solutions",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Professional book cover design helps your book capture attention and create a strong first impression across print and digital marketplaces."
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Creative covers tailored to your story and genre",
-      "Professional typography and balanced layouts",
-      "Custom covers by experienced designers",
-      "High-quality eBook covers for online platforms",
-      "Paperback and hardcover cover formatting",
-      "Print-ready files for professional publishing",
-      "Genre-focused visuals designed to attract your target audience",
-      "Clean image composition for a polished and modern appearance",
-      "Platform-ready cover sizing for Amazon KDP and other publishers",
-      "Multiple revision options for design refinements and feedback",
-      "Affordable cover solutions for authors",
-      "Covers optimized for print and digital publishing"
-     ]
-    }
-   ]
-  },
-  {
-   "title": "Why Choose Us for Book Cover Design?",
-   "blocks": [
-    {
-     "k": "cards",
-     "items": [
-      {
-       "title": "Experienced Designers",
-       "text": "We create professional book covers tailored to your vision and satisfaction."
-      },
-      {
-       "title": "Custom & Original Designs",
-       "text": "Every design is created specifically for your book and brand identity."
-      },
-      {
-       "title": "Reader-Focused Approach",
-       "text": "We design covers that appeal to readers while aligning with industry trends."
-      },
-      {
-       "title": "Affordable Pricing",
-       "text": "Get premium-quality book cover designs at competitive prices."
-      },
-      {
-       "title": "Fast Delivery",
-       "text": "We provide quick turnaround times without compromising design quality."
-      },
-      {
-       "title": "Unlimited Revisions",
-       "text": "Your satisfaction is our priority throughout the design process."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "title": "Helpful Answers for Authors",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Discover everything you need to know about our custom book cover solutions."
+     "label": "Create My Book Cover",
+     "to": "/contact-us"
     }
    ]
   }
  ],
  "faqTitle": "Helpful Answers for Authors",
- "faq": [
-  {
-   "q": "Why is professional book cover design important for self-published authors?",
-   "a": "A professionally designed book cover helps your book create a strong first impression, attract readers, and improve click-through rates on publishing platforms like Amazon Kindle, Apple Books, and Kobo. Studies and publishing experts consistently highlight that cover quality directly impacts reader trust and book sales."
-  },
-  {
-   "q": "Do you offer custom Amazon KDP book cover design services?",
-   "a": "Yes, Authors Crew provides custom Amazon KDP book cover design services for eBooks, paperback books, and hardcover publishing. Our covers are designed according to Amazon KDP formatting requirements, including spine sizing, bleed setup, and print-ready layouts."
-  },
-  {
-   "q": "What genres do your book cover design services support?",
-   "a": "Our professional book cover design services support fiction, non-fiction, romance, thriller, fantasy, self-help, business, memoirs, children’s books, and many other genres. Every design is customized to match your story, audience, and publishing goals."
-  },
-  {
-   "q": "Why should authors choose Authors Crew for book cover design?",
-   "a": "Authors Crew focuses on reader-focused, genre-specific, and platform-optimized book cover designs. We provide: Custom original cover concepts Unlimited revisions eBook and print-ready files Amazon KDP optimization Affordable pricing for self-published authors Fast turnaround times"
-  },
-  {
-   "q": "What files will I receive after my book cover project is completed?",
-   "a": "You will receive high-quality files optimized for both digital and print publishing, including: eBook cover files Paperback cover layouts Hardcover cover designs Print-ready PDFs Spine and back cover files KDP-ready publishing files"
-  },
-  {
-   "q": "Can you design both eBook and print book covers?",
-   "a": "Yes, we design covers, paperback covers, and hardcover book covers. Our print cover services include front cover design, spine formatting, barcode placement, bleed setup, and print-ready formatting for publishing platforms."
-  },
-  {
-   "q": "How does your book cover design process work?",
-   "a": "Our book cover design process follows four simple steps: Share your book idea and design preferences Market research and custom concept creation Design revisions based on your feedback Delivery of final print-ready and eBook-ready files This process helps create a professional cover tailored to your audience and genre."
-  },
-  {
-   "q": "Can a professional book cover improve book sales and visibility?",
-   "a": "Yes, a professionally designed cover can improve book visibility, strengthen author branding, and increase reader engagement. Publishing experts and self-publishing communities often emphasize that attractive, genre-appropriate covers significantly influence buying decisions and online discoverability. Start Your Cover Design Journey"
-  }
- ],
+ "faq": [],
  "reviews": true,
  "contact": {
   "title": "Design a Cover Readers Can't Ignore",
-  "text": "A great book begins with a great cover. Our designers craft visually compelling covers that showcase your story and help your book stand out. Full Name Business Email Phone Number Message"
+  "text": "A great book begins with a great cover. Our designers craft visually compelling covers that showcase your story and help your book stand out."
  }
 }

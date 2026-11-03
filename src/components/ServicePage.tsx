@@ -3,8 +3,9 @@ import Link from "next/link";
 import { BookFan, Eyebrow, FormCard, FramedImage, Wave } from "./Decor";
 import { LeadForm } from "./LeadForm";
 import { QuoteButton } from "./PopupProvider";
-import { Faq, Reviews } from "./sections";
+import { Reviews } from "./sections";
 import { Container, LinkButton, buttonClass } from "./ui";
+import { platforms } from "@/content/home";
 import { COVERS, GALLERY, IMG } from "@/lib/img";
 import type { Block, Pic, ServiceMeta, ServiceSection } from "@/lib/services";
 import { SITE } from "@/lib/site";
@@ -193,6 +194,7 @@ export function CoverStrip({ kind }: { kind: "published" | "small" | "cutouts" }
 type Kind = "band" | "cards" | "split" | "center";
 
 function kindOf(s: ServiceSection): Kind {
+  if (s.layout) return s.layout;
   const has = (k: Block["k"]) => s.blocks.some((b) => b.k === k);
   const ps = s.blocks.filter((b) => b.k === "p").length;
   if (has("cards") || has("chips") || has("tiers") || has("genres") || has("features") || has("showcase")) return "cards";
@@ -201,8 +203,9 @@ function kindOf(s: ServiceSection): Kind {
   return "center";
 }
 
-export function Section({ s, i, pic, reverse = false }: { s: ServiceSection; i: number; pic?: Pic; reverse?: boolean }) {
+export function Section({ s, i, pic: defaultPic, reverse = false }: { s: ServiceSection; i: number; pic?: Pic; reverse?: boolean }) {
   const kind = kindOf(s);
+  const pic = (s.pic && IMG[s.pic as keyof typeof IMG]) || defaultPic;
   const tint = i % 2 === 1 ? "bg-paper" : "";
   const heading = (cls: string) =>
     s.title ? <h2 className={`font-serif text-3xl leading-tight font-medium sm:text-4xl ${cls}`}>{s.title}</h2> : null;
@@ -256,6 +259,25 @@ export function Section({ s, i, pic, reverse = false }: { s: ServiceSection; i: 
   );
 }
 
+/** Retail platforms strip shown under every service hero. */
+function PlatformStrip() {
+  return (
+    <section className="pt-6 pb-10" aria-label={platforms.title}>
+      <Container className="text-center">
+        <h2 className="font-serif text-2xl leading-tight font-medium text-navy sm:text-3xl">{platforms.title}</h2>
+        <p className="mx-auto mt-3 max-w-2xl text-slate-600">{platforms.text}</p>
+        <ul className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+          {platforms.logos.map((l) => (
+            <li key={l.name}>
+              <Image src={l.src} alt={l.name} width={140} height={50} className="h-9 w-auto object-contain transition hover:scale-105" />
+            </li>
+          ))}
+        </ul>
+      </Container>
+    </section>
+  );
+}
+
 export function ServicePage({ meta }: { meta: ServiceMeta }) {
   const { content } = meta;
   // A first section with a title but no body is the hero sub-heading.
@@ -263,15 +285,12 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
   const isLabel = (b: Block) => b.k === "p" && b.text.split(" ").length <= 6 && !/[.!?:]$/.test(b.text);
   const heroSub = first && first.title && first.blocks.every(isLabel) ? first.title : "";
   const sections = heroSub ? rest : content.sections;
-  const stripAt = Math.max(1, sections.findIndex((s) => /genres we cater|featured|genre gallery/i.test(s.title)));
+  const stripAt = Math.max(1, sections.findIndex((s) => /genres we cater|featured|genre gallery|match your genre/i.test(s.title)));
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
       { "@type": "Service", name: content.h1, provider: { "@type": "Organization", name: SITE.name, url: SITE.url }, description: meta.description },
-      ...(content.faq.length
-        ? [{ "@type": "FAQPage", mainEntity: content.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }]
-        : []),
     ],
   };
 
@@ -318,6 +337,8 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
         <Wave fill="#ffffff" />
       </section>
 
+      <PlatformStrip />
+
       {sections.map((s, i) => {
         const wantsPic = kindOf(s) === "split";
         const pic = wantsPic ? meta.pics[picIndex % meta.pics.length] : undefined;
@@ -325,13 +346,12 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
         return (
           <div key={`${s.title}-${i}`}>
             <Section s={s} i={i} pic={pic} reverse={picIndex % 2 === 0} />
-            {i === stripAt && <CoverStrip kind={meta.strip} />}
+            {i === stripAt && meta.strip !== "none" && <CoverStrip kind={meta.strip} />}
           </div>
         );
       })}
 
       {content.reviews && <Reviews />}
-      {content.faq.length > 0 && <Faq title={content.faqTitle || "Frequently Asked Questions"} items={content.faq} />}
 
       {content.contact && (
         <section className="bg-hero relative isolate overflow-hidden py-24 text-white">
@@ -351,19 +371,6 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
         </section>
       )}
 
-      <section className="bg-paper py-20">
-        <Container className="grid items-center gap-12 lg:grid-cols-2">
-          <div className="reveal text-center lg:text-left">
-            <Eyebrow>Start your author journey</Eyebrow>
-            <h2 className="font-serif text-3xl leading-tight font-medium text-navy sm:text-4xl">Ready When You Are</h2>
-            <p className="mt-4 text-lg text-slate-600">One short form is all it takes to get a clear plan and a fixed quote for your book.</p>
-            <Image src={IMG.publishers.src} alt={IMG.publishers.alt} width={400} height={400} sizes="320px" className="mx-auto mt-6 hidden h-auto w-72 lg:mx-0 lg:block" />
-          </div>
-          <div className="reveal rounded-[1.75rem] bg-white p-6 shadow-[var(--shadow-lift)] ring-1 ring-slate-100 sm:p-8">
-            <LeadForm variant="journey" submitLabel="Get Consultation" defaultProjectType={meta.label} />
-          </div>
-        </Container>
-      </section>
     </>
   );
 }

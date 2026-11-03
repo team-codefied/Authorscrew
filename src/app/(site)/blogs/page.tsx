@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { BlogCard } from "@/components/BlogCard";
 import { PageHero } from "@/components/Decor";
-import { IMG } from "@/lib/img";
 import { Container } from "@/components/ui";
 import { getPosts } from "@/lib/blog";
 import { SITE } from "@/lib/site";
@@ -31,7 +30,6 @@ export default function Blogs() {
         crumbs={[{ label: "Home", href: "/" }, { label: "Blogs" }]}
         eyebrow="Author insights"
         intro="Writing tips, publishing guidance and marketing strategies for every stage of your author journey."
-        visual={IMG.stack}
       />
 
       <section className="py-16 sm:py-20">

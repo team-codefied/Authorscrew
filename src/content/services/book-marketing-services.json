@@ -26,10 +26,6 @@
      "k": "cta",
      "label": "Get Started Today",
      "to": "popup"
-    },
-    {
-     "k": "p",
-     "text": "Self Publishing Services"
     }
    ]
   },
@@ -55,7 +51,8 @@
       "Increase book sales and long-term growth"
      ]
     }
-   ]
+   ],
+   "pic": "bookstore"
   },
   {
    "title": "Ready to Reach More Readers?",
@@ -226,10 +223,6 @@
      ]
     },
     {
-     "k": "p",
-     "text": "Build momentum, attract readers, and grow your audience with professional book marketing services."
-    },
-    {
      "k": "cta",
      "label": "Start Marketing Your Book",
      "to": "/contact-us"
@@ -269,55 +262,13 @@
      ]
     }
    ]
-  },
-  {
-   "title": "Common Questions About Book Marketing",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Get the information you need to make informed decisions about promoting your book and growing your author brand."
-    }
-   ]
   }
  ],
  "faqTitle": "Common Questions About Book Marketing",
- "faq": [
-  {
-   "q": "What are book marketing services?",
-   "a": "Book marketing services are professional solutions designed to help authors promote their books, reach their target audience, and increase book sales. These services may include Amazon book marketing, social media promotion, email marketing, publicity campaigns, book launch marketing, and author branding strategies."
-  },
-  {
-   "q": "How do professional book marketing services increase book sales?",
-   "a": "Professional book marketing services increase book sales by improving visibility, attracting qualified readers, and creating targeted promotional campaigns. By combining audience research, online marketing, and reader engagement strategies, authors can generate greater awareness and long-term sales growth."
-  },
-  {
-   "q": "What is included in your book marketing services?",
-   "a": "Our book marketing services include Amazon optimization, book launch marketing, social media marketing, email marketing campaigns, publicity and media outreach, reader engagement strategies, and author branding support. Every campaign is customized to align with your book, audience, and publishing goals."
-  },
-  {
-   "q": "How does Amazon book marketing help authors reach more readers?",
-   "a": "Amazon book marketing helps improve your book’s discoverability through keyword optimization, category selection, metadata enhancements, and listing improvements. These strategies increase your chances of appearing in relevant searches and reaching readers actively looking for books like yours."
-  },
-  {
-   "q": "Is book marketing worth it for self-published authors?",
-   "a": "Yes. Book marketing is essential for self-published authors who want to increase visibility and compete effectively in today’s publishing market. A strategic marketing plan can help attract readers, generate reviews, build credibility, and support long-term book sales."
-  },
-  {
-   "q": "What is the best way to market a self-published book?",
-   "a": "The most effective way to market a self-published book is through a combination of Amazon book marketing, social media promotion, email marketing, reader outreach, and author branding. A multi-channel strategy helps maximize exposure and connect with the right audience."
-  },
-  {
-   "q": "Can a book marketing company help me sell more books?",
-   "a": "Yes. A professional book marketing company can help increase your book’s visibility, improve discoverability, connect you with potential readers, and develop targeted campaigns that support higher engagement and stronger sales performance over time."
-  },
-  {
-   "q": "How much do professional book marketing services cost?",
-   "a": "The cost of professional book marketing services varies depending on the scope of the campaign, marketing channels used, and your goals as an author. Customized marketing solutions allow authors to choose services that fit their budget while maximizing visibility and growth opportunities. Market & Promote Your Book"
-  }
- ],
+ "faq": [],
  "reviews": true,
  "contact": {
   "title": "Reach More Readers. Sell More Books.",
-  "text": "From launch campaigns and Amazon optimization to social media marketing and author branding, we create customized marketing strategies that help your book gain visibility and drive sales. Full Name Business Email Phone Number Message"
+  "text": "From launch campaigns and Amazon optimization to social media marketing and author branding, we create customized marketing strategies that help your book gain visibility and drive sales."
  }
 }

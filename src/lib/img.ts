@@ -21,6 +21,8 @@ export const COVERS = {
 
 export const IMG = {
   // Mockups and scenes
+  shelf: { src: CV("shelf"), alt: "Authors Crew books on a shelf" },
+  rowAdventure: { src: CV("row-adventure"), alt: "Three published Authors Crew books" },
   podium: { src: CV("shelf"), alt: "Authors Crew books on a shelf" },
   stack: { src: CV("row-five"), alt: "A row of published Authors Crew books" },
   publishers: { src: CV("fan-teal"), alt: "Published Authors Crew books" },

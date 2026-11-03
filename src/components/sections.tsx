@@ -4,7 +4,7 @@ import { IMG } from "@/lib/img";
 import { Eyebrow, Wave } from "./Decor";
 import { Container, SectionHeading } from "./ui";
 
-export function Reviews({ title = "Our Client Reviews", intro }: { title?: string; intro?: string }) {
+export function Reviews({ title = "What Our Authors Say", intro }: { title?: string; intro?: string }) {
   return (
     <section className="bg-hero relative isolate overflow-hidden py-24 text-white">
       <div aria-hidden className="bg-dots absolute inset-0 -z-10 opacity-40" />

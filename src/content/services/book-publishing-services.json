@@ -12,47 +12,45 @@
    ]
   },
   {
-   "title": "Complete Book Publishing Services for Aspiring Authors",
+   "title": "Your Book Publishing Journey, Made Simple",
    "blocks": [
     {
      "k": "p",
-     "text": "Take your manuscript from draft to bookshelf with Authors Crew. Whether you are looking to publish your book for the first time or expand your reach as an author, our experts handle everything from preparation and design to publishing and distribution across major platforms."
-    },
-    {
-     "k": "p",
-     "text": "From first-time authors to seasoned writers, we simplify the process of publishing your own book and help bring your work to market with confidence."
+     "text": "Authors Crew makes publishing easier by guiding you through each stage, from reviewing your manuscript and preparing the book design to selecting publishing platforms and completing the release. Our team keeps you informed at each step and provides the support you need throughout the publishing process."
     },
     {
      "k": "cta",
-     "label": "DESIGN YOUR BESTSELLER",
+     "label": "Start Your Publishing Journey",
      "to": "/contact-us"
     }
    ]
   },
   {
-   "title": "All in One Book Publishing Solutions",
+   "title": "Complete Book Publishing Services Under One Roof",
+   "layout": "split",
+   "pic": "shelf",
    "blocks": [
     {
      "k": "p",
-     "text": "We provide complete publishing support tailored to your goals. Our book publishers work closely with authors to ensure every element of the book meets industry standards and reader expectations."
+     "text": "Every book has the potential to reach readers and make an impact. At Authors Crew, we bring together the publishing support you need to turn your manuscript into a finished book. Our team helps prepare your book for publication and take it one step closer to readers."
     },
     {
      "k": "ul",
      "items": [
-      "Professional manuscript evaluation",
-      "Developmental editing and copy editing",
-      "Proofreading services",
-      "Custom book cover design",
-      "Interior book formatting",
-      "eBook conversion and formatting",
-      "Book marketing and promotion",
-      "ISBN registration assistance",
-      "Paperback and hardcover publishing",
-      "Print-on-demand setup",
-      "Global book distribution",
-      "Audiobook publishing support",
-      "Metadata optimization",
-      "Author profile creation"
+      "Manuscript Assessment",
+      "Developmental & Copy Editing",
+      "Proofreading",
+      "Book Cover Design",
+      "Interior Formatting",
+      "eBook Conversion",
+      "Book Marketing & Promotion",
+      "ISBN Assistance",
+      "Paperback & Hardcover Publishing",
+      "Print-on-Demand Setup",
+      "Global Distribution",
+      "Audiobook Publishing",
+      "Metadata Setup",
+      "Author Profile Creation"
      ]
     }
    ]
@@ -68,36 +66,6 @@
      "k": "cta",
      "label": "Get Your Free Consultation",
      "to": "popup"
-    },
-    {
-     "k": "p",
-     "text": "Self Publishing Services"
-    }
-   ]
-  },
-  {
-   "title": "Your Book. Your Rights. Your Publishing Success.",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Publish with confidence while maintaining full ownership and creative control. Our professional self-publishing assistance helps prepare, optimize, and distribute your book across major publishing platforms. We assist with:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Publishing account setup",
-      "Book metadata optimization",
-      "Category and keyword selection",
-      "ISBN guidance",
-      "Pricing strategy recommendations",
-      "Print and digital publishing",
-      "Distribution management"
-     ]
-    },
-    {
-     "k": "cta",
-     "label": "Start Publishing Today",
-     "to": "tel"
     }
    ]
   },
@@ -128,12 +96,9 @@
      "k": "cta",
      "label": "Request a Free Consultation",
      "to": "/contact-us"
-    },
-    {
-     "k": "p",
-     "text": "0 +"
     }
-   ]
+   ],
+   "pic": "rowAdventure"
   },
   {
    "title": "Where Great Stories Meet Global Readers",
@@ -160,52 +125,37 @@
      "label": "Publish Your eBook Now",
      "to": "tel"
     }
-   ]
+   ],
+   "pic": "devices"
   },
   {
    "title": "Audiobook Publishing Services",
+   "layout": "split",
+   "pic": "audioPhone",
    "blocks": [
     {
      "k": "p",
-     "text": "Audiobooks continue to experience significant growth, creating new opportunities for authors to reach audiences. Our"
-    },
-    {
-     "k": "cta",
-     "label": "audiobook publishing solutions",
-     "to": "/audiobook-publishing-services"
+     "text": "Give your book a voice and connect with readers in a new way. Authors Crew helps turn your written work into an audiobook, making your story accessible to listeners who prefer to enjoy books on the go or while doing other activities."
     },
     {
      "k": "p",
-     "text": "help bring your story to life through professional audio production and distribution."
-    },
-    {
-     "k": "p",
-     "text": "Audiobook Services Include"
+     "text": "Audiobook Publishing Includes"
     },
     {
      "k": "ul",
      "items": [
-      "Narration Assistance",
-      "Audio Editing"
-     ]
-    },
-    {
-     "k": "cta",
-     "label": "Audiobook Production",
-     "to": "/audiobook-publishing-services"
-    },
-    {
-     "k": "ul",
-     "items": [
+      "Narration & Voice Selection",
+      "Audio Recording & Editing",
+      "Audio Quality Review",
       "Distribution Setup",
-      "Metadata Optimization",
+      "Metadata Preparation",
       "Platform Submission"
      ]
     },
     {
      "k": "cta",
      "label": "Publish Your Audio Book Now",
-     "to": "tel"
+     "to": "/contact-us"
     }
    ]
   },
@@ -225,45 +175,55 @@
   },
   {
    "title": "Publishing Platforms We Support",
+   "layout": "cards",
    "blocks": [
     {
      "k": "p",
-     "text": "Authors Crew is a leading choice among book publishing companies, offering complete publishing solutions for authors seeking worldwide distribution."
+     "text": "Your book deserves the opportunity to reach readers wherever they choose to read. Authors Crew helps authors publish across recognised digital and print platforms, making their books available to audiences in different markets around the world."
+    },
+    {
+     "k": "p",
+     "text": "Explore the Publishing Platforms We Support:"
     },
     {
      "k": "chips",
      "items": [
       "Amazon KDP",
-      "Barnes & Noble",
+      "Barnes & Noble Press",
       "Apple Books",
-      "Kobo Books",
+      "Kobo",
       "Google Play Books",
       "IngramSpark"
      ]
     },
     {
-     "k": "p",
-     "text": "Our Amazon Kindle Direct Publishing services help authors publish and distribute eBooks worldwide through the largest online book marketplace. With expert Amazon KDP Publishing support, we optimize your book for Amazon search visibility, Kindle Unlimited enrollment opportunities, and reader discovery, helping you reach millions of Kindle users globally."
-    },
-    {
-     "k": "p",
-     "text": "Expand your reach with our Barnes and Noble Press Self Publishing services. We provide complete B&N Self Publishing Services, helping authors publish professionally formatted print and digital books while connecting with readers through one of the most recognized bookselling platforms in the industry."
-    },
-    {
-     "k": "p",
-     "text": "Our Apple Books Publishing Services help authors distribute their books to readers across the Apple ecosystem, including iPhone, iPad, and Mac users worldwide. Through professional Apple eBook Publishing support, we ensure your book meets platform requirements while delivering a seamless reading experience for Apple device users."
-    },
-    {
-     "k": "p",
-     "text": "Reach international readers with our Kobo eBook Publishing solutions. Our Kobo Publishing Services include formatting, metadata optimization, and global distribution, helping authors expand into international markets and connect with readers across Europe, Canada, Australia, and beyond."
-    },
-    {
-     "k": "p",
-     "text": "Our Google eBook Publishing services help authors publish and sell digital books through one of the world’s largest content marketplaces. With Google Play Books Publishing support, we optimize your book for discoverability across Google’s ecosystem, helping attract new readers and increase engagement."
-    },
-    {
-     "k": "p",
-     "text": "Our Ingram Publishing Services provide access to one of the largest global book distribution networks. Through professional Ingram Publisher Services, we help authors distribute print and digital books to bookstores, libraries, academic institutions, and retailers worldwide, significantly expanding market availability."
+     "k": "cards",
+     "items": [
+      {
+       "title": "Amazon KDP Publishing",
+       "text": "Publish your eBook and paperback through Amazon Kindle Direct Publishing. We help prepare your book for Amazon's publishing requirements, set up your listing, and organise the details readers use to find your work."
+      },
+      {
+       "title": "Barnes & Noble Press Publishing",
+       "text": "Bring your book to Barnes & Noble's online bookstore through its self-publishing platform. We help prepare your print and digital editions, format your files, and set up your book for publication."
+      },
+      {
+       "title": "Apple Books Publishing",
+       "text": "Make your eBook available to readers across Apple's ecosystem. We help prepare your manuscript, cover, and book details to meet Apple Books' publishing requirements and provide a smooth reading experience."
+      },
+      {
+       "title": "Kobo Publishing",
+       "text": "Reach readers through Kobo's international eBook marketplace. We help prepare your digital book, organise its metadata, and set it up for distribution through the platform."
+      },
+      {
+       "title": "Google Play Books Publishing",
+       "text": "Make your eBook available to readers through Google Play Books. Our team helps prepare your files and book information for listing, giving readers another way to discover and purchase your work."
+      },
+      {
+       "title": "IngramSpark Publishing",
+       "text": "Expand your book's distribution opportunities through IngramSpark's publishing and distribution network. We help prepare your print and digital editions for distribution to participating bookstores, libraries, and retailers."
+      }
+     ]
     }
    ]
   },
@@ -272,7 +232,7 @@
    "blocks": [
     {
      "k": "p",
-     "text": "See how we have helped authors transform their manuscripts into professionally published books available worldwide."
+     "text": "Explore our book publishing projects, discover the creativity behind each book, and get inspired to take the next step with your own story. Your book could be our next featured project!"
     }
    ]
   },
@@ -309,55 +269,13 @@
      ]
     }
    ]
-  },
-  {
-   "title": "Still Have Questions? We’re Here to Help",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Answers for Aspiring Authors, Learn More About Our Book Publishing Process, Platforms, and Services"
-    }
-   ]
   }
  ],
  "faqTitle": "Still Have Questions? We’re Here to Help",
- "faq": [
-  {
-   "q": "How do I publish my first book?",
-   "a": "To publish your first book, you typically need editing, formatting, cover design, publishing setup, and distribution. Professional book publishing services help prepare your manuscript and publish it across major platforms like Amazon KDP and Barnes & Noble."
-  },
-  {
-   "q": "How much does it cost to publish a book?",
-   "a": "Book publishing costs vary depending on editing, design, formatting, and marketing requirements. The overall investment depends on the services needed to prepare and publish your book professionally."
-  },
-  {
-   "q": "Can I keep the rights to my book after publishing?",
-   "a": "Yes. Self-publishing allows authors to retain full ownership, copyright, and creative control over their work while maintaining publishing rights."
-  },
-  {
-   "q": "How long does the book publishing process take?",
-   "a": "Most books can be published within a few weeks to a few months, depending on manuscript readiness, editing requirements, design work, and publishing goals."
-  },
-  {
-   "q": "Do you publish books on Amazon KDP?",
-   "a": "Yes. Authors Crew provides Amazon Kindle Direct Publishing (KDP) support, including eBook formatting, paperback publishing, metadata optimization, and publishing assistance."
-  },
-  {
-   "q": "Can Authors Crew help first-time authors?",
-   "a": "Absolutely. Authors Crew works with both first-time and experienced authors, providing step-by-step guidance throughout the publishing process."
-  },
-  {
-   "q": "What are the best platforms for self-publishing a book?",
-   "a": "Popular self-publishing platforms include Amazon Kindle Direct Publishing (KDP), Barnes & Noble Press, Apple Books, Kobo Writing Life, Google Play Books, IngramSpark, Draft2Digital, and Smashwords. Each platform offers unique benefits for eBook publishing, print distribution, global reach, and author royalties."
-  },
-  {
-   "q": "Why choose Authors Crew for book publisher services?",
-   "a": "Authors Crew book publisher services offers, custom publishing solutions, global distribution support, and dedicated publishing specialists to help authors publish with confidence. Publish More Than a Book"
-  }
- ],
+ "faq": [],
  "reviews": true,
  "contact": {
   "title": "Build Your Author Legacy",
-  "text": "Create a lasting impact with professional publishing services designed to showcase your work at its best. Full Name Business Email Phone Number Message"
+  "text": "Create a lasting impact with professional publishing services designed to showcase your work at its best."
  }
 }

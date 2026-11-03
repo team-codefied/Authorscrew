@@ -3,91 +3,60 @@
  "h1": "Professional Ghostwriting Services",
  "sections": [
   {
-   "title": "Ghostwriting Built for Global Publishing Success",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Your Story, Professionally Written"
-    }
-   ]
+   "title": "Every great book deserves thoughtful writing. Our professional ghostwriters turn your ideas into a well-written manuscript that reflects your voice and vision. Get in touch with our team to discuss your project and take the first step towards becoming a published author.",
+   "blocks": []
   },
   {
    "title": "Publish Your Book Without Writing a Single Word",
+   "layout": "split",
+   "pic": "writer",
    "blocks": [
     {
      "k": "p",
-     "text": "Turn your ideas into a professionally written, publish-ready book with the best ghostwriter services. From concept to completion, our ghost writer service helps you write a book that builds authority, drives revenue, and leaves a lasting impact."
+     "text": "Every great book starts with an idea. Our professional ghostwriters help turn your ideas, experiences, or rough drafts into a well-written, professionally prepared book."
     },
     {
      "k": "p",
-     "text": "Whether you have an idea or a rough draft, our nonfiction and fiction ghostwriting services help shape it into a complete book."
+     "text": "Whether you want to write fiction or nonfiction, we work with you at every step to create a book that reflects your thoughts, voice, and vision."
+    },
+    {
+     "k": "p",
+     "text": "From the first idea to the final manuscript, we're here to make your book-writing journey simple and stress-free."
+    },
+    {
+     "k": "p",
+     "text": "Ready to Get Started?"
     },
     {
      "k": "cta",
      "label": "Talk to a Ghostwriting Expert",
-     "to": "tel"
-    },
-    {
-     "k": "p",
-     "text": "Our Approach"
+     "to": "/contact-us"
     }
    ]
   },
   {
-   "title": "Why Authors Trust Us for Ghostwriting",
+   "title": "A Better Way to Bring Your Book to Life",
+   "layout": "split",
+   "pic": "ghostwriter",
    "blocks": [
     {
      "k": "p",
-     "text": "Not all ghostwriting services are created equal. At Authors Crew, we don’t just write books, we create authority-building assets that position you as a leader in your niche."
+     "text": "Writing a book takes time, planning, and creativity. We make the journey easier by taking care of the writing while you focus on your ideas. With Authors Crew, you get support, clear communication, and guidance from start to finish."
     },
     {
      "k": "ul",
      "items": [
-      "Dedicated professional ghostwriters",
-      "Tailored writing style to match your voice",
-      "Deep research and content accuracy",
-      "Structured storytelling for engagement",
-      "Publishing-ready manuscripts"
+      "Let us handle the writing while you focus on other projects.",
+      "Share your ideas and feedback throughout the project.",
+      "Get help whether you have a rough idea or a complete draft.",
+      "Stay informed about your book's progress.",
+      "We make sure the finished book follows your expectations."
      ]
     },
     {
      "k": "cta",
      "label": "Discuss Your Book Idea Today",
-     "to": "popup"
-    },
-    {
-     "k": "p",
-     "text": "THE WRITING EXPERIENCE"
-    }
-   ]
-  },
-  {
-   "title": "What's Included in Our Ghostwriting Service",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Work with us and get complete end-to-end ghostwriting services build around your vision. From concept to completion, we turn your ideas into a clear, engaging, and publish-ready book."
-    },
-    {
-     "k": "cards",
-     "items": [
-      {
-       "title": "Manuscript in Your Voice",
-       "text": "Every line is written to match your tone, personality, and message, ensuring your book feels authentic and truly yours."
-      },
-      {
-       "title": "Get the Right Writer",
-       "text": "Through expert content and story development, we shape your ideas into a clear, compelling, and reader-focused narrative."
-      },
-      {
-       "title": "Collaborative Process",
-       "text": "You stay involved at every step from outlining to revisions ensuring the final manuscript aligns perfectly with your vision."
-      },
-      {
-       "title": "Ready-to-Publish Book",
-       "text": "With our affordable ghostwriting services, get a professionally written manuscript ready for publishing, formatting, and distribution."
-      }
-     ]
+     "to": "/contact-us"
     }
    ]
   },
@@ -106,38 +75,38 @@
    ]
   },
   {
-   "title": "Work with Industry-Leading Ghostwriters You Can Trust",
+   "title": "Professional Ghostwriting Support from Start to Finish",
    "blocks": [
     {
      "k": "p",
-     "text": "Authors Crew provides professional ghostwriters to help authors turn ideas into professionally written, publish-ready books, without the stress."
+     "text": "Have a book idea but don't know where to start? Our ghostwriting team helps you plan, write, and prepare your book. We handle every stage of writing while keeping your ideas and goals in mind."
     },
     {
      "k": "cards",
      "items": [
       {
-       "title": "Expert Book Ghostwriters",
-       "text": "Work with expert book ghostwriters who transform your ideas into compelling, high-quality manuscripts written in your voice and tailored to your audience."
+       "title": "Experienced Book Ghostwriters",
+       "text": "Get matched with a writer who understands your book's topic, genre, and target readers."
       },
       {
-       "title": "Structure & Outline",
-       "text": "We validate your idea and create a clear, engaging structure that sets the foundation for a successful book."
+       "title": "Book Planning & Outline",
+       "text": "We organize your ideas into chapters and create a clear plan before writing begins."
       },
       {
-       "title": "Full Manuscript Creation",
-       "text": "Our team delivers complete manuscripts across genres, business, memoir, self-help, and fiction with a consistent tone and engaging flow."
+       "title": "Complete Book Writing",
+       "text": "From the first chapter to the last, we write your manuscript with a consistent style and smooth flow."
       },
       {
-       "title": "Proofreading & Refinement",
-       "text": "We polish your manuscript with professional editing, ensuring clarity, accuracy, and a publication-ready finish."
+       "title": "Editing & Proofreading",
+       "text": "We check your manuscript for spelling, grammar, clarity, and consistency to improve its overall quality."
       },
       {
-       "title": "Your Style, Your Voice",
-       "text": "Our ghostwriter for book writing service captures your unique tone and message so your book feels authentically yours."
+       "title": "Writing in Your Voice",
+       "text": "We follow your preferred tone and style so the book reflects your ideas and personality."
       },
       {
-       "title": "Publishing-Ready Manuscript",
-       "text": "Receive a fully formatted manuscript ready for Amazon KDP, print, and digital publishing platforms."
+       "title": "Manuscript Preparation",
+       "text": "Receive a properly organized manuscript, ready for professional formatting and publishing."
       }
      ]
     }
@@ -164,98 +133,62 @@
       "Self-Help",
       "Business"
      ]
-    },
-    {
-     "k": "p",
-     "text": "0 +"
     }
-   ]
+   ],
+   "pic": "books3"
   },
   {
-   "title": "You Bring the Idea. We’ll Write the Book",
+   "title": "Where Your Book Takes Shape",
    "blocks": [
     {
      "k": "p",
-     "text": "Our ghostwriters craft compelling books in your voice ready to publish and share with the world."
-    },
-    {
-     "k": "p",
-     "text": "Bring Your eBook Vision to Life"
-    }
-   ]
-  },
-  {
-   "title": "Looking to publish an eBook but short on time?",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Our professional eBook ghostwriters transform your ideas into compelling digital content written in your voice and ready for publication."
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Professionally written eBooks tailored to your niche and audience.",
-      "End-to-end support from concept development to final manuscript.",
-      "Engaging, publication-ready content for Amazon Kindle and digital platforms."
-     ]
-    },
-    {
-     "k": "cta",
-     "label": "Talk to an eBook Expert",
-     "to": "/contact-us"
-    }
-   ]
-  },
-  {
-   "title": "Where Ideas Become Great Books",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "With our affordable ghostwriting services, we turn your concept into a professionally written manuscript through a smooth, guided process."
+     "text": "A book may begin with a simple thought, a personal experience, or a story waiting to be told. We bring the writing expertise to turn that starting point into a book you can proudly call your own. Your idea leads the way; we help put it into words."
     },
     {
      "k": "cards",
      "items": [
       {
-       "title": "Share Your Concept",
-       "text": "Tell us your idea and goals, we shape it into a clear direction."
+       "title": "1. Tell Us Your Idea",
+       "text": "Share what you have in mind, what you want to achieve, and the kind of book you hope to create."
       },
       {
-       "title": "Get the Right Writer",
-       "text": "Easily hire professional ghostwriter matched to your voice and genre."
+       "title": "2. Meet Your Writer",
+       "text": "We pair your project with a suitable ghostwriter based on its subject, genre, and creative direction."
       },
       {
-       "title": "Create & Refine",
-       "text": "We write, edit, and improve your manuscript with your feedback."
+       "title": "3. Bring the Story to Life",
+       "text": "Your writer develops the chapters and shapes the content, with your input guiding the work."
       },
       {
-       "title": "Ready to Launch",
-       "text": "Receive a polished book, fully prepared for publishing and the next step. Who We Serve"
+       "title": "4. Complete Your Manuscript",
+       "text": "Once the writing and revisions are complete, your manuscript is organised for the publishing stage."
       }
      ]
     }
    ]
   },
   {
-   "title": "Ghostwriting Services for Every Type of Author",
+   "title": "Writing Support for Every Author's Journey",
+   "layout": "split",
+   "pic": "publishers",
    "blocks": [
     {
      "k": "p",
-     "text": "Our services are designed for"
+     "text": "Whether you want to share your expertise, build your brand, or tell your personal story, our ghostwriting team helps turn your ideas and experiences into a professionally written book. We work with authors from a wide range of backgrounds and professions."
     },
     {
      "k": "ul",
      "items": [
-      "Entrepreneurs & business owners",
-      "Coaches & consultants",
-      "Public speakers",
-      "First-time authors",
-      "Industry experts"
+      "Entrepreneurs & Business Owners",
+      "Coaches & Consultants",
+      "Public Speakers",
+      "First-Time Authors",
+      "Industry Experts"
      ]
     },
     {
      "k": "p",
-     "text": "For every voice with a vision, we deliver the words."
+     "text": "Every author has a story worth sharing. Let's find the words to tell yours."
     },
     {
      "k": "cta",
@@ -265,27 +198,29 @@
    ]
   },
   {
-   "title": "Hire a Ghostwriter for Your Book",
+   "title": "Everything Your Book Needs, All in One Place",
+   "layout": "split",
+   "pic": "stack",
    "blocks": [
     {
      "k": "p",
-     "text": "Authors Crew offers professional ghostwriting services with full ownership rights. Work with best ghost book writers to turn your idea into a publish-ready book."
+     "text": "Every book has its own needs. Whether you're starting with a rough concept or preparing a completed manuscript, our team offers a range of creative and publishing services to help you take the next step with confidence."
     },
     {
      "k": "ul",
      "items": [
-      "Custom book cover design and creative illustrations",
-      "Professional writing aligned with your vision and goals",
-      "Complete manuscript planning, outlining, and drafting",
-      "In-depth research and idea analysis to build a strong foundation",
-      "Editing, proofreading, and detailed revisions for quality assurance",
-      "Formatting and typesetting for a polished, publication-ready book",
-      "Engaging video book trailers for promotion",
-      "Full self-publishing support from start to finish",
-      "Strategic book marketing and global branding",
-      "Final proofreading and critical review after your feedback",
-      "Expert consultancy for both traditional and self-publishing",
-      "Guidance in choosing the right literary agents and publishing paths"
+      "Covers and illustrations that suit your book.",
+      "Professional writing shaped around your ideas and style.",
+      "A clear structure to guide your manuscript.",
+      "Relevant research to support your content.",
+      "Clear, polished, and consistent writing.",
+      "Interior layouts for print and digital editions.",
+      "Short promotional videos to introduce your book.",
+      "Guidance through the self-publishing process.",
+      "Promotional strategies to reach potential readers.",
+      "A final check after your feedback and revisions.",
+      "Help exploring traditional and independent publishing.",
+      "Support in finding and approaching suitable agents."
      ]
     }
    ]
@@ -303,55 +238,13 @@
      "to": "tel"
     }
    ]
-  },
-  {
-   "title": "Still Have Questions? We’re Here to Help",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "We make the writing and publishing process easy to understand from the start."
-    }
-   ]
   }
  ],
  "faqTitle": "Still Have Questions? We’re Here to Help",
- "faq": [
-  {
-   "q": "What makes Authors Crew a trusted ghostwriting agency?",
-   "a": "Authors Crew is a professional ghostwriting agency offering end-to-end ghost writing services, from idea validation to publishing-ready manuscripts. Our expert writers match your voice, ensure deep research, and deliver high-quality books with 100% ownership rights and confidentiality."
-  },
-  {
-   "q": "Does Authors Crew offer ebook ghostwriter services for Amazon?",
-   "a": "Yes, we provide specialized ebook ghostwriter services designed for platforms like Amazon KDP. Our team creates engaging, well-structured digital books that meet publishing standards and help you build authority online."
-  },
-  {
-   "q": "Can I hire a professional ghostwriter through Authors Crew?",
-   "a": "Absolutely. With our ghostwriting service, you can easily hire a professional ghostwriter tailored to your genre, tone, and goals. We match you with experienced writers who transform your ideas into compelling, publish-ready content."
-  },
-  {
-   "q": "Will I own the rights to my book with your ghostwriting services?",
-   "a": "Yes. When you use our ghost writing services, you receive full ownership rights, complete confidentiality, and NDA protection. The final manuscript is entirely yours to publish, distribute, and profit from."
-  },
-  {
-   "q": "What are ghostwriting services and how do they work?",
-   "a": "Ghostwriting services involve hiring a professional writer to create content—such as books, blogs, or ebooks that is published under your name. The ghostwriter captures your voice and ideas while remaining anonymous, delivering polished, ready-to-publish work."
-  },
-  {
-   "q": "Why should I use ebook ghostwriter services?",
-   "a": "Ebook ghostwriter services help you publish high-quality digital books without writing them yourself. They save time, ensure professional structure, and create engaging content that boosts credibility, authority, and online visibility."
-  },
-  {
-   "q": "How much do ghostwriting services typically cost?",
-   "a": "The cost of a ghostwriting service varies depending on the book length, complexity, and writer expertise. Prices can range from a few hundred dollars for short ebooks to thousands for full-length books, with pricing usually based on project scope and quality requirements."
-  },
-  {
-   "q": "Is hiring a ghostwriting agency ethical and legal?",
-   "a": "Yes, working with a ghostwriting agency is both ethical and legal. It is a standard professional practice where the writer is paid for their work, and the client receives full credit and ownership, as agreed in the contract. Where Your Ideas Become Books"
-  }
- ],
+ "faq": [],
  "reviews": true,
  "contact": {
   "title": "Work with a Professional Ghost Writer",
-  "text": "Turn your expertise into a powerful book without writing it yourself. We capture your voice and deliver a polished, publish-ready manuscript. Full Name Business Email Phone Number Message"
+  "text": "Turn your expertise into a powerful book without writing it yourself. We capture your voice and deliver a polished, publish-ready manuscript."
  }
 }

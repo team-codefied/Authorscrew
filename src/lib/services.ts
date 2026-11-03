@@ -18,7 +18,14 @@ export type Block =
   | { k: "features"; items: { title: string; text: string }[] }
   | { k: "showcase"; items: { title: string; text: string[]; lead?: string; bullets: string[] }[] };
 
-export type ServiceSection = { title: string; blocks: Block[] };
+export type ServiceSection = {
+  title: string;
+  blocks: Block[];
+  /** Forces a layout instead of picking one from the blocks. */
+  layout?: "band" | "cards" | "split" | "center";
+  /** Key of an IMG picture to show beside a split section. */
+  pic?: string;
+};
 
 export type ServiceContent = {
   slug: string;
@@ -45,7 +52,7 @@ export type ServiceMeta = {
   /** Pictures used beside content sections, in order. */
   pics: Pic[];
   /** Which kind of cover strip to show mid-page. */
-  strip: "published" | "small" | "cutouts";
+  strip: "published" | "small" | "cutouts" | "none";
 };
 
 const BANNER_FALLBACK = "/images/services/banner-publishing.webp";
@@ -67,7 +74,7 @@ export const SERVICE_PAGES: Record<string, ServiceMeta> = {
     description: "Professional eBook writing, editing and formatting for Amazon Kindle and every major digital platform.",
     banner: BANNER_FALLBACK,
     label: "eBook Writing",
-    hero: [IMG.ebookDevices, IMG.ereader],
+    hero: [IMG.devices, IMG.ereader],
     pics: [IMG.kindleScreen, IMG.ebookDesk, IMG.ebookDesk2, IMG.ebookHand, IMG.devices, IMG.ereader],
     strip: "published",
   },
@@ -107,9 +114,9 @@ export const SERVICE_PAGES: Record<string, ServiceMeta> = {
     description: "Developmental editing, line editing, copy editing and proofreading from professional book editors.",
     banner: "/images/services/banner-editing.webp",
     label: "Book Editing",
-    hero: [IMG.editing, IMG.redPen],
+    hero: [IMG.editing, IMG.glasses],
     pics: [IMG.redPen, IMG.glasses, IMG.oldBooks, IMG.editing, IMG.openBook],
-    strip: "cutouts",
+    strip: "none",
   },
   "book-marketing-services": {
     content: marketing as ServiceContent,
@@ -117,7 +124,7 @@ export const SERVICE_PAGES: Record<string, ServiceMeta> = {
     description: "Author branding, launch campaigns and book marketing that help you reach more readers and sell more books.",
     banner: "/images/services/banner-marketing.webp",
     label: "Book Marketing",
-    hero: [IMG.billboard, IMG.socialMedia],
+    hero: [IMG.publicity, IMG.socialMedia],
     pics: [IMG.publicity, IMG.launchEmail, IMG.amazonBest, IMG.bookstore, IMG.billboard],
     strip: "published",
   },

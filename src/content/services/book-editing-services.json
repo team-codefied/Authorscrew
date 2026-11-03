@@ -3,44 +3,38 @@
  "h1": "Book Editing Services",
  "sections": [
   {
-   "title": "Prepare Your Book for a Global Audience",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "What Is Book Editing?"
-    }
-   ]
+   "title": "Make your manuscript clear, polished, and ready for readers. Our book editing services improve your writing, strengthen the flow, and refine every chapter while keeping your original ideas and writing style intact.",
+   "blocks": [],
+   "pic": "editing"
   },
   {
-   "title": "Transform Your Manuscript with Professional Editing",
+   "title": "Make Every Word Count with Professional Book Editing",
+   "layout": "split",
+   "pic": "redPen",
    "blocks": [
     {
      "k": "p",
-     "text": "Authors Crew professional book editing services improve clarity, grammar, structure, and readability while preserving your unique voice."
+     "text": "Give your manuscript a polished, reader-friendly finish. Our editors refine your content, strengthen its flow, and correct errors while keeping your ideas and writing style true to you."
     },
     {
      "k": "p",
-     "text": "Key Benefits"
+     "text": "Key Benefits:"
     },
     {
      "k": "ul",
      "items": [
-      "Improve clarity and flow",
-      "Fix grammar and spelling",
-      "Enhance structure and consistency",
-      "Maintain your writing style",
-      "Prepare for publishing",
-      "Fiction, nonfiction, memoirs, and more"
+      "Improve sentence clarity and readability",
+      "Correct grammar, spelling, and punctuation",
+      "Strengthen chapter flow and organisation",
+      "Maintain a consistent tone and style",
+      "Get your manuscript ready for publication",
+      "Editing for fiction, nonfiction, memoirs, and more"
      ]
     },
     {
      "k": "cta",
-     "label": "Request a Free Quote",
-     "to": "popup"
-    },
-    {
-     "k": "p",
-     "text": "Benefits of Professional Book Editing"
+     "label": "Get Your Book Edited",
+     "to": "/contact-us"
     }
    ]
   },
@@ -90,56 +84,58 @@
   },
   {
    "title": "Ready to take your manuscript to the next level?",
+   "layout": "split",
+   "pic": "oldBooks",
    "blocks": [
     {
      "k": "p",
-     "text": "Our professional editors help refine, strengthen, and polish your book for a better reader experience and a more successful publication journey."
-    },
-    {
-     "k": "p",
-     "text": "Developmental Editing Services"
+     "text": "Our expert editors refine your manuscript, improve its flow, and polish every chapter to create a clear, engaging, and publication-ready book."
     }
    ]
   },
   {
-   "title": "Build a stronger foundation for your book.",
+   "title": "Give Your Book a Stronger Structure and Direction",
+   "layout": "split",
+   "pic": "writer",
    "blocks": [
     {
      "k": "p",
-     "text": "Build a stronger foundation for your book."
+     "text": "Developmental Editing Services"
     },
     {
      "k": "p",
-     "text": "Developmental editing improves your manuscript’s structure, flow, pacing, and reader engagement before detailed editing begins."
+     "text": "Our developmental editing helps shape your manuscript by improving its overall structure, pacing, content, and flow. We provide thoughtful feedback to strengthen your ideas and create a more engaging reading experience."
     },
     {
      "k": "p",
-     "text": "Ideal For"
+     "text": "Ideal For:"
     },
     {
      "k": "ul",
      "items": [
-      "First-time authors",
-      "Fiction writers",
-      "Memoir authors",
-      "Authors with pacing or structure challenges",
-      "Writers seeking professional manuscript feedback"
+      "First-time authors developing their manuscripts",
+      "Fiction writers refining their plots and characters",
+      "Memoir authors organising personal stories",
+      "Writers facing pacing or structural challenges",
+      "Authors seeking professional feedback before detailed editing"
      ]
     },
     {
      "k": "cta",
-     "label": "Get Editorial Feedback Now",
+     "label": "Hire Developmental Editing",
      "to": "/contact-us"
-    },
-    {
-     "k": "p",
-     "text": "Line Editing Services"
     }
    ]
   },
   {
    "title": "Keep readers engaged from the first page to the last.",
+   "layout": "split",
+   "pic": "ereader",
    "blocks": [
+    {
+     "k": "p",
+     "text": "Line Editing Services"
+    },
     {
      "k": "p",
      "text": "Line editing focuses on improving the clarity, flow, and effectiveness of your writing at the sentence level, transforming average content into compelling, professional prose."
@@ -161,25 +157,27 @@
     },
     {
      "k": "cta",
-     "label": "Get Professional Line Editing",
-     "to": "tel"
-    },
-    {
-     "k": "p",
-     "text": "Copy Editing Services"
+     "label": "Get Editorial Feedback Now",
+     "to": "/contact-us"
     }
    ]
   },
   {
    "title": "Make your manuscript clear, consistent, and publication-ready.",
+   "layout": "split",
+   "pic": "redPen",
    "blocks": [
+    {
+     "k": "p",
+     "text": "Copy Editing Services"
+    },
     {
      "k": "p",
      "text": "Our manuscript copy editing service improves grammar, spelling, punctuation, and consistency to ensure accuracy throughout your manuscript and prepare it for publication."
     },
     {
      "k": "p",
-     "text": "Our editors review"
+     "text": "Our editor’s review:"
     },
     {
      "k": "ul",
@@ -196,24 +194,26 @@
     {
      "k": "cta",
      "label": "Book an Editor Today",
-     "to": "tel"
-    },
-    {
-     "k": "p",
-     "text": "Book Proofreading Services"
+     "to": "/contact-us"
     }
    ]
   },
   {
    "title": "Give your manuscript a flawless final review.",
+   "layout": "split",
+   "pic": "glasses",
    "blocks": [
+    {
+     "k": "p",
+     "text": "Book Proofreading Services"
+    },
     {
      "k": "p",
      "text": "Proofreading is the final quality-control stage before publication. Our book proofreading services ensure your manuscript is polished, error-free, and ready for publication."
     },
     {
      "k": "p",
-     "text": "Our proofreaders identify"
+     "text": "Our proofreaders identify:"
     },
     {
      "k": "ul",
@@ -230,23 +230,25 @@
      "k": "cta",
      "label": "Get Professional Proofreading",
      "to": "/contact-us"
-    },
-    {
-     "k": "p",
-     "text": "eBook Formatting Services"
     }
    ]
   },
   {
    "title": "Prepare Your eBook for a Professional Launch.",
+   "layout": "split",
+   "pic": "kindleScreen",
    "blocks": [
+    {
+     "k": "p",
+     "text": "eBook Formatting Services"
+    },
     {
      "k": "p",
      "text": "We transform your manuscript into a polished, publication-ready ebook with professional editing and formatting for a seamless reading experience."
     },
     {
      "k": "p",
-     "text": "Services Include"
+     "text": "Services Include:"
     },
     {
      "k": "ul",
@@ -267,195 +269,119 @@
    ]
   },
   {
-   "title": "Take Your Manuscript to the Next Level",
+   "title": "Give Your Manuscript the Professional Touch",
    "blocks": [
     {
      "k": "p",
-     "text": "Professional editing helps improve clarity, flow, and reader engagement before publication."
+     "text": "Improve your book’s clarity, flow, and readability with expert editing before publication."
     },
     {
      "k": "cta",
-     "label": "Chat With an Editor Now",
+     "label": "Chat With an Editor",
      "to": "/contact-us"
     }
    ]
   },
   {
-   "title": "Book Genres We Edit",
+   "title": "Bringing Out the Best in Every Genre",
+   "layout": "split",
+   "pic": "libraryShelf",
    "blocks": [
     {
      "k": "p",
-     "text": "No matter your genre, our editors and book formatting services help bring your manuscript to its full potential."
+     "text": "Every genre has its own style and audience. Our editors tailor their approach to your manuscript, helping make your story or ideas clear, consistent, and engaging."
     },
     {
      "k": "ul",
      "items": [
-      "Cultural Anthropology",
-      "Memoir / Autobiography",
-      "Psychological Thriller",
+      "Romance",
+      "Thrillers & Mystery",
+      "Fantasy & Science Fiction",
       "Historical Fiction",
-      "Adventure Fantasy",
       "Literary Fiction",
-      "Women's Literary Fiction",
-      "Poetry",
+      "Nonfiction",
+      "Memoirs & Autobiographies",
       "Self-Help",
-      "Business"
+      "Business",
+      "Poetry",
+      "Children's Books",
+      "Cultural Anthropology"
      ]
     }
    ]
   },
   {
-   "title": "Fiction Editing Services",
+   "title": "Give Your Manuscript the Professional Finish It Needs",
    "blocks": [
     {
      "k": "p",
-     "text": "As a professional manuscript editor, our team helps strengthen plots, pacing, dialogue, and character development."
-    },
-    {
-     "k": "p",
-     "text": "We edit:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Romance Novels",
-      "Mystery Novels",
-      "Thrillers",
-      "Fantasy Books",
-      "Science Fiction",
-      "Historical Fiction",
-      "Literary Fiction"
-     ]
+     "text": "Don't let unclear writing or overlooked errors hold your book back. Get expert editing that sharpens your content, improves readability, and helps your manuscript make a stronger impression on readers."
     },
     {
      "k": "cta",
-     "label": "Request a Fiction Editing Quote",
-     "to": "popup"
-    }
-   ]
-  },
-  {
-   "title": "Nonfiction Editing Services",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Our nonfiction book editing services improve clarity, structure, authority, and reader engagement."
-    },
-    {
-     "k": "p",
-     "text": "We edit:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Business Books",
-      "Self-Help Books",
-      "Leadership Books",
-      "Educational Books",
-      "Health Books",
-      "Religious Books",
-      "Personal Development Books"
-     ]
-    },
-    {
-     "k": "cta",
-     "label": "Talk to an Editor Today",
-     "to": "tel"
-    }
-   ]
-  },
-  {
-   "title": "Memoir Editing Services",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Our memoir editors provide some of the best book editing services for authors looking to strengthen storytelling, emotional impact, and authenticity while preserving their unique voice."
-    },
-    {
-     "k": "p",
-     "text": "We edit:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Personal Memoirs",
-      "Family Memoirs",
-      "Inspirational Memoirs",
-      "Travel Memoirs",
-      "Life Story Memoirs"
-     ]
-    },
-    {
-     "k": "cta",
-     "label": "Get Memoir Editing Now",
-     "to": "tel"
-    }
-   ]
-  },
-  {
-   "title": "Children's Book Editing Services",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Our book editing services ensure age-appropriate language, readability, educational value, and engaging storytelling for young readers."
-    },
-    {
-     "k": "p",
-     "text": "We edit:"
-    },
-    {
-     "k": "ul",
-     "items": [
-      "Picture Books",
-      "Early Reader Books",
-      "Chapter Books",
-      "Middle Grade Books",
-      "Young Adult Books"
-     ]
-    },
-    {
-     "k": "cta",
-     "label": "Contact Us Today",
+     "label": "Get Your Manuscript Edited",
      "to": "/contact-us"
     }
    ]
   },
   {
-   "title": "Let's Perfect Your Book Together",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Receive expert feedback and editing to help your manuscript shine."
-    },
-    {
-     "k": "cta",
-     "label": "Chat With an Editor Now",
-     "to": "/contact-us"
-    }
-   ]
-  },
-  {
-   "title": "Our Book Editing & formatting Process",
+   "title": "Our Book Editing & Formatting Process",
    "blocks": [
     {
      "k": "p",
      "text": "Authors Crew offers professional book editing services to help authors transform rough manuscripts into polished, publication-ready books."
     },
     {
-     "k": "ul",
+     "k": "cards",
      "items": [
-      "Comprehensive manuscript evaluation and editorial feedback",
-      "Developmental editing to improve structure, pacing, and flow",
-      "Line editing for clarity, tone, and readability",
-      "Copy editing for grammar, spelling, punctuation, and consistency",
-      "Professional proofreading to eliminate final errors",
-      "Expert editing for fiction, nonfiction, memoirs, and children's books.",
-      "Detailed editorial suggestions while preserving your unique voice",
-      "Manuscript formatting review for publishing readiness",
-      "Multiple revision rounds based on editorial feedback",
-      "Quality assurance review before publication",
-      "Final manuscript polish to ensure a professional reader experience",
-      "Guidance for self-published and traditionally published authors"
+      {
+       "title": "Manuscript Evaluation",
+       "text": "Comprehensive manuscript evaluation and editorial feedback."
+      },
+      {
+       "title": "Developmental Editing",
+       "text": "Improve structure, pacing, and flow."
+      },
+      {
+       "title": "Line Editing",
+       "text": "Sharpen clarity, tone, and readability."
+      },
+      {
+       "title": "Copy Editing",
+       "text": "Correct grammar, spelling, punctuation, and consistency."
+      },
+      {
+       "title": "Proofreading",
+       "text": "Professional proofreading to eliminate final errors."
+      },
+      {
+       "title": "Genre Expertise",
+       "text": "Expert editing for fiction, nonfiction, memoirs, and children's books."
+      },
+      {
+       "title": "Editorial Suggestions",
+       "text": "Detailed suggestions that preserve your unique voice."
+      },
+      {
+       "title": "Formatting Review",
+       "text": "Manuscript formatting review for publishing readiness."
+      },
+      {
+       "title": "Revision Rounds",
+       "text": "Multiple revision rounds based on editorial feedback."
+      },
+      {
+       "title": "Quality Assurance",
+       "text": "A quality assurance review before publication."
+      },
+      {
+       "title": "Final Polish",
+       "text": "A final manuscript polish to ensure a professional reader experience."
+      },
+      {
+       "title": "Publishing Guidance",
+       "text": "Guidance for self-published and traditionally published authors."
+      }
      ]
     }
    ]
@@ -493,55 +419,13 @@
      ]
     }
    ]
-  },
-  {
-   "title": "Helpful Answers About Book Editing & Formatting",
-   "blocks": [
-    {
-     "k": "p",
-     "text": "Discover everything you need to know about manuscript editing, proofreading, and preparing your book for publication."
-    }
-   ]
   }
  ],
  "faqTitle": "Helpful Answers About Book Editing & Formatting",
- "faq": [
-  {
-   "q": "What are book editing services?",
-   "a": "Book editing services help improve a manuscript’s clarity, structure, grammar, consistency, and readability before publication. Professional editors refine your content while preserving your unique writing style and author voice."
-  },
-  {
-   "q": "Why is professional book editing important before publishing?",
-   "a": "Professional book editing helps eliminate errors, improve reader engagement, strengthen credibility, and create a polished reading experience. A professionally edited book is more likely to receive positive reviews and build trust with readers."
-  },
-  {
-   "q": "How do I hire a professional book editor?",
-   "a": "To hire a professional editor, identify the type of editing your manuscript needs and choose an editor experienced in your genre. If you are searching for a book editor for hire, review their portfolio, editing process, and publishing experience before making a decision."
-  },
-  {
-   "q": "What is the difference between developmental editing and copy editing?",
-   "a": "Developmental editing focuses on structure, pacing, organization, and overall manuscript quality, while copy editing corrects grammar, spelling, punctuation, consistency, and style issues. Both play important roles in preparing a book for publication."
-  },
-  {
-   "q": "How much does professional book editing cost?",
-   "a": "Editing costs vary based on manuscript length, genre, editing level, and turnaround time. Most providers offer custom quotes because manuscript editing pricing depends on the amount of work required and the type of editing selected."
-  },
-  {
-   "q": "What is book proofreading?",
-   "a": "Book proofreading is the final review stage before publication. It focuses on correcting typographical errors, punctuation mistakes, formatting inconsistencies, spacing issues, and minor grammar problems to ensure a polished manuscript."
-  },
-  {
-   "q": "Are book editing and book formatting the same service?",
-   "a": "No. Editing improves the quality and readability of your manuscript, while formatting prepares it for print and digital publishing platforms. Many authors combine editing with formatting services to create a professional publishing-ready book."
-  },
-  {
-   "q": "Do self-published authors need professional book editing?",
-   "a": "Yes. Professional editing helps self-published authors improve quality, enhance reader satisfaction, reduce errors, and strengthen credibility. A professionally edited book has a better chance of generating positive reviews and long-term sales success. Professional Book Editing Services"
-  }
- ],
+ "faq": [],
  "reviews": true,
  "contact": {
   "title": "Every Great Book Begins With Great Editing",
-  "text": "From refining your story and strengthening your writing to correcting grammar and formatting, we guide you through every stage of the editing process to prepare your manuscript for publishing. Full Name Business Email Phone Number Message"
+  "text": "From refining your story and strengthening your writing to correcting grammar and formatting, we guide you through every stage of the editing process to prepare your manuscript for publishing."
  }
 }
