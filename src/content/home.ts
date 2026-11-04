@@ -10,7 +10,7 @@ export const platforms = {
   title: "Publish Where Readers Shop",
   text: "Your book, available worldwide on Amazon, Barnes & Noble, Apple Books, Kobo and Google Play Books, and in bookstores and libraries through IngramSpark.",
   logos: [
-    { name: "Amazon", src: "/images/company/02.webp" },
+    { name: "Amazon", src: "/images/company/amazon-black2.webp" },
     { name: "Barnes & Noble", src: "/images/company/01.webp" },
     { name: "Apple Books", src: "/images/company/04.webp" },
     { name: "Kobo", src: "/images/company/03.webp" },
