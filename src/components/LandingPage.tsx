@@ -165,9 +165,9 @@ export function LandingPage({ slug }: { slug: LandingSlug }) {
             {galleryHere && meta.gallery && (
               <section className="bg-mist py-14" aria-label={meta.gallery.label}>
                 <Container>
-                  <ul className={`grid gap-4 ${meta.gallery.images.length > 6 ? "grid-cols-2 sm:grid-cols-4 lg:grid-cols-6" : "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"}`}>
+                  <ul className="flex flex-wrap justify-center gap-4">
                     {meta.gallery.images.map((src, n) => (
-                      <li key={src} className="reveal">
+                      <li key={src} className={`reveal ${meta.gallery.images.length > 6 ? "w-[46%] sm:w-[23%] lg:w-[15%]" : "w-[46%] sm:w-[30%] lg:w-[18%]"}`}>
                         <Image
                           src={src}
                           alt=""

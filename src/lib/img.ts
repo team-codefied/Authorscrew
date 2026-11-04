@@ -4,7 +4,7 @@
  */
 const L = (n: string) => `/images/live/${n}`;
 /** Composites built only from real Authors Crew covers (see public/images/covers). */
-const CV = (n: string) => `/images/covers/${n}.webp`;
+const CV = (n: string) => `/images/covers/${n}-v4.webp`;
 
 /** Transparent 3D cut-out covers of real Authors Crew books, taken from the live homepage. */
 export const COVERS = {
