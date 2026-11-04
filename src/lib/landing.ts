@@ -71,7 +71,7 @@ export const LANDING_PAGES = {
     banner: "/images/services/banner-publishing.webp",
     theme: "light",
     heroVisual: IMG.pbHero2,
-    pics: [IMG.devices, IMG.gwServices, IMG.pbGlobal, IMG.edNext],
+    pics: [IMG.devices, IMG.gwServices, IMG.pbGlobal, IMG.mkMatters],
     covers: { after: "Every Detail Matters", set: "default" },
   },
   "childrens-book-publishing-illustration-lp": {
