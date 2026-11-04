@@ -4,12 +4,12 @@ import { IMG } from "@/lib/img";
 import { Eyebrow, Wave } from "./Decor";
 import { Container, SectionHeading } from "./ui";
 
-export function Reviews({ title = "What Our Authors Say", intro }: { title?: string; intro?: string }) {
+export function Reviews({ title = "What Our Authors Say", intro, flat = false }: { title?: string; intro?: string; flat?: boolean }) {
   return (
     <section className="bg-hero relative isolate overflow-hidden py-24 text-white">
       <div aria-hidden className="bg-dots absolute inset-0 -z-10 opacity-40" />
-      <Wave fill="#ffffff" flip />
-      <Container className="pt-6">
+      {!flat && <Wave fill="#ffffff" flip />}
+      <Container className={flat ? "" : "pt-6"}>
         <SectionHeading title={title} intro={intro ?? reviews.text} light eyebrow="Reviews" />
         <ul className="mb-10 flex flex-wrap justify-center gap-3">
           {reviews.badges.map((b) => (

@@ -195,13 +195,16 @@ export function Section({ s, i, pic: defaultPic, reverse = false }: { s: Service
 
   if (kind === "band") {
     return (
-      <section className="bg-hero relative isolate overflow-hidden py-16 text-white sm:py-20">
+      <section className="bg-hero relative isolate overflow-hidden py-24 text-white sm:py-28">
         <div aria-hidden className="bg-dots absolute inset-0 -z-10 opacity-40" />
         <div aria-hidden className="absolute -top-20 -right-20 -z-10 size-72 rounded-full bg-teal/20 blur-3xl" />
-        <Container className="max-w-3xl text-center">
+        <div aria-hidden className="absolute -bottom-24 -left-16 -z-10 size-72 rounded-full bg-amber/15 blur-3xl" />
+        <Container className="max-w-3xl pt-6 text-center">
+          <Eyebrow light>Let&apos;s get started</Eyebrow>
           {heading("mb-5 text-white")}
           <Blocks blocks={s.blocks} center light />
         </Container>
+        <Wave fill="#ffffff" flip />
       </section>
     );
   }
@@ -277,6 +280,8 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
     ],
   };
 
+  const lastSection = sections[sections.length - 1];
+  const endsWithBand = !!lastSection && kindOf(lastSection) === "band";
   let picIndex = 0;
   return (
     <>
@@ -334,7 +339,7 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
         );
       })}
 
-      {content.reviews && <Reviews />}
+      {content.reviews && <Reviews flat={endsWithBand} />}
 
       {content.contact && (
         <section className="bg-hero relative isolate overflow-hidden py-24 text-white">

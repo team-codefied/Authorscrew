@@ -21,7 +21,7 @@ export const COVERS = {
 
 export const IMG = {
   team: { src: SC("team"), alt: "The Authors Crew team" },
-  ghostwriter: { src: SC("ghostword"), alt: "A pen, glasses and manuscript spelling ghostwriter" },
+  ghostwriter: { src: SC("redpen"), alt: "A manuscript being refined with a red pen" },
   writer: { src: SC("woman"), alt: "A writer working on a laptop beside an open book" },
   bookstore: { src: SC("bookstore"), alt: "Readers browsing a bookstore" },
   billboard: { src: SC("meeting"), alt: "A team planning around a table" },
@@ -54,7 +54,7 @@ export const IMG = {
   christianBible: { src: SC("glasses"), alt: "Reading glasses on an open book" },
   miracleLife: { src: SC("handwrite"), alt: "Writing by hand with a pen" },
   podium: { src: SC("bookstore"), alt: "Readers browsing a bookstore" },
-  stack: { src: SC("typewriter"), alt: "A vintage typewriter" },
+  stack: { src: SC("meeting"), alt: "A vintage typewriter" },
   publishers: { src: SC("team"), alt: "The Authors Crew team" },
   books3: { src: SC("hands"), alt: "Hands editing a printed page with a pencil" },
   stackBig: { src: SC("meeting"), alt: "A team planning around a table" },
@@ -77,7 +77,7 @@ export const IMG = {
   coverFlat: { src: SC("design-layout"), alt: "Layout wireframes for a book design" },
   coverTablet: { src: SC("laptop"), alt: "Typing on a laptop" },
   coverFlatlay: { src: SC("handwrite"), alt: "Writing by hand with a pen" },
-  ghostwriterWord: { src: SC("ghostword"), alt: "A pen, glasses and manuscript spelling ghostwriter" },
+  ghostwriterWord: { src: SC("redpen"), alt: "A manuscript being refined with a red pen" },
 };
 
 export type CarouselItem = { src: string; alt: string; flat?: boolean };

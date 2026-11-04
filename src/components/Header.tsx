@@ -9,6 +9,16 @@ import { useQuotePopup } from "./PopupProvider";
 
 const btn = "whitespace-nowrap rounded-md px-4 py-2.5 text-[13px] font-bold tracking-wide uppercase transition";
 
+const BLURB: Record<string, string> = {
+  "ghostwriting-services": "A writer shapes your ideas into a book",
+  "ebook-writing": "Digital books ready for every store",
+  "book-cover-design": "Covers that stop readers mid-scroll",
+  "book-publishing-services": "Print and digital, worldwide",
+  "audiobook-publishing-services": "Narration, editing and distribution",
+  "book-editing-services": "Polish every chapter and sentence",
+  "book-marketing-services": "Reach readers and grow your brand",
+};
+
 export function Header() {
   const path = usePathname();
   const { openQuote } = useQuotePopup();
@@ -49,7 +59,7 @@ export function Header() {
                   <button
                     type="button"
                     aria-expanded={sub}
-                    onClick={() => setSub((v) => !v)}
+                    onClick={() => setSub(true)}
                     onMouseEnter={() => setSub(true)}
                     className={`flex items-center gap-1.5 py-3 transition hover:text-teal ${active(item.href) ? "text-teal" : ""}`}
                   >
@@ -59,21 +69,34 @@ export function Header() {
                     </svg>
                   </button>
                   {sub && (
-                    <div className="absolute top-full -left-8 pt-2">
-                      <ul className="grid w-[640px] grid-cols-3 gap-x-4 gap-y-5 rounded-[2rem] bg-white p-8 text-ink shadow-2xl">
-                        {SERVICES.map((s) => (
-                          <li key={s.slug}>
-                            <Link
-                              href={`/${s.slug}`}
-                              onClick={() => setSub(false)}
-                              className="flex items-center gap-3 text-[15px] transition hover:text-teal-dark"
-                            >
-                              <Image src={`/images/menu-icons/${s.icon}.webp`} alt="" width={24} height={24} className="size-6" />
-                              {s.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3">
+                      <div className="relative w-[760px] overflow-hidden rounded-3xl bg-white p-5 text-ink shadow-[0_30px_70px_-15px_rgba(0,24,42,0.5)] ring-1 ring-slate-100">
+                        <span aria-hidden className="absolute inset-x-8 top-0 h-1 rounded-b-full bg-gradient-to-r from-teal via-amber to-teal" />
+                        <p className="px-3 pt-2 pb-3 text-xs font-bold tracking-[0.14em] text-teal-dark uppercase">Our services</p>
+                        <ul className="grid grid-cols-2 gap-1.5">
+                          {SERVICES.map((s) => (
+                            <li key={s.slug}>
+                              <Link
+                                href={`/${s.slug}`}
+                                onClick={() => setSub(false)}
+                                className="group/item flex items-center gap-4 rounded-2xl p-3 transition hover:bg-mist"
+                              >
+                                <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-navy to-[#00506b] shadow-md transition group-hover/item:from-teal group-hover/item:to-navy">
+                                  <Image src={`/images/menu-icons/${s.icon}.webp`} alt="" width={24} height={24} className="size-6" />
+                                </span>
+                                <span className="min-w-0">
+                                  <span className="block text-[15px] font-semibold text-navy">{s.label}</span>
+                                  <span className="block text-sm leading-snug text-slate-500">{BLURB[s.slug]}</span>
+                                </span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="mt-3 flex items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-navy to-[#00506b] px-5 py-4 text-white">
+                          <p className="text-sm"><strong className="font-semibold">Not sure where to start?</strong> Get a free consultation.</p>
+                          <button type="button" onClick={() => { setSub(false); openQuote(); }} className="shrink-0 rounded-lg bg-amber px-4 py-2 text-xs font-bold tracking-wide whitespace-nowrap text-navy uppercase transition hover:bg-amber-dark">Get a quote</button>
+                        </div>
+                      </div>
                     </div>
                   )}
                 </li>
