@@ -23,7 +23,7 @@
   {
    "title": "What Makes an eBook Worth Reading?",
    "layout": "split",
-   "pic": "kindleScreen",
+   "pic": "ebReading",
    "blocks": [
     {
      "k": "p",
@@ -49,7 +49,7 @@
   {
    "title": "Kindle eBook Writing Services",
    "layout": "split",
-   "pic": "ebookDesk",
+   "pic": "ebKindle",
    "blocks": [
     {
      "k": "p",
@@ -151,7 +151,8 @@
       "Business"
      ]
     }
-   ]
+   ],
+   "pic": "ebGenres"
   },
   {
    "title": "Ready to Publish Your eBook?",
@@ -269,7 +270,8 @@
       "Final manuscript review to ensure publishing-ready quality"
      ]
     }
-   ]
+   ],
+   "pic": "ebookHand"
   }
  ],
  "faqTitle": "Everything You Need to Know",

@@ -10,7 +10,7 @@
   {
    "title": "Make Every Word Count with Professional Book Editing",
    "layout": "split",
-   "pic": "redPen",
+   "pic": "edRedpen",
    "blocks": [
     {
      "k": "p",
@@ -85,7 +85,7 @@
   {
    "title": "Ready to take your manuscript to the next level?",
    "layout": "split",
-   "pic": "oldBooks",
+   "pic": "edNext",
    "blocks": [
     {
      "k": "p",
@@ -96,7 +96,7 @@
   {
    "title": "Give Your Book a Stronger Structure and Direction",
    "layout": "split",
-   "pic": "writer",
+   "pic": "edDev",
    "blocks": [
     {
      "k": "p",
@@ -130,7 +130,7 @@
   {
    "title": "Keep readers engaged from the first page to the last.",
    "layout": "split",
-   "pic": "ereader",
+   "pic": "edLine",
    "blocks": [
     {
      "k": "p",
@@ -165,7 +165,7 @@
   {
    "title": "Make your manuscript clear, consistent, and publication-ready.",
    "layout": "split",
-   "pic": "ebookDevices",
+   "pic": "edCopy",
    "blocks": [
     {
      "k": "p",
@@ -201,7 +201,7 @@
   {
    "title": "Give your manuscript a flawless final review.",
    "layout": "split",
-   "pic": "glasses",
+   "pic": "edProof",
    "blocks": [
     {
      "k": "p",
@@ -236,7 +236,7 @@
   {
    "title": "Prepare Your eBook for a Professional Launch.",
    "layout": "split",
-   "pic": "kindleScreen",
+   "pic": "ebookHand",
    "blocks": [
     {
      "k": "p",
@@ -285,7 +285,7 @@
   {
    "title": "Bringing Out the Best in Every Genre",
    "layout": "split",
-   "pic": "bookstore",
+   "pic": "edGenres",
    "blocks": [
     {
      "k": "p",

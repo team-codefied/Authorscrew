@@ -9,7 +9,7 @@
   {
    "title": "Reach More Listeners With Your Audiobook",
    "layout": "split",
-   "pic": "ebookDevices",
+   "pic": "auReach",
    "blocks": [
     {
      "k": "p",
@@ -25,7 +25,7 @@
   {
    "title": "Create an Audiobook Your Listeners Will Enjoy",
    "layout": "split",
-   "pic": "audioStudio",
+   "pic": "auProduce",
    "blocks": [
     {
      "k": "p",
@@ -59,7 +59,7 @@
   {
    "title": "Professional Audiobook Narration Services",
    "layout": "split",
-   "pic": "ebookDesk",
+   "pic": "auNarrator",
    "blocks": [
     {
      "k": "p",
@@ -99,7 +99,7 @@
      "text": "Give Your Characters a Voice"
     }
    ],
-   "pic": "audioPlatforms"
+   "pic": "auGenres"
   },
   {
    "title": "Voice Actors for Audiobooks",
@@ -117,12 +117,12 @@
      "text": "Authentic Voices for Every Story"
     }
    ],
-   "pic": "audioProduction"
+   "pic": "auVoices"
   },
   {
    "title": "AI-Powered Audiobook Narration",
    "layout": "split",
-   "pic": "audioDistribution",
+   "pic": "auAi",
    "blocks": [
     {
      "k": "p",
@@ -146,7 +146,7 @@
   {
    "title": "Professional Audiobook Editing Services",
    "layout": "split",
-   "pic": "redPen",
+   "pic": "auEdit",
    "blocks": [
     {
      "k": "p",
@@ -184,7 +184,7 @@
      "text": "Simple Steps to Audiobook Success"
     }
    ],
-   "pic": "distribution"
+   "pic": "auDist"
   },
   {
    "title": "Our Audiobook Creation Process",

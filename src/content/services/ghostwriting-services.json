@@ -9,7 +9,7 @@
   {
    "title": "Publish Your Book Without Writing a Single Word",
    "layout": "split",
-   "pic": "writer",
+   "pic": "gwConversation",
    "blocks": [
     {
      "k": "p",
@@ -37,7 +37,7 @@
   {
    "title": "A Better Way to Bring Your Book to Life",
    "layout": "split",
-   "pic": "ghostwriter",
+   "pic": "gwProcess",
    "blocks": [
     {
      "k": "p",
@@ -135,7 +135,7 @@
      ]
     }
    ],
-   "pic": "books3"
+   "pic": "gwGenres"
   },
   {
    "title": "Where Your Book Takes Shape",
@@ -170,7 +170,7 @@
   {
    "title": "Writing Support for Every Author's Journey",
    "layout": "split",
-   "pic": "publishers",
+   "pic": "gwAuthors",
    "blocks": [
     {
      "k": "p",
@@ -200,7 +200,7 @@
   {
    "title": "Everything Your Book Needs, All in One Place",
    "layout": "split",
-   "pic": "stack",
+   "pic": "gwServices",
    "blocks": [
     {
      "k": "p",

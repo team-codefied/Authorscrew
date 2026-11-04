@@ -28,7 +28,7 @@
   {
    "title": "Complete Book Publishing Services Under One Roof",
    "layout": "split",
-   "pic": "shelf",
+   "pic": "pbOneroof",
    "blocks": [
     {
      "k": "p",
@@ -98,7 +98,7 @@
      "to": "/contact-us"
     }
    ],
-   "pic": "rowAdventure"
+   "pic": "pbPrint"
   },
   {
    "title": "Where Great Stories Meet Global Readers",
@@ -131,7 +131,7 @@
   {
    "title": "Audiobook Publishing Services",
    "layout": "split",
-   "pic": "audioPhone",
+   "pic": "pbAudio",
    "blocks": [
     {
      "k": "p",

@@ -51,7 +51,7 @@ export const LANDING_PAGES = {
     banner: "/images/services/banner-cover-design.webp",
     theme: "cover",
     heroVisual: IMG.coverSet,
-    pics: [IMG.coverStack, IMG.coverMock, IMG.coverGrid, IMG.coverTablet],
+    pics: [IMG.coverStack, IMG.coverMock, IMG.kdpGuide, IMG.ebookCoverDevices],
     covers: { after: "visual language", set: "default" },
   },
   "book-publishing-services-lp1": {
@@ -60,8 +60,8 @@ export const LANDING_PAGES = {
     description: "You wrote the book. Let Authors Crew help you publish it in print and digital editions.",
     banner: "/images/main-banner.webp",
     theme: "classic",
-    heroVisual: IMG.podium,
-    pics: [IMG.libraryShelf, IMG.stack, IMG.distribution, IMG.openBook],
+    heroVisual: IMG.lpPublish,
+    pics: [IMG.pbOneroof, IMG.pbPrint, IMG.pbGlobal, IMG.pbAudio],
     covers: { after: "From Manuscript to Publish", set: "default" },
   },
   "book-publishing-services-lp2": {
@@ -70,8 +70,8 @@ export const LANDING_PAGES = {
     description: "Professional book publishing support for new and experienced authors, across fiction, nonfiction, memoirs and more.",
     banner: "/images/services/banner-publishing.webp",
     theme: "light",
-    heroVisual: IMG.publishers,
-    pics: [IMG.devices, IMG.books3, IMG.distribution, IMG.shelf],
+    heroVisual: IMG.pbHero2,
+    pics: [IMG.devices, IMG.gwServices, IMG.pbGlobal, IMG.edNext],
     covers: { after: "Every Detail Matters", set: "default" },
   },
   "childrens-book-publishing-illustration-lp": {
@@ -81,7 +81,7 @@ export const LANDING_PAGES = {
     banner: "/images/services/banner-ghost-writing.webp",
     theme: "playful",
     heroVisual: IMG.kidsTable,
-    pics: [IMG.kidsStories, IMG.kidsShelf, IMG.kidsSteps, IMG.ebookDesk],
+    pics: [IMG.kidsStories, IMG.kidsShelf, IMG.kidsSteps, IMG.lpKids],
     covers: { after: "Stories We Transform", set: "kids" },
   },
   "christian-book-publishing-lp": {
@@ -90,8 +90,8 @@ export const LANDING_PAGES = {
     description: "Editorial, design and publishing support for devotionals, testimonies, Christian memoirs and faith-centered books.",
     banner: "/images/services/banner-editing.webp",
     theme: "faith",
-    heroVisual: IMG.christianTrio,
-    pics: [IMG.christianBible, IMG.openBook, IMG.miracleLife, IMG.ebookDesk],
+    heroVisual: IMG.lpFaith,
+    pics: [IMG.edNext, IMG.coverWrap, IMG.pbPrint, IMG.lpWeb],
     covers: { after: "Christian Books We Help", set: "faith" },
   },
 } satisfies Record<string, LandingMeta>;

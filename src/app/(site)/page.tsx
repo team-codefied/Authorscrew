@@ -118,7 +118,7 @@ export default function Home() {
             <Eyebrow>Free consultation</Eyebrow>
             <h2 className="font-serif text-3xl leading-tight font-medium text-navy sm:text-5xl">{c.consultation.title}</h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">{c.consultation.text}</p>
-            <FramedImage src={IMG.podium.src} alt={IMG.podium.alt} width={768} height={512} accent="amber" className="mt-10 hidden max-w-lg lg:block" />
+            <FramedImage src={IMG.lpPublish.src} alt={IMG.lpPublish.alt} width={768} height={512} accent="amber" className="mt-10 hidden max-w-lg lg:block" />
           </div>
           <div className="reveal rounded-[1.75rem] bg-white p-6 shadow-[var(--shadow-lift)] ring-1 ring-slate-100 sm:p-8">
             <LeadForm variant="journey" submitLabel={c.consultation.button} />
@@ -145,7 +145,7 @@ export default function Home() {
       {/* 5. Who we help */}
       <section className="bg-mist relative py-20 sm:py-24">
         <Container className="grid items-center gap-14 lg:grid-cols-2">
-          <FramedImage src={IMG.stackBig.src} alt={IMG.stackBig.alt} width={1024} height={1024} accent="teal" className="reveal mx-auto w-full max-w-lg" sizes="(min-width:1024px) 480px, 90vw" />
+          <FramedImage src={IMG.gwAuthors.src} alt={IMG.gwAuthors.alt} width={1024} height={1024} accent="teal" className="reveal mx-auto w-full max-w-lg" sizes="(min-width:1024px) 480px, 90vw" />
           <div className="reveal">
             <SectionHeading title={c.whoWeHelp.title} center={false} eyebrow="Who we help" />
             <ul className="grid gap-3 sm:grid-cols-1">
@@ -169,7 +169,7 @@ export default function Home() {
           </div>
           <div className="reveal relative mx-auto w-full max-w-xl">
             <div aria-hidden className="absolute inset-6 rounded-full bg-teal/30 blur-3xl" />
-            <Image src={IMG.distribution.src} alt={IMG.distribution.alt} width={768} height={512} sizes="(min-width:1024px) 540px, 90vw" className="relative h-auto w-full rounded-3xl shadow-2xl ring-1 ring-white/20" />
+            <Image src={IMG.pbGlobal.src} alt={IMG.pbGlobal.alt} width={768} height={512} sizes="(min-width:1024px) 540px, 90vw" className="relative h-auto w-full rounded-3xl shadow-2xl ring-1 ring-white/20" />
           </div>
         </Container>
         <Wave fill="#ffffff" />
@@ -204,7 +204,7 @@ export default function Home() {
         <Container className="grid items-center gap-14 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="reveal relative mx-auto max-w-sm">
             <div aria-hidden className="absolute inset-0 -z-10 translate-x-4 translate-y-4 rounded-[2rem] bg-amber/25" />
-            <Image src={IMG.globalAuthors.src} alt={IMG.globalAuthors.alt} width={1024} height={1024} sizes="(min-width:1024px) 400px, 80vw" className="h-auto w-full rounded-[2rem] bg-white object-contain p-4 shadow-[var(--shadow-lift)]" />
+            <Image src={IMG.pbOneroof.src} alt={IMG.pbOneroof.alt} width={1024} height={1024} sizes="(min-width:1024px) 400px, 80vw" className="h-auto w-full rounded-[2rem] bg-white object-contain p-4 shadow-[var(--shadow-lift)]" />
           </div>
           <div>
             <SectionHeading title={c.why.title} center={false} eyebrow="Our promise" />
@@ -295,7 +295,7 @@ export default function Home() {
             <FramedImage src="/images/scenes/marketing-hero-v2.webp" alt="A marketing dashboard with a megaphone, rising chart, email and five-star rating" width={1200} height={800} accent="amber" className="reveal mx-auto w-full max-w-xl" sizes="(min-width:1024px) 540px, 90vw" />
           </div>
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <FramedImage src={IMG.ghostwriter.src} alt={IMG.ghostwriter.alt} width={600} height={400} accent="amber" className="reveal order-2 mx-auto w-full max-w-xl lg:order-1" />
+            <FramedImage src={IMG.gwConversation.src} alt={IMG.gwConversation.alt} width={600} height={400} accent="amber" className="reveal order-2 mx-auto w-full max-w-xl lg:order-1" />
             <div className="reveal order-1 lg:order-2">
               <SectionHeading title={c.ghost.title} intro={c.ghost.text} center={false} eyebrow="Ghostwriting" />
               <LinkButton href="/ghostwriting-services">{c.ghost.button}</LinkButton>

@@ -35,7 +35,7 @@ export default function OurServices() {
         crumbs={[{ label: "Home", href: "/" }, { label: "Our Services" }]}
         eyebrow="360° author services"
         intro="From ghostwriting to global distribution, one expert crew handles every step."
-        visual={IMG.podium}
+        visual={IMG.lpPublish}
       >
         <div className="mt-8 flex flex-wrap gap-4">
           <QuoteButton className={buttonClass("amber")}>Get A Quote</QuoteButton>
