@@ -271,7 +271,7 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
   const isLabel = (b: Block) => b.k === "p" && b.text.split(" ").length <= 6 && !/[.!?:]$/.test(b.text);
   const heroSub = first && first.title && first.blocks.every(isLabel) ? first.title : "";
   const sections = heroSub ? rest : content.sections;
-  const stripAt = Math.max(1, sections.findIndex((s) => /genres we cater|featured|genre gallery|match your genre/i.test(s.title)));
+  const stripAt = Math.max(1, sections.findIndex((s) => /genres we cater|featured|genre gallery/i.test(s.title)));
 
   const jsonLd = {
     "@context": "https://schema.org",
