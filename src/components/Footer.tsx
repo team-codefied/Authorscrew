@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { LeadForm } from "./LeadForm";
-import { Wave } from "./Decor";
 import { NAV, SERVICES, SITE } from "@/lib/site";
 
 const quick = [...NAV.filter((n) => n.label !== "Our Services"), { label: "Services", href: "/our-services" }].sort(
@@ -60,7 +59,6 @@ export function Footer({ landing = false }: { landing?: boolean }) {
       </section>
 
       <div className="bg-hero relative overflow-hidden pt-36 text-white">
-        <Wave fill="#ffffff" className="!top-0 !bottom-auto" />
         <div aria-hidden className="bg-dots absolute inset-0 -z-10 opacity-40 [mask-image:radial-gradient(ellipse_at_20%_30%,black,transparent_70%)]" />
         <div aria-hidden className="absolute -right-24 bottom-10 -z-10 size-[26rem] rounded-full border border-white/10" />
         <div aria-hidden className="absolute -right-8 bottom-24 -z-10 size-[16rem] rounded-full border border-teal/25" />
