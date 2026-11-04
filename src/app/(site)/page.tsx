@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { BlogCard } from "@/components/BlogCard";
 import { CoverCarousel } from "@/components/CoverCarousel";
-import { Eyebrow, FormCard, FramedImage, Wave } from "@/components/Decor";
+import { BookFan, Eyebrow, FormCard, FramedImage, Wave } from "@/components/Decor";
 import { LeadForm } from "@/components/LeadForm";
 import { QuoteButton } from "@/components/PopupProvider";
 import { Container, LinkButton, SectionHeading, buttonClass } from "@/components/ui";
 import * as c from "@/content/home";
 import { getPost } from "@/lib/blog";
-import { IMG, PROCESS_ICONS } from "@/lib/img";
+import { COVERS, IMG, PROCESS_ICONS } from "@/lib/img";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -70,11 +70,7 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <div className="relative mt-12 hidden max-w-xl sm:block lg:mt-14">
-              <Image src={IMG.team.src} alt={IMG.team.alt} width={1200} height={800} sizes="(min-width:1024px) 520px, 90vw" priority className="relative h-56 w-full rounded-3xl object-cover object-top shadow-2xl ring-4 ring-white/15" />
-              <span aria-hidden className="bg-dots absolute -right-4 -bottom-5 -z-10 size-24 opacity-60" />
-              <p className="absolute bottom-4 left-4 rounded-full bg-white px-4 py-2 text-sm font-bold text-navy shadow-xl"><span aria-hidden className="mr-2 inline-block size-2.5 rounded-full bg-amber" />A team behind every book</p>
-            </div>
+            <BookFan covers={[COVERS.thirdMom, COVERS.boxing, COVERS.bookOfAdam, COVERS.lastFarewell]} size="xl" className="mt-12 hidden pl-4 sm:flex lg:mt-14 lg:justify-start" />
           </div>
 
           <div className="relative">
