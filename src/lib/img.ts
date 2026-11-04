@@ -20,6 +20,9 @@ export const COVERS = {
 };
 
 export const IMG = {
+  kdpGuide: { src: SC("kdp-guide-v1"), alt: "A book cover with trim size and bleed guides for Amazon KDP" },
+  ebookCoverDevices: { src: SC("ebook-cover-devices-v1"), alt: "An eBook cover shown on a tablet and a phone" },
+  coverWrap: { src: SC("cover-wrap-v1"), alt: "A full paperback cover wrap with back, spine and front" },
   team: { src: SC("team"), alt: "The Authors Crew team" },
   ghostwriter: { src: SC("redpen"), alt: "A manuscript being refined with a red pen" },
   writer: { src: SC("woman"), alt: "A writer working on a laptop beside an open book" },

@@ -92,7 +92,8 @@
      "label": "Get Your Amazon KDP Cover",
      "to": "/contact-us"
     }
-   ]
+   ],
+   "pic": "kdpGuide"
   },
   {
    "title": "Custom eBook Cover Design Service",
@@ -125,7 +126,8 @@
      "k": "p",
      "text": "Get Print-Ready Book Covers"
     }
-   ]
+   ],
+   "pic": "ebookCoverDevices"
   },
   {
    "title": "Paperback & Hardcover Book Cover Design",
@@ -150,7 +152,8 @@
      "label": "Hire Book Cover Designer Now",
      "to": "tel"
     }
-   ]
+   ],
+   "pic": "coverWrap"
   },
   {
    "title": "Our Book Cover Design Process",
