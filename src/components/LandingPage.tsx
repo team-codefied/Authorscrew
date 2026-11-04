@@ -1,14 +1,14 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import { BookFan, Eyebrow, FormCard, FramedImage, Wave } from "./Decor";
+import { CoverCarousel } from "./CoverCarousel";
+import { Eyebrow, FormCard, FramedImage, Wave } from "./Decor";
 import { LeadForm } from "./LeadForm";
 import { QuoteButton } from "./PopupProvider";
-import { CoverStrip, Section } from "./ServicePage";
+import { Section } from "./ServicePage";
 import { Faq, Reviews } from "./sections";
 import { Container, LinkButton, buttonClass } from "./ui";
 import { platforms } from "@/content/home";
 import { LANDING_PAGES, type LandingSlug, type LandingTheme } from "@/lib/landing";
-import { COVERS } from "@/lib/img";
 import { SITE } from "@/lib/site";
 
 export function landingMetadata(slug: LandingSlug): Metadata {
@@ -100,12 +100,8 @@ export function LandingPage({ slug }: { slug: LandingSlug }) {
               )}
             </div>
 
-            {meta.heroCovers.length > 0 ? (
-              <BookFan covers={meta.heroCovers} size="lg" className="mt-12 hidden pl-4 sm:flex lg:justify-start" />
-            ) : (
-              meta.heroVisual && (
-                <FramedImage src={meta.heroVisual.src} alt={meta.heroVisual.alt} width={768} height={512} accent="teal" className="mt-12 hidden max-w-md sm:block" sizes="420px" />
-              )
+            {meta.heroVisual && (
+              <FramedImage src={meta.heroVisual.src} alt={meta.heroVisual.alt} width={768} height={512} accent="teal" className="mt-12 hidden max-w-md sm:block" sizes="420px" />
             )}
           </div>
 
@@ -158,31 +154,11 @@ export function LandingPage({ slug }: { slug: LandingSlug }) {
             </section>
           );
         }
-        const galleryHere = meta.gallery && s.title.toLowerCase().includes(meta.gallery.after.toLowerCase());
+        const coversHere = s.title.toLowerCase().includes(meta.covers.after.toLowerCase());
         return (
           <div key={`${s.title}-${i}`}>
             <Section s={s} i={i} pic={pic} reverse={picIndex % 2 === 0} />
-            {galleryHere && meta.gallery && (
-              <section className="bg-mist py-14" aria-label={meta.gallery.label}>
-                <Container>
-                  <ul className="flex flex-wrap justify-center gap-4">
-                    {meta.gallery.images.map((src, n) => (
-                      <li key={src} className={`reveal ${meta.gallery.images.length > 6 ? "w-[46%] sm:w-[23%] lg:w-[15%]" : "w-[46%] sm:w-[30%] lg:w-[18%]"}`}>
-                        <Image
-                          src={src}
-                          alt=""
-                          width={300}
-                          height={450}
-                          sizes="(min-width:1024px) 180px, 45vw"
-                          className={`aspect-[2/3] w-full rounded-xl object-cover shadow-[var(--shadow-book)] transition duration-300 hover:-translate-y-2 ${n % 2 ? "sm:translate-y-4" : ""}`}
-                        />
-                      </li>
-                    ))}
-                  </ul>
-                </Container>
-              </section>
-            )}
-            {i === 2 && <CoverStrip kind={meta.strip} />}
+            {coversHere && <CoverCarousel set={meta.covers.set} />}
           </div>
         );
       })}
@@ -198,7 +174,6 @@ export function LandingPage({ slug }: { slug: LandingSlug }) {
             <Eyebrow light>Ready when you are</Eyebrow>
             <h2 className="font-serif text-3xl leading-tight font-medium sm:text-5xl">{c.bottomFormTitle}</h2>
             <p className="mt-5 max-w-lg text-lg text-white/85">Share a few details and get a clear plan and quote for your book.</p>
-            <BookFan covers={[COVERS.bookOfAdam, COVERS.boxing, COVERS.lastFarewell]} size="sm" className="mt-10 hidden justify-start sm:flex" />
             <QuoteButton className="mt-8 rounded-2xl bg-amber px-6 py-4 text-sm font-bold tracking-wide text-navy uppercase hover:bg-amber-dark">
               New Author Special: Get 70% Off
             </QuoteButton>

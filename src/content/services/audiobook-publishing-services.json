@@ -9,7 +9,7 @@
   {
    "title": "Reach More Listeners With Your Audiobook",
    "layout": "split",
-   "pic": "audioBooks",
+   "pic": "ebookDevices",
    "blocks": [
     {
      "k": "p",
@@ -59,7 +59,7 @@
   {
    "title": "Professional Audiobook Narration Services",
    "layout": "split",
-   "pic": "audioPhone",
+   "pic": "ebookDesk",
    "blocks": [
     {
      "k": "p",
@@ -146,7 +146,7 @@
   {
    "title": "Professional Audiobook Editing Services",
    "layout": "split",
-   "pic": "audioStudio",
+   "pic": "redPen",
    "blocks": [
     {
      "k": "p",
@@ -184,7 +184,7 @@
      "text": "Simple Steps to Audiobook Success"
     }
    ],
-   "pic": "audioPhone"
+   "pic": "distribution"
   },
   {
    "title": "Our Audiobook Creation Process",

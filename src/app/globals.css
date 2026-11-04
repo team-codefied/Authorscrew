@@ -79,3 +79,6 @@ body { color: var(--color-ink); background: #fff; font-family: var(--font-sans);
 @media (prefers-reduced-motion: reduce) {
   .animate-float, .animate-float-slow, .marquee-track { animation: none !important; }
 }
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }

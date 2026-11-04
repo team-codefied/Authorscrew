@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BookFan, Eyebrow, FormCard, FramedImage, Wave } from "./Decor";
+import { Eyebrow, FormCard, FramedImage, Wave } from "./Decor";
 import { LeadForm } from "./LeadForm";
 import { QuoteButton } from "./PopupProvider";
 import { Reviews } from "./sections";
 import { Container, LinkButton, buttonClass } from "./ui";
 import { platforms } from "@/content/home";
-import { COVERS, GALLERY, IMG } from "@/lib/img";
+import { CoverCarousel } from "./CoverCarousel";
+import { IMG } from "@/lib/img";
 import type { Block, Pic, ServiceMeta, ServiceSection } from "@/lib/services";
 import { SITE } from "@/lib/site";
 
@@ -173,24 +174,6 @@ export function Blocks({ blocks, center, light = false }: { blocks: Block[]; cen
   );
 }
 
-/** Mid-page strip of covers that gives long pages visual rhythm. */
-export function CoverStrip({ kind }: { kind: "published" | "small" | "cutouts" }) {
-  const list = kind === "small" ? GALLERY.smallCovers : kind === "cutouts" ? GALLERY.cutouts : GALLERY.published;
-  const doubled = [...list, ...list];
-  return (
-    <div className="marquee relative overflow-hidden bg-navy py-10" aria-label="Books published with Authors Crew">
-      <div aria-hidden className="bg-dots absolute inset-0 opacity-40" />
-      <ul className="marquee-track relative gap-6">
-        {doubled.map((src, i) => (
-          <li key={i} className="shrink-0 pr-6" aria-hidden={i >= list.length}>
-            <Image src={src} alt="" width={200} height={300} sizes="160px" className={kind === "published" ? "h-52 w-36 rounded-md object-cover shadow-[var(--shadow-book)]" : "book-tilt h-52 w-auto"} />
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
 type Kind = "band" | "cards" | "split" | "center";
 
 function kindOf(s: ServiceSection): Kind {
@@ -346,7 +329,7 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
         return (
           <div key={`${s.title}-${i}`}>
             <Section s={s} i={i} pic={pic} reverse={picIndex % 2 === 0} />
-            {i === stripAt && meta.strip !== "none" && <CoverStrip kind={meta.strip} />}
+            {i === stripAt && <CoverCarousel />}
           </div>
         );
       })}
@@ -362,7 +345,6 @@ export function ServicePage({ meta }: { meta: ServiceMeta }) {
               <Eyebrow light>Let&apos;s talk</Eyebrow>
               <h2 className="font-serif text-3xl leading-tight font-medium sm:text-5xl">{content.contact.title}</h2>
               {content.contact.text && <p className="mt-5 max-w-lg text-lg text-white/85">{content.contact.text}</p>}
-              <BookFan covers={[COVERS.bookOfAdam, COVERS.boxing, COVERS.lastFarewell]} size="sm" className="mt-10 hidden justify-start sm:flex" />
             </div>
             <div className="reveal rounded-[1.75rem] bg-white p-6 text-ink shadow-2xl sm:p-8">
               <LeadForm variant="contact" submitLabel="Submit Now" />

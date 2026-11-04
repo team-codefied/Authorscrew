@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BlogCard } from "@/components/BlogCard";
-import { BookFan, Eyebrow, FloatingBook, FormCard, FramedImage, Wave } from "@/components/Decor";
+import { CoverCarousel } from "@/components/CoverCarousel";
+import { Eyebrow, FormCard, FramedImage, Wave } from "@/components/Decor";
 import { LeadForm } from "@/components/LeadForm";
 import { QuoteButton } from "@/components/PopupProvider";
 import { Container, LinkButton, SectionHeading, buttonClass } from "@/components/ui";
 import * as c from "@/content/home";
 import { getPost } from "@/lib/blog";
-import { COVERS, GALLERY, IMG, PROCESS_ICONS } from "@/lib/img";
+import { IMG, PROCESS_ICONS } from "@/lib/img";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -25,8 +26,6 @@ const check = (
   </svg>
 );
 
-const heroCovers = [COVERS.thirdMom, COVERS.worldCouldBe, COVERS.bookOfAdam, COVERS.boxing, COVERS.lastFarewell];
-const genreCovers = [COVERS.portuguese, COVERS.worldCouldBe, COVERS.spirit, COVERS.mittLiv, COVERS.boxing, COVERS.thirdMom];
 const processIcons = Object.values(PROCESS_ICONS);
 
 export default function Home() {
@@ -71,7 +70,11 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <BookFan covers={heroCovers} className="mt-12 hidden pl-4 sm:flex lg:mt-14 lg:justify-start" size="lg" />
+            <div className="relative mt-12 hidden max-w-xl sm:block lg:mt-14">
+              <Image src={IMG.team.src} alt={IMG.team.alt} width={1200} height={800} sizes="(min-width:1024px) 520px, 90vw" priority className="relative h-56 w-full rounded-3xl object-cover object-top shadow-2xl ring-4 ring-white/15" />
+              <span aria-hidden className="bg-dots absolute -right-4 -bottom-5 -z-10 size-24 opacity-60" />
+              <p className="absolute bottom-4 left-4 rounded-full bg-white px-4 py-2 text-sm font-bold text-navy shadow-xl"><span aria-hidden className="mr-2 inline-block size-2.5 rounded-full bg-amber" />A team behind every book</p>
+            </div>
           </div>
 
           <div className="relative">
@@ -249,12 +252,12 @@ export default function Home() {
         <Container>
           <SectionHeading title={c.authors.title} intro={c.authors.text} eyebrow="Author stories" />
           <ul className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
-            {[COVERS.spirit, COVERS.legends].map((cover, i) => {
+            {[0, 1].map((i) => {
               const a = c.authors.cards[i === 0 ? 0 : 1];
               return (
                 <li key={a.name} className="reveal relative flex items-center gap-6 overflow-hidden rounded-3xl bg-white p-6 shadow-[var(--shadow-card)] sm:p-8">
                   <div aria-hidden className="absolute -right-12 -bottom-12 size-48 rounded-full bg-teal/10" />
-                  <Image src={cover.src} alt={cover.alt} width={300} height={450} sizes="150px" className="book-tilt-soft relative h-auto w-28 shrink-0 sm:w-36" style={{ ["--r" as string]: i ? "4deg" : "-4deg" }} />
+                  <span aria-hidden className="relative grid size-24 shrink-0 place-items-center rounded-full bg-gradient-to-br from-navy to-teal font-serif text-4xl font-semibold text-white shadow-lg ring-4 ring-amber/40 sm:size-28">{a.name.split(" ").map((w) => w[0]).slice(0, 2).join("")}</span>
                   <div className="relative">
                     <h3 className="font-serif text-2xl text-navy">{a.name}</h3>
                     <p className="mt-2 text-slate-600">{a.blurb}</p>
@@ -278,7 +281,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-navy">{g.h}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-slate-600">{g.t}</p>
                 </div>
-                <Image src={genreCovers[i].src} alt="" width={300} height={450} sizes="90px" className="book-tilt-soft h-auto w-20 shrink-0 transition duration-300 group-hover:-translate-y-2 group-hover:rotate-3" style={{ ["--r" as string]: "-4deg" }} />
+                <span aria-hidden className="grid size-16 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-teal/15 to-amber/25 text-teal-dark transition duration-300 group-hover:-translate-y-1 group-hover:rotate-3"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/><path d="M9 8h6"/></svg></span>
               </li>
             ))}
           </ul>
@@ -315,24 +318,10 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* 14. Published books */}
-      <section className="relative overflow-hidden py-20 sm:py-24">
-        <Container>
-          <SectionHeading title={c.published.title} intro={c.published.text} eyebrow="Our books" />
-        </Container>
-        <div className="marquee overflow-hidden py-6">
-          <ul className="marquee-track gap-6">
-            {[...GALLERY.published, ...GALLERY.published].map((src, i) => (
-              <li key={i} className="shrink-0 pr-6" aria-hidden={i >= GALLERY.published.length}>
-                <a href={c.published.href} target="_blank" rel="noopener noreferrer" tabIndex={i >= GALLERY.published.length ? -1 : 0} aria-label="Browse Authors Crew books on Amazon">
-                  <Image src={src} alt="" width={200} height={300} sizes="200px" className="h-72 w-48 rounded-lg object-cover shadow-[var(--shadow-book)] transition duration-300 hover:-translate-y-3 hover:rotate-1" />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="mt-8 text-center"><QuoteButton className={buttonClass("amber")}>{c.published.button}</QuoteButton></div>
-      </section>
+      {/* 14. Published books: the one cover section on this page */}
+      <CoverCarousel>
+        <QuoteButton className={buttonClass("amber")}>{c.published.button}</QuoteButton>
+      </CoverCarousel>
 
       {/* 15. Reviews */}
       <section className="bg-hero relative isolate overflow-hidden py-24 text-white">
@@ -404,13 +393,11 @@ export default function Home() {
       <section id="contact" className="bg-hero relative isolate overflow-hidden py-24 text-white">
         <div aria-hidden className="bg-dots absolute inset-0 -z-10 opacity-50" />
         <Wave fill="#ffffff" flip />
-        <FloatingBook cover={COVERS.worldCouldBe} className="top-24 left-[3%] hidden opacity-90 2xl:block" rotate={-10} width={120} slow />
         <Container className="grid items-center gap-12 pt-8 lg:grid-cols-2">
           <div className="reveal">
             <Eyebrow light>Start today</Eyebrow>
             <h2 className="font-serif text-3xl leading-tight font-medium sm:text-5xl">{c.finalCta.title}</h2>
             <p className="mt-5 max-w-lg text-lg text-white/85">{c.finalCta.text}</p>
-            <BookFan covers={[COVERS.worldCouldBe, COVERS.thirdMom, COVERS.portuguese]} className="mt-10 hidden sm:flex lg:justify-start" size="lg" />
           </div>
           <div className="reveal rounded-[1.75rem] bg-white p-6 text-ink shadow-2xl sm:p-8">
             <LeadForm variant="contact" submitLabel={c.finalCta.button} />
