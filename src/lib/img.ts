@@ -71,7 +71,7 @@ export const IMG = {
   coverSet: { src: SC("design-palette"), alt: "A colour palette for a book design" },
   coverStack: { src: SC("design-type"), alt: "Typography samples for a book design" },
   coverMock: { src: SC("design-layout"), alt: "Layout wireframes for a book design" },
-  coverBooks: { src: SC("cover-feature-v1"), alt: "A custom-designed Authors Crew book cover with palette and print specs" },
+  coverBooks: { src: SC("cover-feature-v3"), alt: "A children's book cover design with palette and print specs" },
   coverGrid: { src: SC("meeting"), alt: "A team planning around a table" },
   coverGrid2: { src: SC("openbook"), alt: "A stack of printed pages" },
   coverFlat: { src: SC("design-layout"), alt: "Layout wireframes for a book design" },
