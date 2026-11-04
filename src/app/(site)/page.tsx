@@ -292,17 +292,7 @@ export default function Home() {
               <SectionHeading title={c.marketing.title} intro={c.marketing.text} center={false} eyebrow="Book marketing" />
               <LinkButton href="/book-marketing-services">{c.marketing.button}</LinkButton>
             </div>
-            <div className="reveal relative mx-auto w-full max-w-xl pr-3 pb-14 sm:pr-0">
-              <FramedImage src={IMG.socialMedia.src} alt={IMG.socialMedia.alt} width={768} height={512} accent="amber" sizes="(min-width:1024px) 540px, 90vw" />
-              <Image src={IMG.publicity.src} alt={IMG.publicity.alt} width={400} height={400} sizes="220px" className="absolute -bottom-2 -left-3 size-36 -rotate-3 rounded-2xl bg-white object-cover shadow-2xl ring-4 ring-white sm:-left-8 sm:size-44" />
-              <ul aria-hidden className="absolute right-2 -bottom-1 flex max-w-[60%] flex-wrap justify-end gap-2 sm:right-0">
-                {["Amazon ads", "Press releases", "Author websites"].map((t) => (
-                  <li key={t} className="rounded-full bg-white px-4 py-2 text-xs font-bold text-navy shadow-lg">
-                    <span className="mr-1.5 text-teal">&#9679;</span>{t}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <FramedImage src="/images/scenes/marketing-hero-v2.webp" alt="A marketing dashboard with a megaphone, rising chart, email and five-star rating" width={1200} height={800} accent="amber" className="reveal mx-auto w-full max-w-xl" sizes="(min-width:1024px) 540px, 90vw" />
           </div>
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <FramedImage src={IMG.ghostwriter.src} alt={IMG.ghostwriter.alt} width={600} height={400} accent="amber" className="reveal order-2 mx-auto w-full max-w-xl lg:order-1" />
