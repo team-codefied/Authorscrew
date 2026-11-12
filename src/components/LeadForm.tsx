@@ -105,6 +105,7 @@ export function LeadForm({
       });
       const json = (await res.json()) as { ok: boolean; error?: string };
       if (!json.ok) throw new Error(json.error ?? "Something went wrong.");
+      window.dispatchEvent(new Event("ac:navigate"));
       router.push("/thank-you");
     } catch (e) {
       setStatus("error");

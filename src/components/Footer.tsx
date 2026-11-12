@@ -65,7 +65,7 @@ export function Footer({ landing = false }: { landing?: boolean }) {
 
         <div className="mx-auto grid max-w-[1280px] gap-12 px-4 pb-14 lg:grid-cols-[1.5fr_0.8fr_1fr_1.4fr]">
           <div>
-            <Image src="/images/logo.svg" alt="Authors Crew" width={188} height={64} className="h-16 w-auto" />
+            <Image src="/images/logo.png" alt="Authors Crew" width={500} height={234} className="h-24 w-auto" />
             <p className="mt-5 max-w-sm leading-relaxed text-white/75">
               Authors Crew is a full-service self-publishing company helping authors write, publish and market their books, while keeping 100% of their rights and royalties.
             </p>

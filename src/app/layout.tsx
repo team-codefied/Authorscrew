@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Lora } from "next/font/google";
+import { PageLoader } from "@/components/PageLoader";
 import { PopupProvider } from "@/components/PopupProvider";
 import { SITE } from "@/lib/site";
 import "./globals.css";
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   title: { default: "Authors Crew | Book Publishing, Ghostwriting & Marketing", template: "%s | Authors Crew" },
   description: "Authors Crew helps authors write, edit, design, publish and market their books while keeping 100% of their rights and royalties.",
   openGraph: { siteName: SITE.name, type: "website", images: ["/images/main-banner.webp"] },
-  icons: { icon: "/images/favicon.webp" },
+  icons: { icon: "/images/favicon.png", apple: "/images/apple-icon.png" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${inter.variable} ${lora.variable}`}>
       <body className="antialiased">
         <PopupProvider>{children}</PopupProvider>
+        <PageLoader />
       </body>
     </html>
   );

@@ -33,7 +33,7 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", name: SITE.name, url: SITE.url, logo: `${SITE.url}/images/logo.svg`, telephone: SITE.phone, email: SITE.email },
+      { "@type": "Organization", name: SITE.name, url: SITE.url, logo: `${SITE.url}/images/logo.png`, telephone: SITE.phone, email: SITE.email },
       {
         "@type": "FAQPage",
         mainEntity: c.faq.items.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),

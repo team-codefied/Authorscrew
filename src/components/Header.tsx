@@ -48,7 +48,7 @@ export function Header() {
       </a>
       <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-6 px-4 py-4 lg:px-8">
         <Link href="/" aria-label="Authors Crew home" className="shrink-0">
-          <Image src="/images/logo.svg" alt="Authors Crew" width={188} height={64} priority className="h-14 w-auto" />
+          <Image src="/images/logo.png" alt="Authors Crew" width={500} height={234} priority className="h-16 w-auto sm:h-[4.25rem]" />
         </Link>
 
         <nav aria-label="Main" className="hidden lg:block">
@@ -176,7 +176,7 @@ export function LandingHeader() {
     <header className="sticky top-0 z-40 bg-navy-deep/95 text-white shadow-lg backdrop-blur">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-3 px-4 py-3 lg:px-8">
         <Link href="/" aria-label="Authors Crew home">
-          <Image src="/images/logo.svg" alt="Authors Crew" width={188} height={64} priority className="h-11 w-auto sm:h-12" />
+          <Image src="/images/logo.png" alt="Authors Crew" width={500} height={234} priority className="h-12 w-auto sm:h-14" />
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">
           <button type="button" onClick={openQuote} className={`${btn} hidden bg-teal text-navy hover:bg-teal-dark hover:text-white sm:block`}>
