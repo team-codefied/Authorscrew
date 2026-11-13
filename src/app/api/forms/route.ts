@@ -65,7 +65,7 @@ export async function POST(req: Request) {
   }
 
   // An empty or blank FORM_TO_EMAIL falls back to the mailbox itself.
-  const listed = (process.env.FORM_TO_EMAIL ?? "").split(/[,;s]+/).filter((e) => e.includes("@"));
+  const listed = (process.env.FORM_TO_EMAIL ?? "").split(/[,;\s]+/).filter((e) => e.includes("@"));
   const recipients = listed.length ? listed : [SMTP_USER];
   const port = Number(SMTP_PORT ?? 465);
   const transport = nodemailer.createTransport({
