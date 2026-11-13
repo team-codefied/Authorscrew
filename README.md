@@ -17,7 +17,7 @@ In development with no keys set, form submissions are logged to the terminal and
 | Variable | Purpose |
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin, used for sitemap, metadata and structured data |
-| `SMTP_HOST` / `SMTP_PORT` | Hostinger SMTP server (`smtp.hostinger.com`, `465`) |
+| `SMTP_HOST` / `SMTP_PORT` | Hostinger SMTP server (`smtp.hostinger.com`, `465`); use `smtp.titan.email` if the mailbox is Titan email (check the domain MX records) |
 | `SMTP_USER` / `SMTP_PASS` | The Hostinger mailbox address and its password; mail is sent from this mailbox |
 | `FORM_TO_EMAIL` | Comma-separated recipients for every form (defaults to `SMTP_USER`) |
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Cloudflare Turnstile site key |

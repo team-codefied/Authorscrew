@@ -54,7 +54,8 @@ export async function POST(req: Request) {
     .join("");
   const subject = `New ${data.kind} submission${data.page ? ` - ${data.page}` : ""}`;
 
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
+  // Trim: a pasted value with a trailing space or newline makes the mail login fail.
+  const [SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS] = ["SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS"].map((k) => process.env[k]?.trim());
   if (!SMTP_USER || !SMTP_PASS) {
     if (process.env.NODE_ENV === "production") {
       return NextResponse.json({ ok: false, error: "Email service is not configured." }, { status: 500 });
