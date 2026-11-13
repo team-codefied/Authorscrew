@@ -140,8 +140,7 @@ export function LeadForm({
       {variant !== "newsletter" && (
         <div>
           <label htmlFor={field("name")} className={label}>
-            {variant === "contact" ? "Full Name" : "Name"}
-            {variant === "contact" && " *"}
+            {variant === "contact" ? "Full Name" : "Name"} *
           </label>
           <input {...register("name")} {...a11y("name")} autoComplete="name" placeholder="Your name" className={input} />
           {e("name")}
@@ -150,7 +149,7 @@ export function LeadForm({
 
       <div>
         <label htmlFor={field("email")} className={`${label} ${variant === "newsletter" ? "sr-only" : ""}`}>
-          {variant === "contact" ? "Business Email *" : "Email"}
+          {variant === "contact" ? "Business Email *" : variant === "journey" ? "Email *" : "Email"}
         </label>
         <input
           {...register("email")}

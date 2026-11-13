@@ -8,10 +8,12 @@ const base = {
 };
 const email = z.string().trim().email("Enter a valid email address");
 
+const requiredEmail = z.string().trim().min(1, "Email is required").email("Enter a valid email address");
+
 export const journeySchema = z.object({
   kind: z.literal("journey"),
-  name: text().optional(),
-  email: email.optional().or(z.literal("")),
+  name: text().min(2, "Name is required"),
+  email: requiredEmail,
   phone: text(40).min(7, "Phone number is required"),
   projectType: text().optional(),
   genre: text().optional(),
@@ -22,7 +24,7 @@ export const journeySchema = z.object({
 export const contactSchema = z.object({
   kind: z.literal("contact"),
   name: text().min(2, "Full name is required"),
-  email,
+  email: requiredEmail,
   phone: text(40).min(7, "Phone number is required"),
   message: text(3000).min(5, "Please tell us a little about your project"),
   ...base,
