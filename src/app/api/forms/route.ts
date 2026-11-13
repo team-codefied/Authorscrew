@@ -81,7 +81,9 @@ export async function POST(req: Request) {
     });
   } catch (err) {
     console.error("[forms] SMTP send failed", err);
-    return NextResponse.json({ ok: false, error: "We couldn't send your message. Please try again." }, { status: 502 });
+    // Short error code only (e.g. EAUTH, ECONNECTION), never credentials, to make setup problems diagnosable.
+    const code = (err as { code?: string; responseCode?: number })?.code ?? "UNKNOWN";
+    return NextResponse.json({ ok: false, error: "We couldn't send your message. Please try again.", code }, { status: 502 });
   }
   return NextResponse.json({ ok: true });
 }
