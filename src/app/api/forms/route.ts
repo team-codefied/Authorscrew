@@ -64,6 +64,9 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
+  // An empty or blank FORM_TO_EMAIL falls back to the mailbox itself.
+  const listed = (process.env.FORM_TO_EMAIL ?? "").split(/[,;s]+/).filter((e) => e.includes("@"));
+  const recipients = listed.length ? listed : [SMTP_USER];
   const port = Number(SMTP_PORT ?? 465);
   const transport = nodemailer.createTransport({
     host: SMTP_HOST ?? "smtp.hostinger.com",
@@ -75,7 +78,7 @@ export async function POST(req: Request) {
     await transport.sendMail({
       // Hostinger only accepts mail sent from the authenticated mailbox.
       from: `"Authors Crew Website" <${SMTP_USER}>`,
-      to: (process.env.FORM_TO_EMAIL ?? SMTP_USER).split(",").map((s) => s.trim()),
+      to: recipients,
       replyTo: "email" in data && data.email ? data.email : undefined,
       subject,
       html: `<table cellpadding="6">${rows}</table>`,
